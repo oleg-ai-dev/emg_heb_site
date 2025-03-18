@@ -6,6 +6,13 @@
   },
   "routes": [
     {
+      "src": "/articles/images/(.*%D7%..+)",
+      "dest": "/public/articles/images/$1",
+      "headers": {
+        "Cache-Control": "public, max-age=31536000"
+      }
+    },
+    {
       "handle": "filesystem"
     },
     {
