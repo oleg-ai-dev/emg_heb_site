@@ -7,7 +7,7 @@
   "routes": [
     {
       "src": "/articles/images/(.*\\.jpg)",
-      "dest": "/public/articles/images/$1",
+      "dest": "/articles/images/$1",
       "headers": {
         "Cache-Control": "public, max-age=31536000"
       }
