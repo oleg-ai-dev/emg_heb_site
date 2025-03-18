@@ -3,6 +3,7 @@ import { useParams, Link } from 'react-router-dom';
 import { ChevronRight, Calendar, Clock, Share2 } from 'lucide-react';
 import { Phone } from 'lucide-react';
 import { Helmet } from 'react-helmet';
+import Header from '@/components/Header';
 
 // Define blog post data structure
 interface BlogPostData {
@@ -604,6 +605,7 @@ const BlogPost = () => {
 
   return (
     <div className="min-h-screen bg-gray-50">
+      <Header />
       {post && (
         <Helmet>
           <title>{post.title} | MEDASSIST</title>
@@ -651,33 +653,6 @@ const BlogPost = () => {
           </script>
         </Helmet>
       )}
-      {/* Header */}
-      <header className="bg-medblue shadow-md py-4">
-        <div className="container mx-auto px-4">
-          <div className="flex items-center justify-between">
-            <Link to="/" className="text-white text-xl font-bold">
-              MEDASSIST
-            </Link>
-            
-            <div className="flex items-center gap-6">
-              <Link to="/" className="text-white text-lg font-medium hover:text-gray-200 transition-colors">
-                בית
-              </Link>
-              <Link to="/blog" className="text-white text-lg font-medium hover:text-gray-200 transition-colors">
-                בלוג
-              </Link>
-              <a 
-                href="tel:03-301-5458"
-                className="bg-orange-500 hover:bg-orange-600 text-white font-medium py-2 px-6 rounded-md flex items-center gap-2 shadow-md"
-              >
-                <span>03-301-5458</span>
-                <Phone size={16} />
-              </a>
-            </div>
-          </div>
-        </div>
-      </header>
-
       {/* Breadcrumbs */}
       <div className="bg-gray-100 py-3">
         <div className="container mx-auto px-4">

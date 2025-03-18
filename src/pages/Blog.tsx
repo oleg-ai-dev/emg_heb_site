@@ -2,6 +2,7 @@ import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { Phone, Calendar, Clock, ChevronLeft } from 'lucide-react';
 import { Helmet } from 'react-helmet';
+import Header from '@/components/Header';
 
 // Blog post data with keywords for SEO
 const blogPosts = [
@@ -67,6 +68,7 @@ const Blog = () => {
 
   return (
     <div className="min-h-screen bg-gray-50">
+      <Header />
       <Helmet>
         <title>בלוג MEDASSIST - מאמרים מקצועיים על בדיקות EMG ותסמונת התעלה הקרפלית</title>
         <meta name="description" content="בלוג MEDASSIST מציע מאמרים מקצועיים בנושא בדיקות EMG, תסמונת התעלה הקרפלית, וטיפולים מתקדמים. מידע מקצועי ועדכני מצוות המומחים שלנו." />
@@ -106,33 +108,6 @@ const Blog = () => {
           })}
         </script>
       </Helmet>
-      {/* Header */}
-      <header className="bg-medblue shadow-md py-4">
-        <div className="container mx-auto px-4">
-          <div className="flex items-center justify-between">
-            <Link to="/" className="text-white text-xl font-bold">
-              MEDASSIST
-            </Link>
-            
-            <div className="flex items-center gap-6">
-              <Link to="/" className="text-white text-lg font-medium hover:text-gray-200 transition-colors">
-                בית
-              </Link>
-              <Link to="/blog" className="text-white text-lg font-medium hover:text-gray-200 transition-colors">
-                בלוג
-              </Link>
-              <a 
-                href="tel:03-301-5458"
-                className="bg-orange-500 hover:bg-orange-600 text-white font-medium py-2 px-6 rounded-md flex items-center gap-2 shadow-md"
-              >
-                <span>03-301-5458</span>
-                <Phone size={16} />
-              </a>
-            </div>
-          </div>
-        </div>
-      </header>
-
       {/* Blog Header */}
       <div className="bg-medblue-dark text-white py-16">
         <div className="container mx-auto px-4 text-center">
