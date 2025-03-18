@@ -5,11 +5,11 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build", 
+    "build": "node set-permissions.js && vite build", 
     "build:dev": "vite build --mode development",
     "lint": "eslint .",
     "preview": "vite preview",
-    "postinstall": "node -e \"require('fs').chmodSync('node_modules/.bin/vite', 0o755)\""
+    "postinstall": "node set-permissions.js"
   },
   "dependencies": {
     "@hookform/resolvers": "^3.9.0",
