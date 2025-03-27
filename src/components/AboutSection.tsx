@@ -32,7 +32,7 @@ const AboutSection = () => {
           <div className="space-y-4 text-gray-700 text-right">
             <p className="leading-relaxed">
               <span className="font-bold text-medblue-dark text-lg">Medassist</span>{" "}
-              היא חברת הרפואה הפרטית המובילה בישראל, אשר מתמחה במתן שירותי רפואה דחופים ובדיקות רפואיות שלא מבוצעות דיאגנוסטית בקופת חולים.
+              היא חברת הרפואה הפרטית המובילה בישראל, אשר מתמחה במתן שירותי רפואה דחופים ובדיקות רפואיות .
             </p>
             
             {/* Features with icons */}
@@ -55,7 +55,7 @@ const AboutSection = () => {
             </p>
             
             <p className="leading-relaxed">
-              לכן, אם אתם זקוקים לבדיקה מצילת חיים, פנו אלינו בהקדם, כדי שנוכל לסייע בגילוי מוקדם ולהביא לשיפור משמעותי באיכות חייכם.
+              לכן, אם אתם זקוקים לבדיקה דחופה, פנו אלינו בהקדם, כדי שנוכל לסייע בגילוי מוקדם ולהביא לשיפור משמעותי באיכות חייכם.
             </p>
 
             {/* Premium accreditation section */}
