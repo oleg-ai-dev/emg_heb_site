@@ -63,7 +63,7 @@ const Index = () => {
             {/* Desktop Navigation */}
             <div className="hidden md:flex items-center gap-6">
               <a href="/" className="text-white text-lg font-medium hover:text-gray-200 transition-colors">
-                בית
+              עמוד הבית
               </a>
               <a href="/blog" className="text-white text-lg font-medium hover:text-gray-200 transition-colors">
                 בלוג
@@ -110,7 +110,7 @@ const Index = () => {
                 className="text-white font-medium hover:text-gray-200 transition-colors"
                 onClick={() => setMobileMenuOpen(false)}
               >
-                בית
+                עמוד הבית
               </a>
               <a 
                 href="/blog" 
