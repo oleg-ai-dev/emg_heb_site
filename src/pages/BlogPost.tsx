@@ -82,6 +82,21 @@ const blogPosts: Record<string, BlogPostData> = {
           בכשליש מהמקרים, החולשה עלולה להתפתח לשיתוק מלא המחייב הנשמה מלאכותית. חשוב להדגיש שההידרדרות עלולה להיות מהירה מאוד, ולכן אבחון מהיר והתערבות מיידית הם קריטיים.
         </p>
 
+        {/* Inserted Banner */}
+        <div className="my-12 bg-medblue-dark text-white p-8 rounded-lg shadow-md text-right">
+          <h2 className="text-2xl font-bold mb-4">חוששים מתסמיני תסמונת גיאן-בארה?</h2>
+          <p className="mb-6">צוות המומחים שלנו מתמחה באבחון וטיפול בתסמונת גיאן-בארה באמצעות בדיקות EMG מתקדמות ותוכניות טיפול מותאמות אישית.</p>
+          <div className="flex justify-end">
+            <a 
+              href="tel:03-301-5458"
+              className="bg-orange-500 hover:bg-orange-600 text-white font-medium py-3 px-8 rounded-md inline-flex items-center gap-2 shadow-md"
+            >
+              <span>התקשרו עכשיו: 03-301-5458</span>
+              <Phone size={18} />
+            </a>
+          </div>
+        </div>
+
         <h2 className="text-2xl font-semibold text-medblue-dark mt-6 mb-3">בדיקת EMG באבחון תסמונת גיאן-בארה</h2>
         <p className="leading-relaxed">
           בדיקת אלקטרומיוגרפיה (EMG) היא כלי אבחוני חיוני בהערכת תסמונת גיאן-בארה. הבדיקה כוללת שני מרכיבים עיקריים:
@@ -231,6 +246,21 @@ const blogPosts: Record<string, BlogPostData> = {
           <li><strong>הריון</strong>: שינויים הורמונליים ונפיחות מגבירים את הסיכון</li>
           <li><strong>גורמים נוספים</strong>: השמנת יתר, עישון, ונטייה גנטית</li>
         </ul>
+
+        {/* Inserted Banner */}
+        <div className="my-12 bg-medblue-dark text-white p-8 rounded-lg shadow-md text-right">
+          <h2 className="text-2xl font-bold mb-4">סובלים מתסמיני תעלה קרפלית?</h2>
+          <p className="mb-6">צוות המומחים שלנו יכול לעזור לכם באבחון מדויק באמצעות בדיקת EMG ובהתאמת תכנית טיפול אישית.</p>
+          <div className="flex justify-end">
+            <a 
+              href="tel:03-301-5458"
+              className="bg-orange-500 hover:bg-orange-600 text-white font-medium py-3 px-8 rounded-md inline-flex items-center gap-2 shadow-md"
+            >
+              <span>התקשרו עכשיו: 03-301-5458</span>
+              <Phone size={18} />
+            </a>
+          </div>
+        </div>
 
         <h2 className="text-2xl font-semibold text-medblue-dark mt-6 mb-3">בדיקת EMG לאבחון תסמונת התעלה הקרפלית</h2>
         <p className="leading-relaxed">
@@ -409,6 +439,21 @@ const blogPosts: Record<string, BlogPostData> = {
           <li><strong>החמרה בלילה</strong>: סימפטומים שמתגברים בשעות הלילה או בזמן מנוחה</li>
           <li><strong>תלות בתנוחה</strong>: סימפטומים שמשתנים בהתאם לתנוחת הגוף</li>
         </ul>
+
+        {/* Inserted Banner */}
+        <div className="my-12 bg-medblue-dark text-white p-8 rounded-lg shadow-md text-right">
+          <h2 className="text-2xl font-bold mb-4">זקוקים לאבחון מקצועי?</h2>
+          <p className="mb-6">צוות המומחים שלנו יכול לעזור לכם באבחון מדויק באמצעות בדיקת EMG ובהתאמת תכנית טיפול אישית.</p>
+          <div className="flex justify-end">
+            <a 
+              href="tel:03-301-5458"
+              className="bg-orange-500 hover:bg-orange-600 text-white font-medium py-3 px-8 rounded-md inline-flex items-center gap-2 shadow-md"
+            >
+              <span>התקשרו עכשיו: 03-301-5458</span>
+              <Phone size={18} />
+            </a>
+          </div>
+        </div>
 
         <h2 className="text-2xl font-semibold text-medblue-dark mt-6 mb-3">בדיקת EMG באבחון תסמונות לחץ על עצבים</h2>
         <p className="leading-relaxed">

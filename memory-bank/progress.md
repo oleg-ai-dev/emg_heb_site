@@ -9,7 +9,7 @@
     *   Features interactive elements (scroll effects, mobile menu).
 *   **Blog Section (`/blog`, `/blog/:id`):**
     *   Displays a list of blog posts with excerpts and images (`Blog.tsx`). Styling improved (header alignment, card padding, metadata grouping, link alignment).
-    *   Displays individual blog posts with full content (`BlogPost.tsx`). Styling improved (metadata grouping, paragraph leading).
+    *   Displays individual blog posts with full content (`BlogPost.tsx`). Styling improved (metadata grouping, paragraph leading). Added a mid-content call-to-action banner to all three blog posts (`guillain-barre-syndrome`, `carpal-tunnel-syndrome`, `תסמונות-לחץ-עצבים`).
     *   Includes SEO optimizations (`react-helmet`).
     *   Content is currently hardcoded within components.
 *   **UI Components:** Base UI components (`shadcn/ui`) and custom application components (`src/components`) are functional.
@@ -33,6 +33,7 @@
     *   Adjusted text alignment to `text-right` for RTL.
     *   Updated links (Accessibility, About Us, Terms).
     *   Replaced duplicated footer code in all page components with `<Footer />`.
+    *   Updated background color from `bg-gray-900` to `bg-medblue-dark` for consistency with header and project palette.
 
 ## 2. What's Left to Build / In Progress
 *   **Contact Form Submission:** Backend logic/integration for the contact form is assumed but not confirmed (requires checking `ContactForm.tsx` and potential backend/API).
@@ -46,11 +47,13 @@
 *   **About Us Page:** Created, banner added, content refined.
 *   **Terms & Conditions Page:** Created.
 *   **Footer:** Refactored, layout updated, and alignment fixed.
-*   **Blog Pages:** Styling and readability improved. Task completed.
-*   **Overall:** The website is functional with the new pages and updated footer/blog styling. Awaiting next task.
+*   **Blog Pages:** Styling and readability improved. Added mid-content banner to all three posts. Task completed.
+*   **Footer Color Scheme:** Corrected to align with header and project palette. Task completed.
+*   **Overall:** The website is functional with the new pages, updated footer, and improved blog styling including the added banners. Awaiting next task.
 
 ## 4. Known Issues / Potential Improvements
 *   **Footer Duplication:** Resolved by refactoring into `Footer.tsx`.
+*   **Footer Color Scheme:** Resolved.
 *   **Placeholder Footer Links:** Links for "מדיניות פרטיות" and "צור קשר" are placeholders (`#`).
 *   **Contact Form Backend:** Functionality needs verification.
 *   **Blog Content Source:** Content is hardcoded.
