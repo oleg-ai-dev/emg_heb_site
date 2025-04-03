@@ -417,6 +417,7 @@ const Index = () => {
                 <Link to="/blog/carpal-tunnel-syndrome" className="hover:text-white transition-colors">תסמונת התעלה הקרפלית</Link>
                 <Link to="/blog/תסמונות-לחץ-עצבים" className="hover:text-white transition-colors">תסמונות לחץ על עצבים</Link>
                 <Link to="/הצהרת-נגישות" className="hover:text-white transition-colors">הצהרת נגישות</Link>
+                <Link to="/about-us" className="hover:text-white transition-colors">אודות</Link>
                 <a href="#" className="hover:text-white transition-colors">תנאי שימוש</a>
                 <a href="#" className="hover:text-white transition-colors">מדיניות פרטיות</a>
                 <a href="#" className="hover:text-white transition-colors">צור קשר</a>

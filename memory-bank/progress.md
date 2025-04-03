@@ -19,6 +19,11 @@
     *   Link added to footers (`Index.tsx`, `Blog.tsx`, `BlogPost.tsx`).
     *   Styling refined using specific Tailwind classes for improved readability.
     *   Image banner implemented using single composite image (`/images/הצהרת נגישות.jpg`) via `write_to_file` after `replace_in_file` issues.
+*   **About Us Page (`/about-us`):**
+    *   Page component created (`src/pages/AboutUs.tsx`).
+    *   Image banner added using `/images/about-us-banner.jpg`.
+    *   Route added (`src/App.tsx`).
+    *   Link added to footers (`Index.tsx`, `Blog.tsx`, `BlogPost.tsx`, `AccessibilityStatement.tsx`).
 
 ## 2. What's Left to Build / In Progress
 *   **Contact Form Submission:** Backend logic/integration for the contact form is assumed but not confirmed (requires checking `ContactForm.tsx` and potential backend/API).
@@ -28,11 +33,12 @@
 
 ## 3. Current Status
 *   **Memory Bank:** Initial setup completed. Core files created and updated.
-*   **Accessibility Page:** Created, styled, and banner implemented. Task completed.
-*   **Overall:** The website is functional, including the updated accessibility page with banner. Awaiting next task.
+*   **Accessibility Page:** Created, styled, and banner implemented.
+*   **About Us Page:** Created, banner added, and linked. Task completed.
+*   **Overall:** The website is functional, including the new About Us page with its banner. Awaiting next task.
 
 ## 4. Known Issues / Potential Improvements
-*   **Footer Duplication:** Footer code is duplicated across `Index.tsx`, `Blog.tsx`, `BlogPost.tsx`, and `AccessibilityStatement.tsx`. Refactoring into a reusable component is recommended.
+*   **Footer Duplication:** Footer code is duplicated across `Index.tsx`, `Blog.tsx`, `BlogPost.tsx`, `AccessibilityStatement.tsx`, and `AboutUs.tsx`. Refactoring into a reusable component is recommended.
 *   **Placeholder Footer Links:** Links for "תנאי שימוש", "מדיניות פרטיות", "צור קשר" are placeholders (`#`).
 *   **Contact Form Backend:** Functionality needs verification.
 *   **Blog Content Source:** Content is hardcoded.
