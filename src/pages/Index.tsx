@@ -6,6 +6,7 @@ import AccordionSection from '@/components/AccordionSection';
 import TestimonialSection from '@/components/TestimonialSection';
 import EmgBenefitsSection from '@/components/EmgBenefitsSection';
 import AboutSection from '@/components/AboutSection';
+import Footer from '@/components/Footer'; // Import the new Footer component
 import { Textarea } from '@/components/ui/textarea';
 import { Button } from '@/components/ui/button';
 
@@ -402,30 +403,8 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Footer */}
-      <footer className="bg-gray-900 text-white py-8">
-        <div className="container mx-auto px-4">
-          <div className="flex flex-col md:flex-row justify-between items-center">
-            <div className="mb-4 md:mb-0">
-              <div className="text-xl font-bold">MEDASSIST</div>
-              <div className="text-gray-400 text-sm mt-1">בדיקות EMG מתקדמות</div>
-            </div>
-            <div className="text-center md:text-right">
-              <p className="text-gray-400 text-sm">© 2023 MedAssist כל הזכויות שמורות</p>
-              <div className="mt-2 text-gray-500 text-xs flex flex-wrap justify-center md:justify-end gap-4">
-                <Link to="/blog/guillain-barre-syndrome" className="hover:text-white transition-colors">תסמונת גיאן-בארה</Link>
-                <Link to="/blog/carpal-tunnel-syndrome" className="hover:text-white transition-colors">תסמונת התעלה הקרפלית</Link>
-                <Link to="/blog/תסמונות-לחץ-עצבים" className="hover:text-white transition-colors">תסמונות לחץ על עצבים</Link>
-                <Link to="/הצהרת-נגישות" className="hover:text-white transition-colors">הצהרת נגישות</Link>
-                <Link to="/about-us" className="hover:text-white transition-colors">אודות</Link>
-                <Link to="/terms-conditions" className="hover:text-white transition-colors">תנאי שימוש</Link>
-                <a href="#" className="hover:text-white transition-colors">מדיניות פרטיות</a>
-                <a href="#" className="hover:text-white transition-colors">צור קשר</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </footer>
+      {/* Use the new Footer component */}
+      <Footer />
       
       {/* Scroll to top button */}
       {showScrollTop && (

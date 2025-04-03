@@ -24,11 +24,14 @@
     *   Image banner added using `/images/about-us-banner.jpg`.
     *   Redundant image removed from main content area.
     *   Route added (`src/App.tsx`).
-    *   Link added to footers (`Index.tsx`, `Blog.tsx`, `BlogPost.tsx`, `AccessibilityStatement.tsx`).
 *   **Terms & Conditions Page (`/terms-conditions`):**
     *   Page component created (`src/pages/TermsConditions.tsx`).
     *   Route added (`src/App.tsx`).
-    *   Link added to footers (`Index.tsx`, `Blog.tsx`, `BlogPost.tsx`, `AccessibilityStatement.tsx`, `AboutUs.tsx`, `TermsConditions.tsx`).
+*   **Footer:**
+    *   Refactored into reusable `src/components/Footer.tsx` component.
+    *   Updated layout to display links vertically as requested.
+    *   Updated links (Accessibility, About Us, Terms).
+    *   Replaced duplicated footer code in all page components with `<Footer />`.
 
 ## 2. What's Left to Build / In Progress
 *   **Contact Form Submission:** Backend logic/integration for the contact form is assumed but not confirmed (requires checking `ContactForm.tsx` and potential backend/API).
@@ -39,12 +42,13 @@
 ## 3. Current Status
 *   **Memory Bank:** Initial setup completed. Core files created and updated.
 *   **Accessibility Page:** Created, styled, and banner implemented.
-*   **About Us Page:** Created, banner added, content refined, and linked.
-*   **Terms & Conditions Page:** Created and linked. Task completed.
-*   **Overall:** The website is functional, including the new Terms & Conditions page. Awaiting next task.
+*   **About Us Page:** Created, banner added, content refined.
+*   **Terms & Conditions Page:** Created.
+*   **Footer:** Refactored and layout updated. Task completed.
+*   **Overall:** The website is functional with the new pages and updated footer layout. Awaiting next task.
 
 ## 4. Known Issues / Potential Improvements
-*   **Footer Duplication:** Footer code is duplicated across all page components. Refactoring into a reusable component is recommended.
+*   **Footer Duplication:** Resolved by refactoring into `Footer.tsx`.
 *   **Placeholder Footer Links:** Links for "מדיניות פרטיות" and "צור קשר" are placeholders (`#`).
 *   **Contact Form Backend:** Functionality needs verification.
 *   **Blog Content Source:** Content is hardcoded.
