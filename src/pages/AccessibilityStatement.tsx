@@ -25,14 +25,26 @@ const AccessibilityStatement = () => {
       </Helmet>
       <Header />
 
-      {/* Main Content Area */}
-      <main className="py-16 bg-gray-50"> {/* Increased top/bottom padding */}
-        <div className="container mx-auto px-4">
-          <div className="max-w-3xl mx-auto bg-white p-8 md:p-12 rounded-lg shadow-lg"> {/* Slightly narrower, more padding, bigger shadow */}
-            <article className="text-right space-y-6 text-gray-700"> {/* Removed prose, added spacing and default text color */}
-              <h1 className="text-3xl md:text-4xl font-bold text-medblue-dark mb-8 border-b pb-4">הצהרת נגישות</h1>
+      {/* Single Image Banner Section - Final */}
+      <section className="py-8 bg-gray-50"> {/* Kept padding */}
+        {/* Constrained width and centered */}
+        <div className="max-w-3xl mx-auto overflow-hidden rounded-lg shadow-lg"> 
+          <img 
+            src="/images/הצהרת נגישות.jpg" /* Using .jpg as specified */
+            alt="הצהרת נגישות - Medassist" 
+            className="w-full h-auto block" /* Ensure image displays correctly */
+          />
+        </div>
+      </section>
 
-              <h2 className="text-2xl font-semibold text-medblue-dark mt-8 mb-4">הצהרת נגישות</h2>
+      {/* Main Content Area */}
+      <main className="pb-16 bg-gray-50"> {/* Removed py-16, added pb-16 */}
+        <div className="container mx-auto px-4">
+          {/* Removed negative margin, relative, z-10 */}
+          <div className="max-w-3xl mx-auto bg-white p-8 md:p-12 rounded-lg shadow-lg"> 
+            <article className="text-right space-y-6 text-gray-700"> 
+              {/* H1 should not be here as it's visually represented in the banner image */}
+              <h2 className="text-2xl font-semibold text-medblue-dark mt-8 mb-4">הצהרת נגישות</h2> 
               <p className="leading-relaxed">
                 מרפאתנו ומשרדינו נוקטים את מירב המאמצים ומשקיעה משאבים רבים על
                 מנת לספק לכל לקוחותינו שירות שוויוני, מכובד, נגיש ומקצועי. בהתאם לחוק
@@ -40,7 +52,7 @@ const AccessibilityStatement = () => {
                 מושקעים מאמצים ומשאבים רבים בביצוע התאמות הנגישות הנדרשות שיביאו
                 לכך שאדם בעל מוגבלות יוכל לקבל את השירותים הניתנים לכלל הלקוחות,
                 באופן עצמאי ושוויוני.
-              </p>
+              </p> 
 
               <h2 className="text-2xl font-semibold text-medblue-dark mt-8 mb-4">הסדרי נגישות מבנים</h2>
               <p className="leading-relaxed">
