@@ -109,11 +109,11 @@ const Blog = () => {
           })}
         </script>
       </Helmet>
-      {/* Blog Header */}
-      <div className="bg-medblue-dark text-white py-16">
-        <div className="container mx-auto px-4 text-center">
+      {/* Blog Header - Adjusted padding and alignment */}
+      <div className="bg-medblue-dark text-white py-12"> {/* Reduced padding */}
+        <div className="container mx-auto px-4 text-right"> {/* Changed to text-right */}
           <h1 className="text-4xl font-bold mb-4">הבלוג שלנו</h1>
-          <p className="text-xl text-medblue-light max-w-2xl mx-auto">
+          <p className="text-xl text-medblue-light max-w-2xl ml-auto"> {/* Added ml-auto for right alignment */}
             מאמרים מקצועיים בנושא בדיקות EMG, תסמונת התעלה הקרפלית, וטיפולים מתקדמים
           </p>
         </div>
@@ -134,26 +134,30 @@ const Blog = () => {
                     />
                   </div>
                 </Link>
-                <div className="p-6">
-                  <div className="text-xs text-medblue font-semibold mb-2">{post.category}</div>
+                <div className="p-8"> {/* Increased padding */}
+                  <div className="text-xs text-medblue font-semibold mb-2 text-right">{post.category}</div> {/* Ensure right alignment */}
                   <Link to={`/blog/${post.id}`}>
-                    <h2 className="text-xl font-bold text-medblue-dark mb-3 hover:text-medblue transition-colors">{post.title}</h2>
+                    <h2 className="text-xl font-bold text-medblue-dark mb-3 hover:text-medblue transition-colors text-right">{post.title}</h2> {/* Ensure right alignment */}
                   </Link>
-                  <p className="text-gray-600 mb-4 text-right">{post.excerpt}</p>
-                  <div className="flex justify-between items-center text-sm text-gray-500">
-                    <div className="flex items-center gap-1">
-                      <span>{post.readTime}</span>
-                      <Clock className="h-4 w-4" />
-                    </div>
-                    <div className="flex items-center gap-1">
-                      <span>{post.date}</span>
-                      <Calendar className="h-4 w-4" />
+                  <p className="text-gray-600 mb-4 text-right leading-relaxed">{post.excerpt}</p> {/* Added leading-relaxed */}
+                  <div className="flex justify-between items-center text-sm text-gray-500 mt-4"> {/* Added margin-top */}
+                    {/* Grouped metadata */}
+                    <div className="flex items-center gap-2"> 
+                      <div className="flex items-center gap-1">
+                        <span>{post.date}</span>
+                        <Calendar className="h-4 w-4" />
+                      </div>
+                      <span className="text-gray-300">|</span>
+                      <div className="flex items-center gap-1">
+                        <span>{post.readTime}</span>
+                        <Clock className="h-4 w-4" />
+                      </div>
                     </div>
                   </div>
-                  <div className="mt-4 text-left">
+                  <div className="mt-6 text-right"> {/* Changed text-left to text-right and added margin-top */}
                     <Link 
                       to={`/blog/${post.id}`} 
-                      className="text-medblue hover:text-medblue-dark transition-colors inline-flex items-center gap-1"
+                      className="text-medblue hover:text-medblue-dark transition-colors inline-flex items-center gap-1 font-medium" /* Added font-medium */
                     >
                       <span>קרא עוד</span>
                       <ChevronLeft className="h-4 w-4" />

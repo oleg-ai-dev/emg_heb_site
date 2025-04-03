@@ -9,13 +9,12 @@
 *   **Accessibility Page:** Created component, added route, refined styling, implemented banner via `write_to_file`, added footer links.
 *   **About Us Page:** Created component, added banner, refined content, added route, added footer links.
 *   **Terms & Conditions Page:** Created component, added route.
-*   **Footer Refactoring:**
-    *   Created reusable `src/components/Footer.tsx` with vertical link layout as requested.
-    *   Updated all page components (`Index`, `Blog`, `BlogPost`, `AccessibilityStatement`, `AboutUs`, `TermsConditions`) to use the new `<Footer />` component.
+*   **Footer Refactoring:** Created reusable `Footer.tsx`, updated layout/alignment, and replaced in all pages.
+*   **Blog Styling:** Improved layout and readability on `Blog.tsx` (index page) and `BlogPost.tsx` (individual post page).
 *   **Documentation Update:** Updating `activeContext.md` (this file) and `progress.md`.
 
 ## 3. Next Steps
-1.  Update `memory-bank/progress.md` to reflect the footer refactoring and new layout.
+1.  Update `memory-bank/progress.md` to reflect the blog styling improvements.
 2.  Present the completed task to the user using `attempt_completion`.
 3.  Await further instructions from the user.
 

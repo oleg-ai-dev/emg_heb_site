@@ -5,18 +5,19 @@ const Footer = () => {
   return (
     <footer className="bg-gray-900 text-white py-8 mt-16"> 
       <div className="container mx-auto px-4">
-        <div className="flex flex-col md:flex-row justify-between items-center">
+        <div className="flex flex-col md:flex-row justify-between items-center md:items-start"> {/* Align items start on md */}
           {/* Left Side: Logo & Brand */}
-          <div className="mb-6 md:mb-0 text-center md:text-right"> 
+          {/* Ensured text-right for all sizes */}
+          <div className="mb-6 md:mb-0 text-right"> 
             <div className="text-xl font-bold">MEDASSIST</div>
             <div className="text-gray-400 text-sm mt-1">בדיקות EMG מתקדמות</div>
           </div>
           
           {/* Right Side: Links & Copyright */}
-          <div className="text-center md:text-right">
+          <div className="text-right"> {/* Changed text-center md:text-right to text-right */}
             {/* Vertical Links */}
             <nav className="mb-4 md:mb-2">
-              <ul className="flex flex-col items-center md:items-end space-y-2 text-gray-300">
+              <ul className="flex flex-col items-end space-y-2 text-gray-300"> {/* Changed items-center md:items-end to items-end */}
                 <li>
                   <Link to="/הצהרת-נגישות" className="hover:text-white transition-colors text-sm">הצהרת נגישות</Link> 
                 </li>
