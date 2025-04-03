@@ -29,14 +29,13 @@
     *   Route added (`src/App.tsx`).
 *   **Footer:**
     *   Refactored into reusable `src/components/Footer.tsx` component.
-    *   Updated layout to display links vertically.
-    *   Adjusted text alignment to `text-right` for RTL.
+    *   Updated layout to remove logo section and center links/copyright text as per user image.
     *   Updated links (Accessibility, About Us, Terms).
     *   Replaced duplicated footer code in all page components with `<Footer />`.
     *   Updated background color from `bg-gray-900` to `bg-medblue-dark` for consistency with header and project palette.
 
 ## 2. What's Left to Build / In Progress
-*   **Contact Form Submission:** Backend logic/integration for the contact form is assumed but not confirmed (requires checking `ContactForm.tsx` and potential backend/API).
+*   **Contact Form Submission:** Implemented webhook submission logic in `ContactForm.tsx`. Form data (name, phone, email, details) is sent via POST request as JSON to the specified Make.com webhook URL. Includes loading state, success/error toast notifications, and form reset on success.
 *   **Blog Content Management:** Currently hardcoded. Future enhancement might involve a CMS or API integration for easier content updates.
 *   **Footer Links:** Placeholder links for "מדיניות פרטיות" and "צור קשר" still point to `#`. These need actual pages or updated links.
 *   **Testing:** No automated tests (unit, integration, e2e) are apparent in the file structure.
@@ -46,15 +45,16 @@
 *   **Accessibility Page:** Created, styled, and banner implemented.
 *   **About Us Page:** Created, banner added, content refined.
 *   **Terms & Conditions Page:** Created.
-*   **Footer:** Refactored, layout updated, and alignment fixed.
+*   **Footer:** Refactored, layout updated to centered links/copyright (no logo), color scheme corrected. Task completed.
 *   **Blog Pages:** Styling and readability improved. Added mid-content banner to all three posts. Task completed.
-*   **Footer Color Scheme:** Corrected to align with header and project palette. Task completed.
-*   **Overall:** The website is functional with the new pages, updated footer, and improved blog styling including the added banners. Awaiting next task.
+*   **Contact Form:** Submission logic implemented via webhook. Task completed.
+*   **Overall:** The website is functional with the new pages, updated footer layout, improved blog styling, and working contact form submission. Awaiting next task.
 
 ## 4. Known Issues / Potential Improvements
-*   **Footer Duplication:** Resolved by refactoring into `Footer.tsx`.
+*   **Footer Duplication:** Resolved.
 *   **Footer Color Scheme:** Resolved.
+*   **Footer Layout:** Updated to match user image.
 *   **Placeholder Footer Links:** Links for "מדיניות פרטיות" and "צור קשר" are placeholders (`#`).
-*   **Contact Form Backend:** Functionality needs verification.
+*   **Contact Form Backend:** Submission implemented via Make.com webhook. (No dedicated backend API).
 *   **Blog Content Source:** Content is hardcoded.
 *   **Testing:** Lack of automated tests.

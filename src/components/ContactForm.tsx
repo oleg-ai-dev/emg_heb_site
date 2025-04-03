@@ -13,23 +13,60 @@ const ContactForm = () => {
   const [details, setDetails] = useState('');
   const [isLoading, setIsLoading] = useState(false);
   const { toast } = useToast();
+  const webhookUrl = 'https://hook.eu1.make.com/swaxpwhct47j7fh37ix2pqhmtkh69r5e';
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setIsLoading(true);
-    
-    // Simulate form submission
-    setTimeout(() => {
-      setIsLoading(false);
-      toast({
-        title: "פנייתך התקבלה בהצלחה",
-        description: "נציג יחזור אליך בהקדם, בדרך כלל תוך 30 דקות",
+
+    const formData = {
+      name,
+      phone,
+      email,
+      details,
+    };
+
+    try {
+      const response = await fetch(webhookUrl, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
       });
-      setName('');
-      setPhone('');
-      setEmail('');
-      setDetails('');
-    }, 1000);
+
+      if (response.ok) {
+        // Assuming a 2xx response indicates success
+        toast({
+          title: "פנייתך התקבלה בהצלחה",
+          description: "נציג יחזור אליך בהקדם.",
+          variant: "default", // Explicitly setting default variant
+        });
+        // Reset form fields
+        setName('');
+        setPhone('');
+        setEmail('');
+        setDetails('');
+      } else {
+        // Handle non-2xx responses as errors
+        console.error('Webhook submission failed:', response.status, response.statusText);
+        toast({
+          title: "שגיאה בשליחת הפנייה",
+          description: "אירעה שגיאה. אנא נסה שנית או צור קשר טלפוני.",
+          variant: "destructive",
+        });
+      }
+    } catch (error) {
+      // Handle network errors or other exceptions
+      console.error('Error submitting form:', error);
+      toast({
+        title: "שגיאת רשת",
+        description: "לא ניתן היה לשלוח את הפנייה. אנא בדוק את חיבור האינטרנט ונסה שנית.",
+        variant: "destructive",
+      });
+    } finally {
+      setIsLoading(false);
+    }
   };
 
   return (

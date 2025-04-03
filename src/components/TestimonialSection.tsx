@@ -271,18 +271,7 @@ const TestimonialSection = () => {
             <span className="font-semibold">שיטות ייחודיות:</span> פיתחנו פרוטוקולים בלעדיים המאפשרים אבחון מהיר ומדויק
           </p>
         </div>
-      </div>
-      
-      <div className="mt-8 flex justify-center">
-        <Button 
-          variant="link" 
-          className="text-medblue font-medium hover:text-medblue-dark transition-colors"
-          onClick={() => window.location.href = '#contact'}
-        >
-          <span>קרא עוד חוות דעת</span>
-          <ArrowLeft size={16} className="mr-1" />
-        </Button>
-      </div>
+      </div>    
     </div>
   );
 };

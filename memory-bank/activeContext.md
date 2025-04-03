@@ -13,9 +13,11 @@
 *   **Blog Styling:** Improved layout and readability on `Blog.tsx` (index page) and `BlogPost.tsx` (individual post page).
 *   **Documentation Update:** Updating `activeContext.md` (this file) and `progress.md`.
 *   **Blog Post Updates:** Added a call-to-action banner mid-content to all three blog posts (`guillain-barre-syndrome`, `carpal-tunnel-syndrome`, `תסמונות-לחץ-עצבים`) as requested.
+*   **Contact Form Submission:** Implemented webhook submission logic in `ContactForm.tsx` using `fetch` API to send data to the specified Make.com URL. Added success/error handling and toast notifications.
+*   **Footer Layout:** Updated footer layout to remove logo and center links/copyright as per user image. Corrected syntax errors from previous attempt.
 
 ## 3. Next Steps
-1.  Update `memory-bank/progress.md` to reflect the blog styling improvements and the added banners.
+1.  Update `memory-bank/progress.md` to reflect the blog styling improvements, added banners, contact form submission logic, and new footer layout.
 2.  Present the completed task to the user using `attempt_completion`.
 3.  Await further instructions from the user.
 

@@ -3,21 +3,13 @@ import { Link } from 'react-router-dom';
 
 const Footer = () => {
   return (
-    <footer className="bg-medblue-dark text-white py-8 mt-16"> 
-      <div className="container mx-auto px-4">
-        <div className="flex flex-col md:flex-row justify-between items-center md:items-start"> {/* Align items start on md */}
-          {/* Left Side: Logo & Brand */}
-          {/* Ensured text-right for all sizes */}
-          <div className="mb-6 md:mb-0 text-right"> 
-            <div className="text-xl font-bold">MEDASSIST</div>
-            <div className="text-gray-400 text-sm mt-1">בדיקות EMG מתקדמות</div>
-          </div>
-          
-          {/* Right Side: Links & Copyright */}
-          <div className="text-right"> {/* Changed text-center md:text-right to text-right */}
-            {/* Vertical Links */}
-            <nav className="mb-4 md:mb-2">
-              <ul className="flex flex-col items-end space-y-2 text-gray-300"> {/* Changed items-center md:items-end to items-end */}
+    <footer className="bg-medblue-dark text-white py-8 mt-16">
+      <div className="container mx-auto px-4 text-center"> {/* Center align content */}
+        {/* Links & Copyright - Centered */}
+        <div className="inline-block text-center"> {/* Use inline-block for centering */}
+          {/* Vertical Links */}
+          <nav className="mb-4">
+            <ul className="flex flex-col items-center space-y-2 text-gray-300"> {/* Center items */}
                 <li>
                   <Link to="/הצהרת-נגישות" className="hover:text-white transition-colors text-sm">הצהרת נגישות</Link> 
                 </li>
@@ -28,16 +20,17 @@ const Footer = () => {
                   <Link to="/terms-conditions" className="hover:text-white transition-colors text-sm">תנאי שימוש</Link>
                 </li>
                 <li>
+                  {/* Assuming this still links to terms for now, update if a privacy page is created */}
                   <Link to="/terms-conditions" className="hover:text-white transition-colors text-sm">מדיניות הפרטיות והביטולים</Link>
                 </li>
               </ul>
             </nav>
-            
+
             {/* Copyright */}
-            <p className="text-gray-400 text-sm">© 2023 MedAssist כל הזכויות שמורות</p> 
+            <p className="text-gray-400 text-sm">© 2023 MedAssist כל הזכויות שמורות</p>
           </div>
         </div>
-      </div>
+      {/* Removed extra closing div and footer tag from previous incorrect edit */}
     </footer>
   );
 };
