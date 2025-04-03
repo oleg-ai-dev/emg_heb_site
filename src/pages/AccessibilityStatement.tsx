@@ -140,7 +140,7 @@ const AccessibilityStatement = () => {
                 <Link to="/blog/תסמונות-לחץ-עצבים" className="hover:text-white transition-colors">תסמונות לחץ על עצבים</Link>
                 <Link to="/הצהרת-נגישות" className="hover:text-white transition-colors">הצהרת נגישות</Link> 
                 <Link to="/about-us" className="hover:text-white transition-colors">אודות</Link>
-                <a href="#" className="hover:text-white transition-colors">תנאי שימוש</a>
+                <Link to="/terms-conditions" className="hover:text-white transition-colors">תנאי שימוש</Link>
                 <a href="#" className="hover:text-white transition-colors">מדיניות פרטיות</a>
                 <a href="#" className="hover:text-white transition-colors">צור קשר</a>
               </div>

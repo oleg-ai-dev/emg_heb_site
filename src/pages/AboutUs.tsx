@@ -102,8 +102,8 @@ const AboutUs = () => {
                 <Link to="/blog/carpal-tunnel-syndrome" className="hover:text-white transition-colors">תסמונת התעלה הקרפלית</Link>
                 <Link to="/blog/תסמונות-לחץ-עצבים" className="hover:text-white transition-colors">תסמונות לחץ על עצבים</Link>
                 <Link to="/הצהרת-נגישות" className="hover:text-white transition-colors">הצהרת נגישות</Link> 
-                {/* Add link to about page here later */}
-                <a href="#" className="hover:text-white transition-colors">תנאי שימוש</a>
+                <Link to="/about-us" className="hover:text-white transition-colors">אודות</Link>
+                <Link to="/terms-conditions" className="hover:text-white transition-colors">תנאי שימוש</Link>
                 <a href="#" className="hover:text-white transition-colors">מדיניות פרטיות</a>
                 <a href="#" className="hover:text-white transition-colors">צור קשר</a>
               </div>

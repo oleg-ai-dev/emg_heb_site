@@ -22,24 +22,30 @@
 *   **About Us Page (`/about-us`):**
     *   Page component created (`src/pages/AboutUs.tsx`).
     *   Image banner added using `/images/about-us-banner.jpg`.
+    *   Redundant image removed from main content area.
     *   Route added (`src/App.tsx`).
     *   Link added to footers (`Index.tsx`, `Blog.tsx`, `BlogPost.tsx`, `AccessibilityStatement.tsx`).
+*   **Terms & Conditions Page (`/terms-conditions`):**
+    *   Page component created (`src/pages/TermsConditions.tsx`).
+    *   Route added (`src/App.tsx`).
+    *   Link added to footers (`Index.tsx`, `Blog.tsx`, `BlogPost.tsx`, `AccessibilityStatement.tsx`, `AboutUs.tsx`, `TermsConditions.tsx`).
 
 ## 2. What's Left to Build / In Progress
 *   **Contact Form Submission:** Backend logic/integration for the contact form is assumed but not confirmed (requires checking `ContactForm.tsx` and potential backend/API).
 *   **Blog Content Management:** Currently hardcoded. Future enhancement might involve a CMS or API integration for easier content updates.
-*   **Footer Links:** Some footer links (`תנאי שימוש`, `מדיניות פרטיות`, `צור קשר`) still point to `#`. These need actual pages or updated links.
+*   **Footer Links:** Placeholder links for "מדיניות פרטיות" and "צור קשר" still point to `#`. These need actual pages or updated links.
 *   **Testing:** No automated tests (unit, integration, e2e) are apparent in the file structure.
 
 ## 3. Current Status
 *   **Memory Bank:** Initial setup completed. Core files created and updated.
 *   **Accessibility Page:** Created, styled, and banner implemented.
-*   **About Us Page:** Created, banner added, and linked. Task completed.
-*   **Overall:** The website is functional, including the new About Us page with its banner. Awaiting next task.
+*   **About Us Page:** Created, banner added, content refined, and linked.
+*   **Terms & Conditions Page:** Created and linked. Task completed.
+*   **Overall:** The website is functional, including the new Terms & Conditions page. Awaiting next task.
 
 ## 4. Known Issues / Potential Improvements
-*   **Footer Duplication:** Footer code is duplicated across `Index.tsx`, `Blog.tsx`, `BlogPost.tsx`, `AccessibilityStatement.tsx`, and `AboutUs.tsx`. Refactoring into a reusable component is recommended.
-*   **Placeholder Footer Links:** Links for "תנאי שימוש", "מדיניות פרטיות", "צור קשר" are placeholders (`#`).
+*   **Footer Duplication:** Footer code is duplicated across all page components. Refactoring into a reusable component is recommended.
+*   **Placeholder Footer Links:** Links for "מדיניות פרטיות" and "צור קשר" are placeholders (`#`).
 *   **Contact Form Backend:** Functionality needs verification.
 *   **Blog Content Source:** Content is hardcoded.
 *   **Testing:** Lack of automated tests.
