@@ -21,11 +21,13 @@
 *   **New Blog Post (ALS):** Added article `als` to `BlogPost.tsx` and `Blog.tsx`.
 *   **New Blog Post (Polio/Post-Polio):** Added article `polio-post-polio` to `BlogPost.tsx` and `Blog.tsx`.
 *   **New Blog Post (Radiculopathy):** Added article `radiculopathy` to `BlogPost.tsx` and `Blog.tsx` using provided content, keywords, and image. Included mid-content banner.
+*   **Performance Optimization:** Implemented code-splitting for page components in `src/App.tsx` using `React.lazy` and `Suspense` to address build warnings about large chunks.
 
 ## 3. Next Steps
-1.  Update `memory-bank/progress.md` to reflect all recent changes including the new "Radiculopathy" post being added to both blog files.
-2.  Present the completed task to the user using `attempt_completion`.
-3.  Await further instructions from the user.
+1.  Update `memory-bank/progress.md` to reflect the code-splitting implementation.
+2.  Run `npm run build` to verify the chunk size warning is resolved.
+3.  Present the completed task to the user using `attempt_completion`.
+4.  Await further instructions from the user.
 
 ## 4. Active Decisions & Considerations
 *   **Footer Refactoring:** Completed. Addressed the previous duplication issue.

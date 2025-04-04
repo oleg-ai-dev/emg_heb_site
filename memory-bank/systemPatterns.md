@@ -5,6 +5,7 @@
 *   **Framework:** React.
 *   **Build Tool:** Vite.
 *   **Language:** TypeScript.
+*   **Performance:** Code-splitting implemented for page-level components using `React.lazy` and `Suspense` in `src/App.tsx` to improve initial load times.
 
 ## 2. Routing
 *   **Library:** `react-router-dom`.
@@ -52,3 +53,4 @@
 *   Focus on SEO using `react-helmet`.
 *   Hardcoded blog content suggests either a simple initial setup or a future plan to integrate a CMS/API.
 *   RTL support is explicitly handled.
+*   Code-splitting applied to routes in `src/App.tsx`.

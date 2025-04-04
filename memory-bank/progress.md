@@ -2,6 +2,7 @@
 
 ## 1. What Works / Completed Features
 *   **Core Site Structure:** React SPA setup with Vite, TypeScript, and Tailwind CSS.
+    *   **Performance:** Implemented code-splitting for page components (`React.lazy`, `Suspense`) in `src/App.tsx` to improve initial load times and address build warnings.
 *   **Routing:** Basic client-side routing implemented (`/`, `/blog`, `/blog/:id`).
 *   **Main Landing Page (`/`):**
     *   Displays clinic information, benefits, process, testimonials, FAQs, contact form.
@@ -48,7 +49,8 @@
 *   **Footer:** Refactored, layout updated to centered links/copyright (no logo), color scheme corrected. Task completed.
 *   **Blog Pages:** Styling and readability improved. Added mid-content banner to all posts. Added new "Inflammatory Myopathies", "Muscular Dystrophy", "Myasthenia Gravis", "ALS", "Polio/Post-Polio", and "Radiculopathy" posts to both `BlogPost.tsx` and `Blog.tsx`. Task completed.
 *   **Contact Form:** Submission logic implemented via webhook. Task completed.
-*   **Overall:** The website is functional with the new pages, updated footer layout, improved blog styling including the six new posts (visible on index and individual pages), and working contact form submission. Awaiting next task.
+*   **Performance:** Code-splitting implemented for page routes. Task completed.
+*   **Overall:** The website is functional with the new pages, updated footer layout, improved blog styling including the six new posts (visible on index and individual pages), working contact form submission, and route-based code-splitting. Awaiting build verification and next task.
 
 ## 4. Known Issues / Potential Improvements
 *   **Footer Duplication:** Resolved.
@@ -58,3 +60,4 @@
 *   **Contact Form Backend:** Submission implemented via Make.com webhook. (No dedicated backend API).
 *   **Blog Content Source:** Content is hardcoded.
 *   **Testing:** Lack of automated tests.
+*   **Build Warning:** Code-splitting implemented to address chunk size warnings; verification via `npm run build` is needed.
