@@ -9,7 +9,7 @@
     *   Features interactive elements (scroll effects, mobile menu).
 *   **Blog Section (`/blog`, `/blog/:id`):**
     *   Displays a list of blog posts with excerpts and images (`Blog.tsx`). Styling improved (header alignment, card padding, metadata grouping, link alignment).
-    *   Displays individual blog posts with full content (`BlogPost.tsx`). Styling improved (metadata grouping, paragraph leading). Added a mid-content call-to-action banner to all three blog posts (`guillain-barre-syndrome`, `carpal-tunnel-syndrome`, `תסמונות-לחץ-עצבים`).
+    *   Displays individual blog posts with full content (`BlogPost.tsx`). Styling improved (metadata grouping, paragraph leading). Added a mid-content call-to-action banner to all posts. Added new post: "Inflammatory Myopathies" (`inflammatory-myopathies`).
     *   Includes SEO optimizations (`react-helmet`).
     *   Content is currently hardcoded within components.
 *   **UI Components:** Base UI components (`shadcn/ui`) and custom application components (`src/components`) are functional.
@@ -46,9 +46,9 @@
 *   **About Us Page:** Created, banner added, content refined.
 *   **Terms & Conditions Page:** Created.
 *   **Footer:** Refactored, layout updated to centered links/copyright (no logo), color scheme corrected. Task completed.
-*   **Blog Pages:** Styling and readability improved. Added mid-content banner to all three posts. Task completed.
+*   **Blog Pages:** Styling and readability improved. Added mid-content banner to all posts. Added new "Inflammatory Myopathies" post. Task completed.
 *   **Contact Form:** Submission logic implemented via webhook. Task completed.
-*   **Overall:** The website is functional with the new pages, updated footer layout, improved blog styling, and working contact form submission. Awaiting next task.
+*   **Overall:** The website is functional with the new pages, updated footer layout, improved blog styling including the new post, and working contact form submission. Awaiting next task.
 
 ## 4. Known Issues / Potential Improvements
 *   **Footer Duplication:** Resolved.

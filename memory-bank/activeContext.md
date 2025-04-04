@@ -15,9 +15,10 @@
 *   **Blog Post Updates:** Added a call-to-action banner mid-content to all three blog posts (`guillain-barre-syndrome`, `carpal-tunnel-syndrome`, `תסמונות-לחץ-עצבים`) as requested.
 *   **Contact Form Submission:** Implemented webhook submission logic in `ContactForm.tsx` using `fetch` API to send data to the specified Make.com URL. Added success/error handling and toast notifications.
 *   **Footer Layout:** Updated footer layout to remove logo and center links/copyright as per user image. Corrected syntax errors from previous attempt.
+*   **New Blog Post:** Added new article "Inflammatory Myopathies" (`inflammatory-myopathies`) to `BlogPost.tsx` using provided content, keywords, and image. Included mid-content banner.
 
 ## 3. Next Steps
-1.  Update `memory-bank/progress.md` to reflect the blog styling improvements, added banners, contact form submission logic, and new footer layout.
+1.  Update `memory-bank/progress.md` to reflect the blog styling improvements, added banners, contact form submission logic, new footer layout, and the new blog post.
 2.  Present the completed task to the user using `attempt_completion`.
 3.  Await further instructions from the user.
 
