@@ -18,10 +18,12 @@
 *   **New Blog Post (Inflammatory Myopathies):** Added article `inflammatory-myopathies` to `BlogPost.tsx` and `Blog.tsx`.
 *   **New Blog Post (Muscular Dystrophy):** Added article `muscular-dystrophy` to `BlogPost.tsx` and `Blog.tsx`.
 *   **New Blog Post (Myasthenia Gravis):** Added article `myasthenia-gravis` to `BlogPost.tsx` and `Blog.tsx`.
-*   **New Blog Post (ALS):** Added article `als` to `BlogPost.tsx` and `Blog.tsx` using provided content, keywords, and image. Included mid-content banner.
+*   **New Blog Post (ALS):** Added article `als` to `BlogPost.tsx` and `Blog.tsx`.
+*   **New Blog Post (Polio/Post-Polio):** Added article `polio-post-polio` to `BlogPost.tsx` and `Blog.tsx`.
+*   **New Blog Post (Radiculopathy):** Added article `radiculopathy` to `BlogPost.tsx` and `Blog.tsx` using provided content, keywords, and image. Included mid-content banner.
 
 ## 3. Next Steps
-1.  Update `memory-bank/progress.md` to reflect all recent changes including the new "ALS" post being added to both blog files.
+1.  Update `memory-bank/progress.md` to reflect all recent changes including the new "Radiculopathy" post being added to both blog files.
 2.  Present the completed task to the user using `attempt_completion`.
 3.  Await further instructions from the user.
 
