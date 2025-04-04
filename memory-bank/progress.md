@@ -8,10 +8,10 @@
     *   Includes header, footer, responsive design, RTL support.
     *   Features interactive elements (scroll effects, mobile menu).
 *   **Blog Section (`/blog`, `/blog/:id`):**
-    *   Displays a list of blog posts with excerpts and images (`Blog.tsx`). Styling improved (header alignment, card padding, metadata grouping, link alignment). Added new posts: "Inflammatory Myopathies" (`inflammatory-myopathies`), "Muscular Dystrophy" (`muscular-dystrophy`).
-    *   Displays individual blog posts with full content (`BlogPost.tsx`). Styling improved (metadata grouping, paragraph leading). Added a mid-content call-to-action banner to all posts. Added new posts: "Inflammatory Myopathies" (`inflammatory-myopathies`), "Muscular Dystrophy" (`muscular-dystrophy`).
+    *   Displays a list of blog posts with excerpts and images (`Blog.tsx`). Styling improved (header alignment, card padding, metadata grouping, link alignment). Added new posts: "Inflammatory Myopathies" (`inflammatory-myopathies`), "Muscular Dystrophy" (`muscular-dystrophy`), "Myasthenia Gravis" (`myasthenia-gravis`), "ALS" (`als`).
+    *   Displays individual blog posts with full content (`BlogPost.tsx`). Styling improved (metadata grouping, paragraph leading). Added a mid-content call-to-action banner to all posts. Added new posts: "Inflammatory Myopathies" (`inflammatory-myopathies`), "Muscular Dystrophy" (`muscular-dystrophy`), "Myasthenia Gravis" (`myasthenia-gravis`), "ALS" (`als`).
     *   Includes SEO optimizations (`react-helmet`).
-    *   Content is currently hardcoded within components. Added "Muscular Dystrophy" post to index.
+    *   Content is currently hardcoded within components. Added "Inflammatory Myopathies", "Muscular Dystrophy", "Myasthenia Gravis", and "ALS" posts to index.
 *   **UI Components:** Base UI components (`shadcn/ui`) and custom application components (`src/components`) are functional.
 *   **Accessibility Statement Page (`/הצהרת-נגישות`):**
     *   Page component created (`src/pages/AccessibilityStatement.tsx`).
@@ -46,9 +46,9 @@
 *   **About Us Page:** Created, banner added, content refined.
 *   **Terms & Conditions Page:** Created.
 *   **Footer:** Refactored, layout updated to centered links/copyright (no logo), color scheme corrected. Task completed.
-*   **Blog Pages:** Styling and readability improved. Added mid-content banner to all posts. Added new "Inflammatory Myopathies" and "Muscular Dystrophy" posts to both `BlogPost.tsx` and `Blog.tsx`. Task completed.
+*   **Blog Pages:** Styling and readability improved. Added mid-content banner to all posts. Added new "Inflammatory Myopathies", "Muscular Dystrophy", "Myasthenia Gravis", and "ALS" posts to both `BlogPost.tsx` and `Blog.tsx`. Task completed.
 *   **Contact Form:** Submission logic implemented via webhook. Task completed.
-*   **Overall:** The website is functional with the new pages, updated footer layout, improved blog styling including the two new posts (visible on index and individual pages), and working contact form submission. Awaiting next task.
+*   **Overall:** The website is functional with the new pages, updated footer layout, improved blog styling including the four new posts (visible on index and individual pages), and working contact form submission. Awaiting next task.
 
 ## 4. Known Issues / Potential Improvements
 *   **Footer Duplication:** Resolved.

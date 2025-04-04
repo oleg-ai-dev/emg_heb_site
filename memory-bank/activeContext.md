@@ -16,10 +16,12 @@
 *   **Contact Form Submission:** Implemented webhook submission logic in `ContactForm.tsx` using `fetch` API to send data to the specified Make.com URL. Added success/error handling and toast notifications.
 *   **Footer Layout:** Updated footer layout to remove logo and center links/copyright as per user image. Corrected syntax errors from previous attempt.
 *   **New Blog Post (Inflammatory Myopathies):** Added article `inflammatory-myopathies` to `BlogPost.tsx` and `Blog.tsx`.
-*   **New Blog Post (Muscular Dystrophy):** Added article `muscular-dystrophy` to `BlogPost.tsx` and `Blog.tsx` using provided content, keywords, and image. Included mid-content banner.
+*   **New Blog Post (Muscular Dystrophy):** Added article `muscular-dystrophy` to `BlogPost.tsx` and `Blog.tsx`.
+*   **New Blog Post (Myasthenia Gravis):** Added article `myasthenia-gravis` to `BlogPost.tsx` and `Blog.tsx`.
+*   **New Blog Post (ALS):** Added article `als` to `BlogPost.tsx` and `Blog.tsx` using provided content, keywords, and image. Included mid-content banner.
 
 ## 3. Next Steps
-1.  Update `memory-bank/progress.md` to reflect all recent changes including the new "Muscular Dystrophy" post being added to both blog files.
+1.  Update `memory-bank/progress.md` to reflect all recent changes including the new "ALS" post being added to both blog files.
 2.  Present the completed task to the user using `attempt_completion`.
 3.  Await further instructions from the user.
 
