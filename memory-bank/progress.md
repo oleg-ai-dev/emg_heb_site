@@ -10,9 +10,10 @@
     *   Features interactive elements (scroll effects, mobile menu).
 *   **Blog Section (`/blog`, `/blog/:id`):**
     *   Displays a list of blog posts with excerpts and images (`Blog.tsx`). Styling improved (header alignment, card padding, metadata grouping, link alignment). Added new posts: "Inflammatory Myopathies" (`inflammatory-myopathies`), "Muscular Dystrophy" (`muscular-dystrophy`), "Myasthenia Gravis" (`myasthenia-gravis`), "ALS" (`als`), "Polio/Post-Polio" (`polio-post-polio`), "Radiculopathy" (`radiculopathy`).
-    *   Displays individual blog posts with full content (`BlogPost.tsx`). Styling improved (metadata grouping, paragraph leading). Added a mid-content call-to-action banner to all posts. Added new posts: "Inflammatory Myopathies" (`inflammatory-myopathies`), "Muscular Dystrophy" (`muscular-dystrophy`), "Myasthenia Gravis" (`myasthenia-gravis`), "ALS" (`als`), "Polio/Post-Polio" (`polio-post-polio`), "Radiculopathy" (`radiculopathy`).
+    *   Displays individual blog posts (`BlogPost.tsx`). Styling improved. Added mid-content banner. Added new posts: "Inflammatory Myopathies", "Muscular Dystrophy", "Myasthenia Gravis", "ALS", "Polio/Post-Polio", "Radiculopathy".
+    *   **Performance:** Implemented dynamic content loading using `React.lazy` for post content (JSX stored in `src/articles/content/`). Metadata remains in `BlogPost.tsx`.
     *   Includes SEO optimizations (`react-helmet`).
-    *   Content is currently hardcoded within components. Added "Inflammatory Myopathies", "Muscular Dystrophy", "Myasthenia Gravis", "ALS", "Polio/Post-Polio", and "Radiculopathy" posts to index.
+    *   Blog index (`Blog.tsx`) still references hardcoded data (needs update if metadata source changes).
 *   **UI Components:** Base UI components (`shadcn/ui`) and custom application components (`src/components`) are functional.
 *   **Accessibility Statement Page (`/הצהרת-נגישות`):**
     *   Page component created (`src/pages/AccessibilityStatement.tsx`).
@@ -47,10 +48,10 @@
 *   **About Us Page:** Created, banner added, content refined.
 *   **Terms & Conditions Page:** Created.
 *   **Footer:** Refactored, layout updated to centered links/copyright (no logo), color scheme corrected. Task completed.
-*   **Blog Pages:** Styling and readability improved. Added mid-content banner to all posts. Added new "Inflammatory Myopathies", "Muscular Dystrophy", "Myasthenia Gravis", "ALS", "Polio/Post-Polio", and "Radiculopathy" posts to both `BlogPost.tsx` and `Blog.tsx`. Task completed.
+*   **Blog Pages:** Styling and readability improved. Added mid-content banner. Added new posts. Refactored `BlogPost.tsx` for dynamic content loading. Task completed.
 *   **Contact Form:** Submission logic implemented via webhook. Task completed.
-*   **Performance:** Code-splitting implemented for page routes. Task completed.
-*   **Overall:** The website is functional with the new pages, updated footer layout, improved blog styling including the six new posts (visible on index and individual pages), working contact form submission, and route-based code-splitting. Awaiting build verification and next task.
+*   **Performance:** Code-splitting implemented for page routes and blog post content. Task completed.
+*   **Overall:** The website is functional with the new pages, updated footer layout, improved blog styling including the six new posts, working contact form submission, and enhanced code-splitting for better performance. Awaiting build verification and next task.
 
 ## 4. Known Issues / Potential Improvements
 *   **Footer Duplication:** Resolved.
@@ -58,6 +59,6 @@
 *   **Footer Layout:** Updated to match user image.
 *   **Placeholder Footer Links:** Links for "מדיניות פרטיות" and "צור קשר" are placeholders (`#`).
 *   **Contact Form Backend:** Submission implemented via Make.com webhook. (No dedicated backend API).
-*   **Blog Content Source:** Content is hardcoded.
+*   **Blog Content Source:** Content is now split (metadata in `BlogPost.tsx`, JSX in `src/articles/content/`). `Blog.tsx` still uses hardcoded data for the index page. Future enhancement could involve a unified data source.
 *   **Testing:** Lack of automated tests.
-*   **Build Warning:** Code-splitting implemented to address chunk size warnings; verification via `npm run build` is needed.
+*   **Build Warning:** Code-splitting implemented for pages and blog content to address chunk size warnings; verification via `npm run build` is needed.

@@ -35,8 +35,11 @@
 *   **Reusability:** Components like `Header`, `ContactForm`, `AccordionSection`, `TestimonialSection`, `EmgBenefitsSection`, `AboutSection` are designed for reuse, primarily on the Index page but potentially elsewhere. `Header` is reused in `Blog.tsx` and `BlogPost.tsx`.
 
 ## 6. Data Handling
-*   **Blog Content:** Currently hardcoded as JavaScript objects/arrays within the `Blog.tsx` and `BlogPost.tsx` components. No external data fetching (e.g., from a CMS or API) is evident for blog posts in the reviewed files.
-*   **Contact Form:** Logic likely resides within `src/components/ContactForm.tsx` (not yet reviewed). Submission might involve an API call, email service, or other backend integration.
+*   **Blog Content:**
+    *   Metadata (title, date, image, etc.) is stored in `src/pages/BlogPost.tsx`.
+    *   Actual post content (JSX) is stored in individual component files within `src/articles/content/`.
+    *   `BlogPost.tsx` dynamically imports the relevant content component using `React.lazy` based on the URL parameter.
+*   **Contact Form:** Logic resides within `src/components/ContactForm.tsx`. Submission uses the `fetch` API to send data to a Make.com webhook.
 
 ## 7. SEO
 *   **Implementation:** Uses `react-helmet` to manage `<head>` tags dynamically (title, meta description, keywords, canonical URLs, Open Graph tags, structured data JSON-LD). This is actively used in `Blog.tsx` and `BlogPost.tsx`.
@@ -51,6 +54,6 @@
 *   Tailwind CSS + shadcn/ui offers a balance of rapid UI development and customization.
 *   Client-side routing with `react-router-dom` for SPA navigation.
 *   Focus on SEO using `react-helmet`.
-*   Hardcoded blog content suggests either a simple initial setup or a future plan to integrate a CMS/API.
+*   Blog content is split: Metadata in `BlogPost.tsx`, content JSX in separate files (`src/articles/content/`), loaded dynamically via `React.lazy`. This improves performance by avoiding bundling all content together.
 *   RTL support is explicitly handled.
-*   Code-splitting applied to routes in `src/App.tsx`.
+*   Code-splitting applied to page routes in `src/App.tsx` and blog post content in `src/pages/BlogPost.tsx`.

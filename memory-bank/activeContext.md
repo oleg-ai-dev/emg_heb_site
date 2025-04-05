@@ -21,11 +21,12 @@
 *   **New Blog Post (ALS):** Added article `als` to `BlogPost.tsx` and `Blog.tsx`.
 *   **New Blog Post (Polio/Post-Polio):** Added article `polio-post-polio` to `BlogPost.tsx` and `Blog.tsx`.
 *   **New Blog Post (Radiculopathy):** Added article `radiculopathy` to `BlogPost.tsx` and `Blog.tsx` using provided content, keywords, and image. Included mid-content banner.
-*   **Performance Optimization:** Implemented code-splitting for page components in `src/App.tsx` using `React.lazy` and `Suspense` to address build warnings about large chunks.
+*   **Performance Optimization (Pages):** Implemented code-splitting for page components in `src/App.tsx` using `React.lazy` and `Suspense` to address build warnings about large chunks.
+*   **Performance Optimization (Blog Posts):** Refactored `BlogPost.tsx` to dynamically load post content using `React.lazy`. Extracted JSX content for each post into separate files under `src/articles/content/`.
 
 ## 3. Next Steps
-1.  Update `memory-bank/progress.md` to reflect the code-splitting implementation.
-2.  Run `npm run build` to verify the chunk size warning is resolved.
+1.  Update `memory-bank/progress.md` to reflect the blog post content splitting.
+2.  Run `npm run build` to verify the reduction in the `BlogPost` chunk size.
 3.  Present the completed task to the user using `attempt_completion`.
 4.  Await further instructions from the user.
 
