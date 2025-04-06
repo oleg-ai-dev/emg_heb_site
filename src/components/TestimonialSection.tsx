@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect } from 'react';
 import { Star, Quote, User, ArrowRight, ArrowLeft, ChevronLeft, ChevronRight, Shield, Award, BadgeCheck } from 'lucide-react';
 import { Progress } from '@/components/ui/progress';
@@ -94,7 +93,7 @@ const TestimonialSection = () => {
     }, 500);
   };
 
-  const goToTestimonial = (index) => {
+  const goToTestimonial = (index: number) => {
     if (isAnimating || index === activeIndex) return;
     
     setIsAnimating(true);
@@ -116,24 +115,31 @@ const TestimonialSection = () => {
         </Badge>
       </div>
 
-      <div className="flex items-center justify-between mb-8">
-        <div className="flex items-center space-x-1 rtl:space-x-reverse">
+      {/* Updated Rating Section Layout */}
+      <div className="text-center mb-4"> {/* Heading and review count centered */}
+        <h3 className="text-2xl font-bold text-medblue-dark">המטופלים שלנו מרוצים</h3>
+        <p className="text-gray-500 text-sm">
+          מבוסס על <span className="font-medium text-medblue">{reviewCount}</span> חוות דעת
+        </p>
+      </div>
+      <div className="flex flex-col items-center mb-8"> {/* Centered stars and rating */}
+        {/* Stars */}
+        <div className="flex items-center space-x-1 rtl:space-x-reverse mb-2">
           {[...Array(5)].map((_, i) => (
             <Star 
               key={i} 
               size={24} 
-              fill={i < Math.floor(rating) ? "#D4B776" : "none"}
-              stroke={i < Math.floor(rating) ? "#D4B776" : "#D4B776"}
-              className={`${i < Math.floor(rating) ? "text-medgold" : "text-gray-300"} transition-all duration-300 hover:scale-110`}
+              fill={"#D4B776"} // Always fill gold
+              stroke={"#D4B776"} // Always stroke gold
+              className={`text-medgold transition-all duration-300 hover:scale-110`} // Simplified class
             />
           ))}
-          <span className="mx-2 font-bold text-medgold text-xl">{rating}</span>
         </div>
-        <div className="text-right">
-          <h3 className="text-2xl font-bold text-medblue-dark">המטופלים שלנו מרוצים</h3>
-          <p className="text-gray-500 text-sm">
-            מבוסס על <span className="font-medium text-medblue">{reviewCount}</span> חוות דעת
-          </p>
+        {/* Rating Number and Text */}
+        <div className="flex items-baseline justify-center"> 
+          <span className="font-bold text-medblue-dark text-4xl">{rating}</span>
+          {/* Use margin-right for RTL spacing */}
+          <span className="mr-1 text-gray-600 text-lg">מתוך 5</span> 
         </div>
       </div>
       
