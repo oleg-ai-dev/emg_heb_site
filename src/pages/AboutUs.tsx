@@ -1,8 +1,8 @@
 import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import Header from '@/components/Header'; 
+// Removed Header import
 import { Helmet } from 'react-helmet';
-import Footer from '@/components/Footer'; // Import the new Footer component
+// Removed Footer import
 
 const AboutUs = () => {
   useEffect(() => {
@@ -23,7 +23,7 @@ const AboutUs = () => {
           <link rel="canonical" href="https://emg.org.il/about-us" /> 
           {/* Add other relevant meta tags if needed */}
       </Helmet>
-      <Header />
+      {/* Header removed */}
 
       {/* Banner Section */}
       <section className="py-8 bg-gray-50"> 
@@ -88,8 +88,7 @@ const AboutUs = () => {
         </div>
       </main>
 
-      {/* Use the new Footer component */}
-      <Footer />
+      {/* Footer removed */}
     </div>
   );
 };

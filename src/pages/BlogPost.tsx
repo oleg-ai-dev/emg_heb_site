@@ -2,8 +2,7 @@ import React, { useEffect, useState, lazy, Suspense } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { ChevronRight, Calendar, Clock, Share2, Phone } from 'lucide-react';
 import { Helmet } from 'react-helmet';
-import Header from '@/components/Header';
-import Footer from '@/components/Footer';
+// Removed Header and Footer imports, handled by MainLayout
 
 // Define blog post metadata structure (content removed)
 interface BlogPostMetadata {
@@ -173,7 +172,7 @@ const BlogPost = () => {
 
   return (
     <div className="min-h-screen bg-gray-50">
-      <Header />
+      {/* Header removed, handled by MainLayout */}
       {postMeta && (
         <Helmet>
           <title>{postMeta.title} | MEDASSIST</title>
@@ -301,7 +300,7 @@ const BlogPost = () => {
         </div>
       </main>
 
-      <Footer />
+      {/* Footer removed, handled by MainLayout */}
     </div>
   );
 };

@@ -4,6 +4,7 @@ import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import MainLayout from "./components/MainLayout"; // Import the layout
 
 // Lazy load page components
 const LazyIndex = lazy(() => import("./pages/Index"));
@@ -28,14 +29,19 @@ const App = () => (
       <BrowserRouter>
         <Suspense fallback={<LoadingFallback />}>
           <Routes>
-            <Route path="/" element={<LazyIndex />} />
-            <Route path="/blog" element={<LazyBlog />} />
-            <Route path="/blog/:id" element={<LazyBlogPost />} />
-            <Route path="/הצהרת-נגישות" element={<LazyAccessibilityStatement />} />
-            <Route path="/about-us" element={<LazyAboutUs />} />
-            <Route path="/terms-conditions" element={<LazyTermsConditions />} />
-            {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
-            <Route path="*" element={<LazyNotFound />} />
+            {/* Routes wrapped by MainLayout */}
+            <Route element={<MainLayout />}>
+              <Route path="/" element={<LazyIndex />} />
+              <Route path="/blog" element={<LazyBlog />} />
+              <Route path="/blog/:id" element={<LazyBlogPost />} />
+              <Route path="/הצהרת-נגישות" element={<LazyAccessibilityStatement />} />
+              <Route path="/about-us" element={<LazyAboutUs />} />
+              <Route path="/terms-conditions" element={<LazyTermsConditions />} />
+              {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
+              <Route path="*" element={<LazyNotFound />} /> 
+            </Route>
+
+            {/* Routes without MainLayout could go here if needed */}
           </Routes>
         </Suspense>
       </BrowserRouter>

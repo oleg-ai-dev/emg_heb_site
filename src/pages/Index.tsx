@@ -6,7 +6,7 @@ import AccordionSection from '@/components/AccordionSection';
 import TestimonialSection from '@/components/TestimonialSection';
 import EmgBenefitsSection from '@/components/EmgBenefitsSection';
 import AboutSection from '@/components/AboutSection';
-import Footer from '@/components/Footer'; // Import the new Footer component
+// Removed Footer import, as it's handled by MainLayout
 import { Textarea } from '@/components/ui/textarea';
 import { Button } from '@/components/ui/button';
 
@@ -51,90 +51,10 @@ const Index = () => {
   };
 
   return (
-    <div className="min-h-screen bg-gray-50">
-      {/* Header with Logo and CTA */}
-      <header className={`bg-medblue sticky top-0 z-50 shadow-md py-6 transition-all duration-300 ${isScrolled ? 'py-3' : 'py-6'}`}>
-        <div className="container mx-auto px-4">
-          <div className="flex items-center justify-between">
-            {/* Logo */}
-            <div className="text-white text-xl font-bold">
-              MEDASSIST
-            </div>
-            
-            {/* Desktop Navigation */}
-            <div className="hidden md:flex items-center gap-6">
-              <a href="/" className="text-white text-lg font-medium hover:text-gray-200 transition-colors">
-              עמוד הבית
-              </a>
-              <a href="/blog" className="text-white text-lg font-medium hover:text-gray-200 transition-colors">
-                בלוג
-              </a>
-            </div>
-            
-            {/* Primary CTA */}
-            <div className="flex items-center gap-4">
-              {/* Mobile Menu Button */}
-              <div className="md:hidden">
-                <button 
-                  className="text-white focus:outline-none" 
-                  onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-                >
-                  {mobileMenuOpen ? (
-                    <X className="w-6 h-6" />
-                  ) : (
-                    <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16M4 18h16"></path>
-                    </svg>
-                  )}
-                </button>
-              </div>
-              
-              <a 
-                href="tel:03-301-5458"
-                className="bg-orange-500 hover:bg-orange-600 text-white font-medium py-2 px-6 rounded-md flex items-center gap-2 shadow-md"
-              >
-                <span>03-301-5458</span>
-                <Phone size={16} />
-              </a>
-            </div>
-          </div>
-        </div>
-      </header>
-
-      {/* Mobile Menu */}
-      {mobileMenuOpen && (
-        <div className="fixed inset-0 bg-medblue-dark bg-opacity-95 z-40 flex flex-col items-center justify-center">
-          <div className="text-center">
-            <nav className="flex flex-col gap-8 text-xl">
-              <a 
-                href="/" 
-                className="text-white font-medium hover:text-gray-200 transition-colors"
-                onClick={() => setMobileMenuOpen(false)}
-              >
-                עמוד הבית
-              </a>
-              <a 
-                href="/blog" 
-                className="text-white font-medium hover:text-gray-200 transition-colors"
-                onClick={() => setMobileMenuOpen(false)}
-              >
-                בלוג
-              </a>
-              <a 
-                href="tel:03-301-5458"
-                className="bg-orange-500 hover:bg-orange-600 text-white font-medium py-3 px-8 rounded-md mt-4 flex items-center justify-center gap-2"
-                onClick={() => setMobileMenuOpen(false)}
-              >
-                <span>03-301-5458</span>
-                <Phone size={16} />
-              </a>
-            </nav>
-          </div>
-        </div>
-      )}
-
+    // Removed redundant <header> and mobile menu logic from this page component
+    <div className="min-h-screen bg-gray-50"> 
       {/* Hero Section */}
-      <section className="relative overflow-hidden">
+      <section className="relative overflow-hidden pt-8"> {/* Added padding-top since header is removed */}
         <div className="container mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 py-12 px-4">
             <div className="order-2 md:order-1 flex flex-col justify-center">
@@ -403,8 +323,7 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Use the new Footer component */}
-      <Footer />
+      {/* Removed Footer component instance, handled by MainLayout */}
       
       {/* Scroll to top button */}
       {showScrollTop && (

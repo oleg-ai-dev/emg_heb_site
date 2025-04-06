@@ -1,8 +1,8 @@
 import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import Header from '@/components/Header'; // Assuming Header component exists and is appropriate
+// Removed Header import
 import { Helmet } from 'react-helmet';
-import Footer from '@/components/Footer'; // Import the new Footer component
+// Removed Footer import
 
 const AccessibilityStatement = () => {
   useEffect(() => {
@@ -24,7 +24,7 @@ const AccessibilityStatement = () => {
           <link rel="canonical" href="https://emg.org.il/הצהרת-נגישות" />
           {/* Add other relevant meta tags if needed */}
       </Helmet>
-      <Header />
+      {/* Header removed */}
 
       {/* Single Image Banner Section - Final */}
       <section className="py-8 bg-gray-50"> {/* Kept padding */}
@@ -125,8 +125,7 @@ const AccessibilityStatement = () => {
         </div>
       </main>
 
-      {/* Use the new Footer component */}
-      <Footer />
+      {/* Footer removed */}
     </div>
   );
 };

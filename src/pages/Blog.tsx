@@ -2,8 +2,7 @@ import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { Phone, Calendar, Clock, ChevronLeft } from 'lucide-react';
 import { Helmet } from 'react-helmet';
-import Header from '@/components/Header';
-import Footer from '@/components/Footer'; // Import the new Footer component
+// Removed Header and Footer imports, handled by MainLayout
 
 // Blog post data with keywords for SEO
 const blogPosts = [
@@ -165,7 +164,7 @@ const Blog = () => {
 
   return (
     <div className="min-h-screen bg-gray-50">
-      <Header />
+      {/* Header removed, handled by MainLayout */}
       <Helmet>
         <title>בלוג MEDASSIST - מאמרים מקצועיים על בדיקות EMG ותסמונת התעלה הקרפלית</title>
         <meta name="description" content="בלוג MEDASSIST מציע מאמרים מקצועיים בנושא בדיקות EMG, תסמונת התעלה הקרפלית, וטיפולים מתקדמים. מידע מקצועי ועדכני מצוות המומחים שלנו." />
@@ -285,8 +284,7 @@ const Blog = () => {
         </div>
       </section>
 
-      {/* Use the new Footer component */}
-      <Footer />
+      {/* Footer removed, handled by MainLayout */}
     </div>
   );
 };

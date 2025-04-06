@@ -1,8 +1,8 @@
 import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import Header from '@/components/Header'; 
+// Removed Header import
 import { Helmet } from 'react-helmet';
-import Footer from '@/components/Footer'; // Import the new Footer component
+// Removed Footer import
 
 const TermsConditions = () => {
   useEffect(() => {
@@ -23,7 +23,7 @@ const TermsConditions = () => {
           <link rel="canonical" href="https://emg.org.il/terms-conditions" /> 
           {/* Add other relevant meta tags if needed */}
       </Helmet>
-      <Header />
+      {/* Header removed */}
 
       {/* Main Content Area */}
       <main className="py-16 bg-gray-50"> 
@@ -159,8 +159,7 @@ const TermsConditions = () => {
         </div>
       </main>
 
-      {/* Use the new Footer component */}
-      <Footer />
+      {/* Footer removed */}
     </div>
   );
 };
