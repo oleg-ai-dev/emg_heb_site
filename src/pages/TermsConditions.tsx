@@ -20,7 +20,7 @@ const TermsConditions = () => {
       <Helmet>
           <title>תנאי שימוש ומדיניות פרטיות | Medassist</title>
           <meta name="description" content="קראו את תנאי השימוש, מדיניות הפרטיות ומדיניות הביטולים של Medassist." />
-          <link rel="canonical" href="https://medassist.co.il/terms-conditions" /> 
+          <link rel="canonical" href="https://emg.org.il/terms-conditions" /> 
           {/* Add other relevant meta tags if needed */}
       </Helmet>
       <Header />

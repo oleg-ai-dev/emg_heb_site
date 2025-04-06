@@ -21,7 +21,7 @@ const AccessibilityStatement = () => {
       <Helmet>
           <title>הצהרת נגישות | MEDASSIST</title>
           <meta name="description" content="הצהרת הנגישות של מרפאת MEDASSIST. אנו מחויבים לספק שירות נגיש לכלל לקוחותינו." />
-          <link rel="canonical" href="https://medassist.co.il/הצהרת-נגישות" />
+          <link rel="canonical" href="https://emg.org.il/הצהרת-נגישות" />
           {/* Add other relevant meta tags if needed */}
       </Helmet>
       <Header />

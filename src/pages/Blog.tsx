@@ -173,9 +173,9 @@ const Blog = () => {
         <meta property="og:title" content="בלוג MEDASSIST - מאמרים מקצועיים על בדיקות EMG ותסמונת התעלה הקרפלית" />
         <meta property="og:description" content="בלוג MEDASSIST מציע מאמרים מקצועיים בנושא בדיקות EMG, תסמונת התעלה הקרפלית, וטיפולים מתקדמים. מידע מקצועי ועדכני מצוות המומחים שלנו." />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://medassist.co.il/blog" />
+        <meta property="og:url" content="https://emg.org.il/blog" />
         <meta property="og:image" content="https://medassist.co.il/og-image.png" />
-        <link rel="canonical" href="https://medassist.co.il/blog" />
+        <link rel="canonical" href="https://emg.org.il/blog" />
         <script type="application/ld+json">
           {JSON.stringify({
             "@context": "https://schema.org",
@@ -200,7 +200,7 @@ const Blog = () => {
                 "@type": "Organization",
                 "name": "MEDASSIST"
               },
-              "url": `https://medassist.co.il/blog/${post.id}`
+              "url": `https://emg.org.il/blog/${post.id}`
             }))
           })}
         </script>

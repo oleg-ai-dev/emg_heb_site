@@ -187,7 +187,7 @@ const BlogPost = () => {
           <meta name="twitter:title" content={postMeta.title} />
           <meta name="twitter:description" content={postMeta.description} />
           <meta name="twitter:image" content={postMeta.image} />
-          <link rel="canonical" href={`https://medassist.co.il/blog/${postMeta.id}`} />
+          <link rel="canonical" href={`https://emg.org.il/blog/${postMeta.id}`} />
           {/* Keep JSON-LD script as is, using postMeta */}
           <script type="application/ld+json">
             {JSON.stringify({
@@ -212,7 +212,7 @@ const BlogPost = () => {
               "description": postMeta.description,
               "mainEntityOfPage": {
                 "@type": "WebPage",
-                "@id": `https://medassist.co.il/blog/${postMeta.id}`
+                "@id": `https://emg.org.il/blog/${postMeta.id}`
               },
               // Removed speakable as it might not be relevant for all content types
             })}

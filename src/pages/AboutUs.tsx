@@ -20,7 +20,7 @@ const AboutUs = () => {
       <Helmet>
           <title>אודות Medassist - מובילים את הרפואה הפרטית בישראל</title>
           <meta name="description" content="למדו על Medassist, חברת בת של Medex, המתמחה במתן סיוע רפואי מהיר ושירותים רפואיים ברמה הגבוהה ביותר בישראל." />
-          <link rel="canonical" href="https://medassist.co.il/about-us" /> 
+          <link rel="canonical" href="https://emg.org.il/about-us" /> 
           {/* Add other relevant meta tags if needed */}
       </Helmet>
       <Header />
@@ -76,10 +76,10 @@ const AboutUs = () => {
                 <h3 className="text-xl text-gray-600 mb-4">קבע את התור הקרוב ביותר לרופא שלך</h3>
                 <p>
                   <a 
-                    href="tel:037724220" 
+                    href="tel:033015458" 
                     className="inline-block bg-orange-500 hover:bg-orange-600 text-white font-semibold py-3 px-6 rounded-md transition-colors duration-300 shadow-md"
                   >
-                    037724220
+                    03-301-5458
                   </a>
                 </p>
               </div>
