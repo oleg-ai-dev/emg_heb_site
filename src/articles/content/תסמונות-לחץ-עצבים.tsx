@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom'; // Import Link
 import { Phone } from 'lucide-react';
 
 const NerveCompressionSyndromesContent = () => {
@@ -99,7 +100,7 @@ const NerveCompressionSyndromesContent = () => {
 
       <h2 className="text-2xl font-semibold text-medblue-dark mt-6 mb-3">בדיקת EMG באבחון תסמונות לחץ על עצבים</h2>
       <p className="leading-relaxed">
-        בדיקת אלקטרומיוגרפיה (EMG) היא כלי אבחוני מרכזי בהערכת תסמונות לחץ על עצבים פריפריים. 
+        <Link to="/blog/what-is-emg" className="text-medblue hover:underline">בדיקת אלקטרומיוגרפיה (EMG)</Link> היא כלי אבחוני מרכזי בהערכת תסמונות לחץ על עצבים פריפריים. 
         הבדיקה מספקת מידע אובייקטיבי על תפקוד העצבים והשרירים ומסייעת באבחון מדויק.
       </p>
       

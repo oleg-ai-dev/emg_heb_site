@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import { Helmet } from 'react-helmet'; // Import Helmet
 import { Phone, ChevronDown, Award, CheckCircle, ThumbsUp, ChevronUp, Clock, Book, Home, X } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import ContactForm from '@/components/ContactForm';
@@ -112,7 +113,112 @@ const Index = () => {
 
   return (
     // Removed redundant <header> and mobile menu logic from this page component
-    <div className="min-h-screen bg-gray-50"> 
+    <div className="min-h-screen bg-gray-50">
+      <Helmet>
+        <title>MEDASSIST | בדיקות EMG מתקדמות | תור מהיר</title>
+        <meta name="description" content="מרכז מומחים לבדיקות EMG מתקדמות בישראל. צוות רפואי מנוסה, טכנולוגיה חדישה, תורים מהירים ושירות אישי. צרו קשר לקביעת תור." />
+        <meta name="keywords" content="בדיקת EMG, אלקטרומיוגרפיה, נוירולוג, תור מהיר EMG, מרפאת EMG, אבחון עצבים, אבחון שרירים, תסמונת התעלה הקרפלית, כאבי שרירים, נימול" />
+        <link rel="canonical" href="https://emg.org.il/" />
+        <meta property="og:title" content="MEDASSIST | בדיקות EMG מתקדמות | תור מהיר" />
+        <meta property="og:description" content="מרכז מומחים לבדיקות EMG מתקדמות בישראל. צוות רפואי מנוסה, טכנולוגיה חדישה, תורים מהירים ושירות אישי." />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://emg.org.il/" />
+        {/* Add og:image later if a suitable general image is decided */}
+        {/* FAQPage Schema */}
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "מהי בדיקת EMG?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "בדיקת EMG (אלקטרומיוגרפיה) היא הליך אבחוני המעריך את בריאות השרירים ותאי העצב השולטים בהם (נוירונים מוטוריים). היא יכולה לזהות תפקוד לקוי של עצבים, שרירים או בעיות בהעברת אותות עצב-שריר."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "האם בדיקת EMG כואבת?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "בדיקת הולכה עצבית (NCS) כרוכה בגירויים חשמליים קלים שעשויים לגרום לתחושת עקצוץ או התכווצות קלה. בדיקת המחט (EMG) כוללת החדרת מחט דקה לשריר, דבר שעלול לגרום לאי נוחות קלה או כאב מקומי, אך לרוב נסבל."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "כמה זמן אורכת בדיקת EMG?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "משך הבדיקה משתנה בהתאם למספר האזורים הנבדקים והמורכבות הקלינית, אך לרוב היא נמשכת בין 30 ל-90 דקות."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "האם יש צורך בהכנה מיוחדת לבדיקה?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "מומלץ להגיע בבגדים נוחים המאפשרים גישה לאזורים הנבדקים. יש להימנע ממריחת קרמים או שמנים על העור באזורי הבדיקה ביום הבדיקה. חשוב ליידע את הרופא על כל תרופה שנוטלים, במיוחד מדללי דם, ועל קיומו של קוצב לב."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "מתי מקבלים את תוצאות הבדיקה?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "ב-MEDASSIST אנו שואפים לספק פיענוח מהיר של תוצאות הבדיקה, לרוב תוך מספר ימים."
+                }
+              }
+            ]
+          })}
+        </script>
+        {/* MedicalClinic Schema */}
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "MedicalClinic",
+            "name": "MEDASSIST",
+            "description": "מרכז מומחים לבדיקות EMG מתקדמות בישראל. צוות רפואי מנוסה, טכנולוגיה חדישה, תורים מהירים ושירות אישי.",
+            "telephone": "+972-3-330-2006", // Using the updated number
+            "url": "https://emg.org.il/",
+            // Placeholder - Add address if available
+            // "address": {
+            //   "@type": "PostalAddress",
+            //   "streetAddress": "רחוב הדוגמה 123",
+            //   "addressLocality": "תל אביב",
+            //   "postalCode": "61000",
+            //   "addressCountry": "IL"
+            // },
+            // Placeholder - Add logo URL if available
+            // "logo": "https://emg.org.il/logo.png", 
+            "image": "https://emg.org.il/images/about-us-banner.jpg", // Using a relevant image
+            "priceRange": "$$", // General price range indication
+            "currenciesAccepted": "ILS",
+            "medicalSpecialty": "Neurology", // Primary specialty
+            "availableService": {
+              "@type": "MedicalTest",
+              "name": "בדיקת EMG (אלקטרומיוגרפיה)",
+              "description": "הערכת בריאות השרירים ותאי העצב השולטים בהם לאבחון תפקוד לקוי של עצבים, שרירים או בעיות בהעברת אותות עצב-שריר."
+            }
+            // Placeholder - Add opening hours if available
+            // "openingHoursSpecification": [
+            //   {
+            //     "@type": "OpeningHoursSpecification",
+            //     "dayOfWeek": [
+            //       "Sunday",
+            //       "Monday",
+            //       "Tuesday",
+            //       "Wednesday",
+            //       "Thursday"
+            //     ],
+            //     "opens": "09:00",
+            //     "closes": "17:00"
+            //   }
+            // ]
+          })}
+        </script>
+      </Helmet>
       {/* Hero Section */}
       <section className="relative overflow-hidden pt-8"> {/* Added padding-top since header is removed */}
         <div className="container mx-auto">
@@ -157,7 +263,7 @@ const Index = () => {
                 <div className="bg-white rounded-xl shadow-xl overflow-hidden border-t-4 border-orange-500">
                   <img 
                     src="https://images.unsplash.com/photo-1579684385127-1ef15d508118?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" 
-                    alt="EMG Treatment" 
+                    alt="רופא מבצע בדיקת EMG למטופלת" // More descriptive alt text
                     className="w-full h-64 object-cover object-center"
                   />
                   <ContactForm />
@@ -272,7 +378,7 @@ const Index = () => {
               <div className="absolute inset-0 bg-medblue rounded-lg overflow-hidden shadow-xl">
                 <img 
                   src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" 
-                  alt="Medical Procedure" 
+                  alt="רופאה מסבירה למטופל על תוצאות בדיקה" // More descriptive alt text
                   className="w-full h-full object-cover object-center"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-medblue-dark/70 to-transparent"></div>
@@ -376,19 +482,20 @@ const Index = () => {
             <div className="mt-6 pt-6 border-t border-gray-100">
               <div className="text-center text-sm text-gray-500 mb-3">לקוחות מרוצים משתפים:</div>
               <div className="flex justify-center items-center gap-4">
+                {/* Using empty alt for decorative placeholder images */}
                 <img 
                   src="https://randomuser.me/api/portraits/men/32.jpg" 
-                  alt="מטופל" 
+                  alt="" 
                   className="w-8 h-8 rounded-full border-2 border-white shadow-sm"
                 />
                 <img 
                   src="https://randomuser.me/api/portraits/women/44.jpg" 
-                  alt="מטופלת" 
+                  alt="" 
                   className="w-8 h-8 rounded-full border-2 border-white shadow-sm"
                 />
                 <img 
                   src="https://randomuser.me/api/portraits/men/68.jpg" 
-                  alt="מטופל" 
+                  alt="" 
                   className="w-8 h-8 rounded-full border-2 border-white shadow-sm"
                 />
                 <span className="text-xs text-gray-500">+134 נוספים</span>

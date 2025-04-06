@@ -1,10 +1,10 @@
 # Active Context: MEDASSIST EMG Website
 
 ## 1. Current Focus
-*   **Task Completion:** Finalizing the creation of the Terms & Conditions page and updating documentation.
-*   **Awaiting Next Task:** Ready for the next user request or to suggest potential improvements (e.g., refactoring the duplicated footer).
+*   **SEO Improvement:** Implementing SEO enhancements based on the analysis performed. Starting with adding meta tags (`react-helmet`) to core pages.
 
 ## 2. Recent Changes (Current Session)
+*   **SEO Analysis:** Researched current SEO best practices (2025). Analyzed site structure, technical files (`robots.txt`, `sitemap.xml`), core pages (`Index.tsx`, `BlogPost.tsx`), blog content (`carpal-tunnel-syndrome.tsx`), and image usage (`AboutSection.tsx`, `Index.tsx`) to identify SEO strengths and weaknesses.
 *   **Memory Bank Creation:** Established all core Memory Bank files.
 *   **Accessibility Page:** Created component, added route, refined styling, implemented banner via `write_to_file`, added footer links.
 *   **About Us Page:** Created component, added banner, refined content, added route, added footer links.
@@ -22,13 +22,14 @@
 *   **New Blog Post (Polio/Post-Polio):** Added article `polio-post-polio` to `BlogPost.tsx` and `Blog.tsx`.
 *   **New Blog Post (Radiculopathy):** Added article `radiculopathy` to `BlogPost.tsx` and `Blog.tsx` using provided content, keywords, and image. Included mid-content banner.
 *   **Performance Optimization (Pages):** Implemented code-splitting for page components in `src/App.tsx` using `React.lazy` and `Suspense` to address build warnings about large chunks.
-*   **Performance Optimization (Blog Posts):** Refactored `BlogPost.tsx` to dynamically load post content using `React.lazy`. Extracted JSX content for each post into separate files under `src/articles/content/`.
+    *   **Performance Optimization (Blog Posts):** Refactored `BlogPost.tsx` to dynamically load post content using `React.lazy`. Extracted JSX content for each post into separate files under `src/articles/content/`.
 
 ## 3. Next Steps
-1.  Update `memory-bank/progress.md` to reflect the blog post content splitting.
-2.  Run `npm run build` to verify the reduction in the `BlogPost` chunk size.
-3.  Present the completed task to the user using `attempt_completion`.
-4.  Await further instructions from the user.
+1.  **Implement Meta Tags:** Add `react-helmet` with appropriate titles, descriptions, and keywords to core pages (`Index.tsx`, `AboutUs.tsx`, `Blog.tsx`, `AccessibilityStatement.tsx`, `TermsConditions.tsx`).
+2.  **Implement Structured Data:** Add `MedicalClinic`/`LocalBusiness` and `FAQPage` schema using `react-helmet`.
+3.  **Add Internal Links:** Review blog content and add relevant internal links.
+4.  **Optimize Alt Text:** Review and improve image alt text where necessary.
+5.  **Update Documentation:** Update `progress.md` to reflect SEO analysis and implementation start.
 
 ## 4. Active Decisions & Considerations
 *   **Footer Refactoring:** Completed. Addressed the previous duplication issue.

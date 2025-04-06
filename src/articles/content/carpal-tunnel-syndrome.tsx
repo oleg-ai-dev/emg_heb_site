@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom'; // Import Link
 import { Phone } from 'lucide-react';
 
 const CarpalTunnelSyndromeContent = () => {
@@ -52,7 +53,7 @@ const CarpalTunnelSyndromeContent = () => {
 
       <h2 className="text-2xl font-semibold text-medblue-dark mt-6 mb-3">בדיקת EMG לאבחון תסמונת התעלה הקרפלית</h2>
       <p className="leading-relaxed">
-        בדיקת אלקטרומיוגרפיה (EMG) היא כלי אבחוני מרכזי בהערכת תסמונת התעלה הקרפלית. 
+        <Link to="/blog/what-is-emg" className="text-medblue hover:underline">בדיקת אלקטרומיוגרפיה (EMG)</Link> היא כלי אבחוני מרכזי בהערכת תסמונת התעלה הקרפלית. 
         הבדיקה כוללת שני חלקים עיקריים:
       </p>
       

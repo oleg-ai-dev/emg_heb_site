@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom'; // Import Link
 import { Phone } from 'lucide-react';
 
 const GuillainBarreSyndromeContent = () => {
@@ -71,7 +72,7 @@ const GuillainBarreSyndromeContent = () => {
 
       <h2 className="text-2xl font-semibold text-medblue-dark mt-6 mb-3">בדיקת EMG באבחון תסמונת גיאן-בארה</h2>
       <p className="leading-relaxed">
-        בדיקת אלקטרומיוגרפיה (EMG) היא כלי אבחוני חיוני בהערכת תסמונת גיאן-בארה. הבדיקה כוללת שני מרכיבים עיקריים:
+        <Link to="/blog/what-is-emg" className="text-medblue hover:underline">בדיקת אלקטרומיוגרפיה (EMG)</Link> היא כלי אבחוני חיוני בהערכת תסמונת גיאן-בארה. הבדיקה כוללת שני מרכיבים עיקריים:
       </p>
       
       <h3 className="text-xl font-semibold text-medblue-dark mt-4 mb-2">1. בדיקת מוליכות עצבית (NCS)</h3>

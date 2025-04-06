@@ -18,10 +18,15 @@ const AboutUs = () => {
   return (
     <div className="min-h-screen bg-gray-50">
       <Helmet>
-          <title>אודות Medassist - מובילים את הרפואה הפרטית בישראל</title>
-          <meta name="description" content="למדו על Medassist, חברת בת של Medex, המתמחה במתן סיוע רפואי מהיר ושירותים רפואיים ברמה הגבוהה ביותר בישראל." />
-          <link rel="canonical" href="https://emg.org.il/about-us" /> 
-          {/* Add other relevant meta tags if needed */}
+          <title>אודות MEDASSIST - מומחים בבדיקות EMG ושירותי רפואה</title>
+          <meta name="description" content="למדו על MEDASSIST, חברת בת של Medex, המתמחה בבדיקות EMG מתקדמות ומתן סיוע רפואי מהיר ושירותים רפואיים ברמה הגבוהה ביותר בישראל." />
+          <meta name="keywords" content="אודות MEDASSIST, רפואה פרטית, בדיקות EMG, שירות רפואי מהיר, Medex, נוירולוגיה, אבחון רפואי" />
+          <link rel="canonical" href="https://emg.org.il/about-us" />
+          <meta property="og:title" content="אודות MEDASSIST - מומחים בבדיקות EMG ושירותי רפואה" />
+          <meta property="og:description" content="למדו על MEDASSIST, המתמחה בבדיקות EMG מתקדמות ומתן סיוע רפואי מהיר ושירותים רפואיים ברמה הגבוהה ביותר בישראל." />
+          <meta property="og:type" content="website" />
+          <meta property="og:url" content="https://emg.org.il/about-us" />
+          <meta property="og:image" content="https://emg.org.il/images/about-us-banner.jpg" /> {/* Using the banner image */}
       </Helmet>
       {/* Header removed */}
 

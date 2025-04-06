@@ -20,9 +20,14 @@ const AccessibilityStatement = () => {
     <div className="min-h-screen bg-gray-50">
       <Helmet>
           <title>הצהרת נגישות | MEDASSIST</title>
-          <meta name="description" content="הצהרת הנגישות של מרפאת MEDASSIST. אנו מחויבים לספק שירות נגיש לכלל לקוחותינו." />
+          <meta name="description" content="הצהרת הנגישות של מרפאת MEDASSIST. אנו מחויבים לספק שירות נגיש לכלל לקוחותינו בהתאם לחוק שוויון זכויות לאנשים עם מוגבלויות." />
+          <meta name="keywords" content='הצהרת נגישות, נגישות אתרים, WCAG, ת"י 5568, שוויון זכויות, אנשים עם מוגבלויות, MEDASSIST נגישות' />
           <link rel="canonical" href="https://emg.org.il/הצהרת-נגישות" />
-          {/* Add other relevant meta tags if needed */}
+          <meta property="og:title" content="הצהרת נגישות | MEDASSIST" />
+          <meta property="og:description" content="הצהרת הנגישות של מרפאת MEDASSIST. אנו מחויבים לספק שירות נגיש לכלל לקוחותינו." />
+          <meta property="og:type" content="website" />
+          <meta property="og:url" content="https://emg.org.il/הצהרת-נגישות" />
+          <meta property="og:image" content="https://emg.org.il/images/הצהרת נגישות.jpg" /> {/* Using the banner image */}
       </Helmet>
       {/* Header removed */}
 

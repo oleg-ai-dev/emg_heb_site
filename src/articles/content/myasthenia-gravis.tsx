@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom'; // Import Link
 import { Phone } from 'lucide-react';
 
 const MyastheniaGravisContent = () => {
@@ -116,7 +117,7 @@ const MyastheniaGravisContent = () => {
 
       <h2 className="text-2xl font-semibold text-medblue-dark mt-6 mb-3">EMG למיאסטניה גרביס – הבדיקה שמראה את הבעיה בצומת העצב-שריר</h2>
       <p className="leading-relaxed">
-        כאשר עולה חשד קליני למיאסטניה גרביס, <strong>בדיקת EMG למיאסטניה</strong> היא כלי אבחוני מרכזי המספק הוכחה אובייקטיבית לפגיעה בתפקוד ה<strong>צומת הנוירומוסקולרי</strong>. הבדיקה כוללת טכניקות ספציפיות:
+        כאשר עולה חשד קליני למיאסטניה גרביס, <Link to="/blog/what-is-emg" className="text-medblue hover:underline"><strong>בדיקת EMG למיאסטניה</strong></Link> היא כלי אבחוני מרכזי המספק הוכחה אובייקטיבית לפגיעה בתפקוד ה<strong>צומת הנוירומוסקולרי</strong>. הבדיקה כוללת טכניקות ספציפיות:
       </p>
       
       <h3 className="text-xl font-semibold text-medblue-dark mt-4 mb-2">1. בדיקת גירוי חוזר (RNS - Repetitive Nerve Stimulation)</h3>

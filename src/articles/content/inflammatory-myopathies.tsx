@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom'; // Import Link
 import { Phone } from 'lucide-react';
 
 const InflammatoryMyopathiesContent = () => {
@@ -97,7 +98,7 @@ const InflammatoryMyopathiesContent = () => {
 
       <h3 className="text-xl font-semibold text-medblue-dark mt-4 mb-2">מהי בדיקת EMG?</h3>
       <p className="leading-relaxed">
-        בדיקת אלקטרומיוגרפיה (EMG) היא כלי חשוב באבחון מיופתיות דלקתיות. הבדיקה כוללת שני חלקים:
+        <Link to="/blog/what-is-emg" className="text-medblue hover:underline">בדיקת אלקטרומיוגרפיה (EMG)</Link> היא כלי חשוב באבחון מיופתיות דלקתיות. הבדיקה כוללת שני חלקים:
       </p>
       <ol className="list-decimal pr-8 space-y-3 mt-4">
         <li><strong>בדיקת מוליכות עצבית (NCS)</strong>: בדיקה זו בודקת את תפקוד העצבים הפריפריים ובדרך כלל תקינה במיופתיות טהורות, מה שעוזר להבדיל בינן לבין בעיות בעצבים.</li>

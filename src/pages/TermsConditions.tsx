@@ -18,10 +18,15 @@ const TermsConditions = () => {
   return (
     <div className="min-h-screen bg-gray-50">
       <Helmet>
-          <title>תנאי שימוש ומדיניות פרטיות | Medassist</title>
-          <meta name="description" content="קראו את תנאי השימוש, מדיניות הפרטיות ומדיניות הביטולים של Medassist." />
-          <link rel="canonical" href="https://emg.org.il/terms-conditions" /> 
-          {/* Add other relevant meta tags if needed */}
+          <title>תנאי שימוש ומדיניות פרטיות | MEDASSIST</title>
+          <meta name="description" content="קראו את תנאי השימוש, מדיניות הפרטיות ומדיניות הביטולים של אתר MEDASSIST. מידע חשוב על השימוש באתר, שמירת פרטיות וביטול תורים." />
+          <meta name="keywords" content="תנאי שימוש, מדיניות פרטיות, מדיניות ביטולים, MEDASSIST, הגנת הפרטיות, זכויות יוצרים, אחריות" />
+          <link rel="canonical" href="https://emg.org.il/terms-conditions" />
+          <meta property="og:title" content="תנאי שימוש ומדיניות פרטיות | MEDASSIST" />
+          <meta property="og:description" content="קראו את תנאי השימוש, מדיניות הפרטיות ומדיניות הביטולים של אתר MEDASSIST." />
+          <meta property="og:type" content="website" />
+          <meta property="og:url" content="https://emg.org.il/terms-conditions" />
+          {/* No specific og:image for this page */}
       </Helmet>
       {/* Header removed */}
 
