@@ -6,14 +6,21 @@ import AccordionSection from '@/components/AccordionSection';
 import TestimonialSection from '@/components/TestimonialSection';
 import EmgBenefitsSection from '@/components/EmgBenefitsSection';
 import AboutSection from '@/components/AboutSection';
-// Removed Footer import, as it's handled by MainLayout
+import { useToast } from "@/components/ui/use-toast"; // Import useToast
 import { Textarea } from '@/components/ui/textarea';
 import { Button } from '@/components/ui/button';
 
 const Index = () => {
+  const { toast } = useToast(); // Initialize toast
   const [isScrolled, setIsScrolled] = useState(false);
   const [showScrollTop, setShowScrollTop] = useState(false);
-  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  // State for the second contact form
+  const [secondFormName, setSecondFormName] = useState('');
+  const [secondFormPhone, setSecondFormPhone] = useState('');
+  const [secondFormEmail, setSecondFormEmail] = useState('');
+  const [secondFormDetails, setSecondFormDetails] = useState('');
+  const [isSecondFormLoading, setIsSecondFormLoading] = useState(false);
+  const webhookUrl = 'https://hook.eu1.make.com/swaxpwhct47j7fh37ix2pqhmtkh69r5e'; // Same webhook
 
   useEffect(() => {
     document.documentElement.setAttribute('dir', 'rtl');
@@ -49,6 +56,59 @@ const Index = () => {
   const scrollToTop = () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
+
+  // Submission handler for the second form (copied and adapted from ContactForm)
+  const handleSecondFormSubmit = async (e: React.FormEvent) => {
+    e.preventDefault(); // Prevent default refresh
+    setIsSecondFormLoading(true);
+
+    const formData = {
+      name: secondFormName,
+      phone: secondFormPhone,
+      email: secondFormEmail,
+      details: secondFormDetails,
+    };
+
+    try {
+      const response = await fetch(webhookUrl, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
+      });
+
+      if (response.ok) {
+        toast({
+          title: "פנייתך התקבלה בהצלחה",
+          description: "נציג יחזור אליך בהקדם.",
+          variant: "default",
+        });
+        // Reset second form fields
+        setSecondFormName('');
+        setSecondFormPhone('');
+        setSecondFormEmail('');
+        setSecondFormDetails('');
+      } else {
+        console.error('Second form webhook submission failed:', response.status, response.statusText);
+        toast({
+          title: "שגיאה בשליחת הפנייה",
+          description: "אירעה שגיאה. אנא נסה שנית או צור קשר טלפוני.",
+          variant: "destructive",
+        });
+      }
+    } catch (error) {
+      console.error('Error submitting second form:', error);
+      toast({
+        title: "שגיאת רשת",
+        description: "לא ניתן היה לשלוח את הפנייה. אנא בדוק את חיבור האינטרנט ונסה שנית.",
+        variant: "destructive",
+      });
+    } finally {
+      setIsSecondFormLoading(false);
+    }
+  };
+
 
   return (
     // Removed redundant <header> and mobile menu logic from this page component
@@ -248,45 +308,60 @@ const Index = () => {
               מבצע מיוחד - 20% הנחה לנרשמים עכשיו
             </div>
             
-            <form className="space-y-6">
+            {/* Attach the new submit handler */}
+            <form className="space-y-6" onSubmit={handleSecondFormSubmit}>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <div>
+                  {/* Connect input to state */}
                   <input 
                     type="text" 
                     placeholder="שם מלא" 
                     className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-medblue focus:border-transparent" 
+                    value={secondFormName}
+                    onChange={(e) => setSecondFormName(e.target.value)}
                     required 
                   />
                 </div>
                 <div>
+                   {/* Connect input to state */}
                   <input 
                     type="tel" 
                     placeholder="טלפון" 
                     className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-medblue focus:border-transparent" 
+                    value={secondFormPhone}
+                    onChange={(e) => setSecondFormPhone(e.target.value)}
                     required 
                   />
                 </div>
               </div>
               <div>
+                 {/* Connect input to state */}
                 <input 
                   type="email" 
                   placeholder="דוא״ל" 
                   className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-medblue focus:border-transparent" 
+                  value={secondFormEmail}
+                  onChange={(e) => setSecondFormEmail(e.target.value)}
                 />
               </div>
               <div>
+                 {/* Connect input to state */}
                 <Textarea 
                   placeholder="פרטי בדיקה" 
                   rows={4} 
                   className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-medblue focus:border-transparent resize-none" 
+                  value={secondFormDetails}
+                  onChange={(e) => setSecondFormDetails(e.target.value)}
                 />
               </div>
               <div className="text-right">
+                 {/* Removed onClick, added disabled state and conditional text */}
                 <button 
                   type="submit" 
-                  className="bg-orange-500 hover:bg-orange-600 text-white font-semibold py-3 px-6 rounded-md transition-all duration-300 pulseAnimation shadow-lg"
+                  disabled={isSecondFormLoading}
+                  className="bg-orange-500 hover:bg-orange-600 text-white font-semibold py-3 px-6 rounded-md transition-all duration-300 pulseAnimation shadow-lg disabled:opacity-70"
                 >
-                  שליחה
+                  {isSecondFormLoading ? "שולח..." : "שליחה"}
                 </button>
               </div>
             </form>
