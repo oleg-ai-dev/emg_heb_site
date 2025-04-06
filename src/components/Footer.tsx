@@ -55,8 +55,10 @@ const Footer = () => {
           <div>
             <h3 className="text-lg font-semibold mb-4 text-medgold">מידע על EMG</h3>
             <ul className="space-y-2 text-gray-300">
-              <li><Link to="/emg-info/what-is-emg" className="hover:text-white transition-colors text-sm">מהי בדיקת EMG?</Link></li>
-              <li><Link to="/emg-info/preparation" className="hover:text-white transition-colors text-sm">הכנה לבדיקה</Link></li>
+              {/* Updated link to new blog post */}
+              <li><Link to="/blog/what-is-emg" className="hover:text-white transition-colors text-sm">מהי בדיקת EMG?</Link></li> 
+              {/* Link to future preparation page (placeholder) */}
+              <li><Link to="/emg-info/preparation" className="hover:text-white transition-colors text-sm">הכנה לבדיקה</Link></li> 
               <li><Link to="/blog" className="hover:text-white transition-colors text-sm">מצבים שאנו מאבחנים</Link></li>
             </ul>
           </div>

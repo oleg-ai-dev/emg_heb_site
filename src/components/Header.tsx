@@ -168,11 +168,12 @@ const Header = () => {
                               </p>
                             </Link>
                           </NavigationMenuLink>
-                          {/* Links to future dedicated pages */}
-                          <ListItem to="/emg-info/what-is-emg" title="מהי בדיקת EMG?" className="text-right">
+                          {/* Updated link to new blog post */}
+                          <ListItem to="/blog/what-is-emg" title="מהי בדיקת EMG?" className="text-right">
                             כל מה שצריך לדעת על הבדיקה.
                           </ListItem>
-                          <ListItem to="/emg-info/preparation" title="הכנה לבדיקה" className="text-right">
+                          {/* Link to future preparation page (placeholder) */}
+                          <ListItem to="/emg-info/preparation" title="הכנה לבדיקה" className="text-right"> 
                             כיצד להתכונן לבדיקת EMG.
                           </ListItem>
                         </div>

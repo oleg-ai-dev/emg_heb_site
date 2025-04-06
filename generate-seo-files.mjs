@@ -29,6 +29,7 @@ const blogPostSlugs = [
   'als',
   'polio-post-polio',
   'radiculopathy',
+  'what-is-emg', // Added new slug
 ];
 
 const today = new Date().toISOString().split('T')[0]; // Get date in YYYY-MM-DD format
