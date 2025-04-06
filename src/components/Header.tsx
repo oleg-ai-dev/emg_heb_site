@@ -216,10 +216,10 @@ const Header = () => {
             <div className="flex items-center gap-4 order-last md:order-none">
               {/* Phone CTA */}
               <a
-                href="tel:03-301-5458"
+                href="tel:03-330-2006" // Updated number
                 className="bg-orange-500 hover:bg-orange-600 text-white font-medium py-2 px-4 sm:px-6 rounded-md flex items-center gap-2 shadow-md text-sm sm:text-base"
               >
-                <span className="hidden sm:inline">03-301-5458</span>
+                <span className="hidden sm:inline">03-330-2006</span> {/* Updated number */}
                 <Phone size={16} />
               </a>
               {/* Mobile Menu Button */}
@@ -266,11 +266,11 @@ const Header = () => {
               ))}
               {/* Phone CTA in Mobile Menu */}
               <a
-                href="tel:03-301-5458"
+                href="tel:03-330-2006" // Updated number
                 className="bg-orange-500 hover:bg-orange-600 text-white font-medium py-3 px-8 rounded-md mt-4 flex items-center justify-center gap-2"
                 onClick={() => setMobileMenuOpen(false)}
               >
-                <span>03-301-5458</span>
+                <span>03-330-2006</span> {/* Updated number */}
                 <Phone size={16} />
               </a>
             </nav>

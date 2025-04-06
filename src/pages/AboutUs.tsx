@@ -76,10 +76,10 @@ const AboutUs = () => {
                 <h3 className="text-xl text-gray-600 mb-4">קבע את התור הקרוב ביותר לרופא שלך</h3>
                 <p>
                   <a 
-                    href="tel:033015458" 
+                    href="tel:03-330-2006" // Updated number
                     className="inline-block bg-orange-500 hover:bg-orange-600 text-white font-semibold py-3 px-6 rounded-md transition-colors duration-300 shadow-md"
                   >
-                    03-301-5458
+                    03-330-2006 {/* Updated number */}
                   </a>
                 </p>
               </div>

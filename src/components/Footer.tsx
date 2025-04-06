@@ -7,7 +7,7 @@ const Footer = () => {
 
   // Example data - replace with actual clinic details
   const contactDetails = {
-    phone: '03-301-5458',
+    phone: '03-330-2006', // Updated number
     address: 'רחוב הברזל 11, רמת החייל, תל אביב', // Example Address
     hours: 'א\'-ה\' 09:00 - 17:00', // Example Hours
     email: 'info@medassist.co.il', // Example Email

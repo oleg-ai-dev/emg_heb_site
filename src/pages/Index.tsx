@@ -83,10 +83,10 @@ const Index = () => {
                 
                 <div className="text-right">
                   <a 
-                    href="tel:03-301-5458"
+                    href="tel:03-330-2006" // Updated number
                     className="pulseAnimation bg-orange-500 hover:bg-orange-600 text-white px-8 py-3 rounded-md text-lg font-semibold shadow-lg inline-flex items-center gap-2"
                   >
-                    <span>03-301-5458</span>
+                    <span>03-330-2006</span> {/* Updated number */}
                     <Phone size={18} />
                   </a>
                 </div>
@@ -292,8 +292,8 @@ const Index = () => {
             </form>
             <div className="mt-8 text-center">
               <div className="text-gray-500 mb-2">או התקשרו ישירות</div>
-              <a href="tel:03-301-5458" className="text-xl font-bold text-medblue hover:text-medblue-dark transition-colors">
-                03-301-5458
+              <a href="tel:03-330-2006" className="text-xl font-bold text-medblue hover:text-medblue-dark transition-colors"> {/* Updated number */}
+                03-330-2006 {/* Updated number */}
               </a>
             </div>
             
@@ -339,10 +339,10 @@ const Index = () => {
       <div className="md:hidden fixed bottom-0 left-0 right-0 bg-white shadow-lg py-3 px-4 z-50">
         <div className="flex justify-center items-center">
           <a 
-            href="tel:03-301-5458"
+            href="tel:03-330-2006" // Updated number
             className="pulseAnimation bg-orange-500 text-white px-6 py-2 rounded-md font-medium w-full flex items-center justify-center gap-2"
           >
-            <span>03-301-5458</span>
+            <span>03-330-2006</span> {/* Updated number */}
             <Phone size={16} />
           </a>
         </div>

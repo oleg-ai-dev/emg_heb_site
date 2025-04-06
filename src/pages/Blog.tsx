@@ -274,10 +274,10 @@ const Blog = () => {
               צוות המומחים שלנו זמין לענות על כל שאלה ולעזור לכם בתהליך האבחון והטיפול
             </p>
             <a 
-              href="tel:03-301-5458"
+              href="tel:03-330-2006" // Updated number
               className="bg-orange-500 hover:bg-orange-600 text-white font-medium py-3 px-8 rounded-md inline-flex items-center gap-2 shadow-md"
             >
-              <span>התקשרו עכשיו: 03-301-5458</span>
+              <span>התקשרו עכשיו: 03-330-2006</span> {/* Updated number */}
               <Phone size={18} />
             </a>
           </div>

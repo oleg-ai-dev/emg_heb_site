@@ -88,7 +88,7 @@ const AccessibilityStatement = () => {
               <h2 className="text-2xl font-semibold text-medblue-dark mt-8 mb-4">אמצעים נוספים ליצירת קשר</h2>
               <p className="leading-relaxed">קיימים מספר אמצעים נוספים ליצירת קשר:</p>
               <ul className="list-disc pr-6 space-y-2 mt-4">
-                <li>טלפון: <a href="tel:03-301-5458" className="text-medblue hover:text-medblue-dark hover:underline">03-301-5458</a></li>
+                <li>טלפון: <a href="tel:03-330-2006" className="text-medblue hover:text-medblue-dark hover:underline">03-330-2006</a></li> {/* Updated number */}
                 <li>מייל:&nbsp;<a href="mailto:contact@medassist.co.il" className="text-medblue hover:text-medblue-dark hover:underline">contact@medassist.co.il</a></li>
               </ul>
 
@@ -113,10 +113,10 @@ const AccessibilityStatement = () => {
                 <h3 className="text-xl text-gray-600 mb-4">קבע את התור הקרוב ביותר לרופא שלך</h3>
                 <p>
                   <a 
-                    href="tel:03-301-5458" 
+                    href="tel:03-330-2006" // Updated number
                     className="inline-block bg-orange-500 hover:bg-orange-600 text-white font-semibold py-3 px-6 rounded-md transition-colors duration-300 shadow-md"
                   >
-                    03-301-5458
+                    03-330-2006 {/* Updated number */}
                   </a>
                 </p>
               </div>
