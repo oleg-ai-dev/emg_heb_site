@@ -48,7 +48,8 @@ const WhatIsEmgContent = () => {
         <li><strong>אחרי הבדיקה:</strong> ניתן לחזור לפעילות רגילה מיד. ייתכנו מעט כאב, רגישות או שטפי דם קטנים באזורי החדרת המחט, אך אלה חולפים בדרך כלל תוך יום-יומיים. אפשר להשתמש במשככי כאבים קלים במידת הצורך.</li>
       </ul>
 
-      <h2 className="text-2xl font-semibold text-medblue-dark mt-6 mb-3">הכנה לבדיקת EMG: מה חשוב לדעת?</h2>
+      {/* Added id="preparation" */}
+      <h2 id="preparation" className="text-2xl font-semibold text-medblue-dark mt-6 mb-3 scroll-mt-20">הכנה לבדיקת EMG: מה חשוב לדעת?</h2> 
       <p className="leading-relaxed">
         ה<strong>הכנה לבדיקת EMG</strong> היא פשוטה יחסית, אך יש כמה דברים שכדאי לדעת:
       </p>

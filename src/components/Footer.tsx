@@ -57,8 +57,21 @@ const Footer = () => {
             <ul className="space-y-2 text-gray-300">
               {/* Updated link to new blog post */}
               <li><Link to="/blog/what-is-emg" className="hover:text-white transition-colors text-sm">מהי בדיקת EMG?</Link></li> 
-              {/* Link to future preparation page (placeholder) */}
-              <li><Link to="/emg-info/preparation" className="hover:text-white transition-colors text-sm">הכנה לבדיקה</Link></li> 
+              {/* Updated link to preparation section */}
+              <li>
+                <Link 
+                  to="/blog/what-is-emg#preparation" 
+                  onClick={(e) => {
+                    if (window.location.pathname === '/blog/what-is-emg') {
+                      e.preventDefault();
+                      document.getElementById('preparation')?.scrollIntoView({ behavior: 'smooth' });
+                    }
+                  }}
+                  className="hover:text-white transition-colors text-sm"
+                >
+                  הכנה לבדיקה
+                </Link>
+              </li> 
               <li><Link to="/blog" className="hover:text-white transition-colors text-sm">מצבים שאנו מאבחנים</Link></li>
             </ul>
           </div>

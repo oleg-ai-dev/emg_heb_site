@@ -172,8 +172,18 @@ const Header = () => {
                           <ListItem to="/blog/what-is-emg" title="מהי בדיקת EMG?" className="text-right">
                             כל מה שצריך לדעת על הבדיקה.
                           </ListItem>
-                          {/* Link to future preparation page (placeholder) */}
-                          <ListItem to="/emg-info/preparation" title="הכנה לבדיקה" className="text-right"> 
+                          {/* Updated link to preparation section */}
+                          <ListItem 
+                            to="/blog/what-is-emg#preparation" 
+                            title="הכנה לבדיקה" 
+                            className="text-right"
+                            onClick={(e) => {
+                              if (window.location.pathname === '/blog/what-is-emg') {
+                                e.preventDefault();
+                                document.getElementById('preparation')?.scrollIntoView({ behavior: 'smooth' });
+                              }
+                            }}
+                          > 
                             כיצד להתכונן לבדיקת EMG.
                           </ListItem>
                         </div>
