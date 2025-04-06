@@ -70,7 +70,7 @@ const AboutUs = () => {
               </p>
 
               <img 
-                src="https://medassist.co.il/wp-content/uploads/2018/03/emg-1-500x334.jpg" 
+                src="/articles/images/what-is-emg.jpg" 
                 alt="MedAssist Neurologist EMG" 
                 className="w-full h-auto rounded-lg my-8 shadow" 
               />
