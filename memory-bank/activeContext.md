@@ -5,6 +5,8 @@
 *   **Awaiting Next Task:** Ready for the next user request.
 
 ## 2. Recent Changes (Current Session)
+*   **Bing Site Verification:** Added Bing site verification meta tag (`msvalidate.01`) to `index.html`. Task completed.
+*   **Google Site Verification:** Added Google site verification meta tag to `index.html`. Task completed.
 *   **Blog Article CTAs:** Created reusable `BlogCtaBanner` and `BlogShortForm` components. Added the banner at ~1/3 point and the short form at ~2/3 point within all longer blog articles (`als`, `polio-post-polio`, `radiculopathy`, `carpal-tunnel-syndrome`, `guillain-barre-syndrome`, `inflammatory-myopathies`, `muscular-dystrophy`, `myasthenia-gravis`, `תסמונות-לחץ-עצבים`). Added only the short form to the `what-is-emg` article after corrections. Removed old hardcoded banners. Task completed.
 *   **Header Icons:** Added icons to main desktop navigation links in `Header.tsx`. Task completed.
 *   **Blog Subtitle:** Updated subtitle on `Blog.tsx` page header. Task completed.
@@ -33,7 +35,7 @@
     *   **Performance Optimization (Blog Posts):** Refactored `BlogPost.tsx` to dynamically load post content using `React.lazy`. Extracted JSX content for each post into separate files under `src/articles/content/`.
 
 ## 3. Next Steps
-1.  **Update Documentation:** Update `progress.md` to reflect the completed blog CTA implementation.
+1.  **Update Documentation:** Update `progress.md` to reflect the completed Bing site verification implementation.
 2.  **Present Completion:** Use `attempt_completion` to inform the user.
 
 ## 4. Active Decisions & Considerations

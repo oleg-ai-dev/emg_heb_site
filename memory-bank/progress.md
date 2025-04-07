@@ -43,6 +43,8 @@
     *   Optimized image alt text on `Index.tsx`.
 *   **Header:** Added icons to desktop navigation links.
 *   **Analytics:** Added Umami tracking script to `index.html`.
+*   **Google Site Verification:** Added Google site verification meta tag to `index.html`.
+*   **Bing Site Verification:** Added Bing site verification meta tag (`msvalidate.01`) to `index.html`.
 *   **Image Update:** Replaced external image with local one in `AboutUs.tsx`.
 
 ## 2. What's Left to Build / In Progress
@@ -68,7 +70,9 @@
 *   **Header:** Icons added to desktop navigation. Task completed.
 *   **Analytics:** Umami script added. Task completed.
 *   **Image:** Path updated in About Us. Task completed.
-*   **Overall:** The website is functional with the new pages, updated footer layout, improved blog styling/CTAs/layout, working contact form submission, enhanced code-splitting, initial SEO improvements, header icons, and analytics script. Blog CTAs implemented across all articles as requested.
+*   **Google Site Verification:** Tag added to `index.html`. Task completed.
+*   **Bing Site Verification:** Tag added to `index.html`. Task completed.
+*   **Overall:** The website is functional with the new pages, updated footer layout, improved blog styling/CTAs/layout, working contact form submission, enhanced code-splitting, initial SEO improvements, header icons, analytics script, Google site verification tag, and Bing site verification tag. Blog CTAs implemented across all articles as requested.
 
 ## 4. Known Issues / Potential Improvements
 *   **SEO - Keyword Integration:** Body content keyword density/placement could be further reviewed.
