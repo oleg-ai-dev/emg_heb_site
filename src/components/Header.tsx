@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { Phone, X, Menu } from 'lucide-react';
+// Import necessary icons
+import { Phone, X, Menu, Home, Info, BrainCircuit, Newspaper, Mail } from 'lucide-react'; 
 import { cn } from '@/lib/utils';
 import {
   NavigationMenu,
@@ -116,24 +117,30 @@ const Header = () => {
                 {/* Removed dir="rtl" from the list */}
                 <NavigationMenuList> 
                   {/* Standard Links */}
+                  {/* Standard Links with Icons */}
                   <NavigationMenuItem>
-                    <Link to="/">
-                      <NavigationMenuLink className={navigationMenuTriggerStyle() + " bg-medblue text-white hover:bg-medblue-dark"}>
-                        עמוד הבית
+                    <Link to="/" className="flex items-center">
+                      <NavigationMenuLink className={navigationMenuTriggerStyle() + " bg-medblue text-white hover:bg-medblue-dark flex items-center gap-1"}>
+                        <Home size={16} />
+                        <span>עמוד הבית</span>
                       </NavigationMenuLink>
                     </Link>
                   </NavigationMenuItem>
                   <NavigationMenuItem>
-                    <Link to="/about-us">
-                      <NavigationMenuLink className={navigationMenuTriggerStyle() + " bg-medblue text-white hover:bg-medblue-dark"}>
-                        אודות
+                    <Link to="/about-us" className="flex items-center">
+                      <NavigationMenuLink className={navigationMenuTriggerStyle() + " bg-medblue text-white hover:bg-medblue-dark flex items-center gap-1"}>
+                        <Info size={16} />
+                        <span>אודות</span>
                       </NavigationMenuLink>
                     </Link>
                   </NavigationMenuItem>
 
-                  {/* Mega Menu Trigger */}
+                  {/* Mega Menu Trigger with Icon */}
                   <NavigationMenuItem>
-                    <NavigationMenuTrigger className="bg-medblue text-white hover:bg-medblue-dark data-[state=open]:bg-medblue-dark">מידע על EMG</NavigationMenuTrigger>
+                    <NavigationMenuTrigger className="bg-medblue text-white hover:bg-medblue-dark data-[state=open]:bg-medblue-dark flex items-center gap-1">
+                      <BrainCircuit size={16} />
+                      <span>מידע על EMG</span>
+                    </NavigationMenuTrigger>
                     <NavigationMenuContent>
                       <ul className="grid gap-3 p-6 md:w-[450px] lg:w-[550px] lg:grid-cols-[1fr_1fr] text-right" dir="rtl"> {/* Adjusted width and cols */}
                         
@@ -192,17 +199,19 @@ const Header = () => {
                   </NavigationMenuItem>
 
                   {/* More Standard Links */}
+                  {/* More Standard Links with Icons */}
                   <NavigationMenuItem>
-                    <Link to="/blog">
-                      <NavigationMenuLink className={navigationMenuTriggerStyle() + " bg-medblue text-white hover:bg-medblue-dark"}>
-                        בלוג
+                    <Link to="/blog" className="flex items-center">
+                      <NavigationMenuLink className={navigationMenuTriggerStyle() + " bg-medblue text-white hover:bg-medblue-dark flex items-center gap-1"}>
+                        <Newspaper size={16} />
+                        <span>בלוג</span>
                       </NavigationMenuLink>
                     </Link>
                   </NavigationMenuItem>
                   <NavigationMenuItem>
-                    {/* Updated to Link and added onClick for smooth scroll */}
+                    {/* Updated to Link and added onClick for smooth scroll, added icon */}
                     <Link 
-                      to="/#contact" 
+                      to="/#contact"
                       onClick={(e) => {
                         // Prevent default jump if already on homepage
                         if (window.location.pathname === '/') {
@@ -213,9 +222,11 @@ const Header = () => {
                         // If on another page, Link component handles navigation, 
                         // browser might handle scroll (or further logic could be added)
                       }}
+                      className="flex items-center"
                     >
-                      <NavigationMenuLink className={navigationMenuTriggerStyle() + " bg-medblue text-white hover:bg-medblue-dark"}>
-                        צור קשר
+                      <NavigationMenuLink className={navigationMenuTriggerStyle() + " bg-medblue text-white hover:bg-medblue-dark flex items-center gap-1"}>
+                        <Mail size={16} />
+                        <span>צור קשר</span>
                       </NavigationMenuLink>
                     </Link>
                   </NavigationMenuItem>

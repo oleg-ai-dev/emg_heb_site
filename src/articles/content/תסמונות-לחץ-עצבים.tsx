@@ -1,6 +1,8 @@
 import React from 'react';
-import { Link } from 'react-router-dom'; // Import Link
+import { Link } from 'react-router-dom';
 import { Phone } from 'lucide-react';
+import BlogCtaBanner from '@/components/BlogCtaBanner'; // Import Banner
+import BlogShortForm from '@/components/BlogShortForm'; // Import Short Form
 
 const NerveCompressionSyndromesContent = () => {
   return (
@@ -71,6 +73,9 @@ const NerveCompressionSyndromesContent = () => {
         <li><strong>גורמים תורשתיים</strong>: מבנה אנטומי מולד המגביר את הסיכון ללחץ על עצבים</li>
       </ul>
 
+      {/* CTA Banner - Approx 1/3 point */}
+      <BlogCtaBanner />
+
       <h2 className="text-2xl font-semibold text-medblue-dark mt-6 mb-3">סימפטומים אופייניים לתסמונות לחץ על עצבים</h2>
       <p className="leading-relaxed">למרות שהסימפטומים משתנים בהתאם לעצב הנפגע, קיימים מספר סימנים אופייניים:</p>
       <ul className="list-disc pr-8 space-y-3 mt-4">
@@ -82,21 +87,6 @@ const NerveCompressionSyndromesContent = () => {
         <li><strong>החמרה בלילה</strong>: סימפטומים שמתגברים בשעות הלילה או בזמן מנוחה</li>
         <li><strong>תלות בתנוחה</strong>: סימפטומים שמשתנים בהתאם לתנוחת הגוף</li>
       </ul>
-
-      {/* Inserted Banner */}
-      <div className="my-12 bg-medblue-dark text-white p-8 rounded-lg shadow-md text-right">
-        <h2 className="text-2xl font-bold mb-4">זקוקים לאבחון מקצועי?</h2>
-        <p className="mb-6">צוות המומחים שלנו יכול לעזור לכם באבחון מדויק באמצעות בדיקת EMG ובהתאמת תכנית טיפול אישית.</p>
-        <div className="flex justify-end">
-          <a 
-            href="tel:03-330-2006" // Updated number
-            className="bg-orange-500 hover:bg-orange-600 text-white font-medium py-3 px-8 rounded-md inline-flex items-center gap-2 shadow-md"
-          >
-            <span>התקשרו עכשיו: 03-330-2006</span> {/* Updated number */}
-            <Phone size={18} />
-          </a>
-        </div>
-      </div>
 
       <h2 className="text-2xl font-semibold text-medblue-dark mt-6 mb-3">בדיקת EMG באבחון תסמונות לחץ על עצבים</h2>
       <p className="leading-relaxed">
@@ -136,6 +126,9 @@ const NerveCompressionSyndromesContent = () => {
         <li><strong>הנחיית טיפול</strong>: עוזרת לקבוע את הטיפול המתאים ביותר</li>
         <li><strong>ניטור התקדמות</strong>: מאפשרת לעקוב אחר השיפור או ההחמרה במצב</li>
       </ul>
+
+      {/* Short Contact Form - Approx 2/3 point */}
+      <BlogShortForm />
 
       <h2 className="text-2xl font-semibold text-medblue-dark mt-6 mb-3">אפשרויות טיפול בתסמונות לחץ על עצבים</h2>
       <p className="leading-relaxed">הטיפול בתסמונות לחץ על עצבים תלוי בסוג התסמונת, חומרתה ומשך הסימפטומים:</p>

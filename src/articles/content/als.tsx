@@ -1,6 +1,8 @@
 import React from 'react';
-import { Link } from 'react-router-dom'; // Import Link
+import { Link } from 'react-router-dom';
 import { Phone } from 'lucide-react';
+import BlogCtaBanner from '@/components/BlogCtaBanner'; // Import Banner
+import BlogShortForm from '@/components/BlogShortForm'; // Import Short Form
 
 const AlsContent = () => {
   return (
@@ -87,21 +89,9 @@ const AlsContent = () => {
       <p className="leading-relaxed mb-4"> {/* Added bottom margin */}
         חשוב לזכור, אלו סימנים שיכולים להופיע גם במחלות אחרות. לכן, אם מישהו חווה דברים כאלה, במיוחד אם הם מתקדמים ומתפשטים, חייבים ללכת לרופא נוירולוג לבדיקה יסודית. האבחון לא פשוט, וצריך לשלול דברים אחרים.
       </p>
-
-      {/* Inserted Banner */}
-      <div className="my-12 bg-medblue-dark text-white p-8 rounded-lg shadow-md text-right">
-        <h2 className="text-2xl font-bold mb-4">זקוקים לאבחון מקצועי?</h2>
-        <p className="mb-6">צוות המומחים שלנו יכול לעזור לכם באבחון מדויק באמצעות בדיקת EMG ובהתאמת תכנית טיפול אישית.</p>
-        <div className="flex justify-end">
-          <a 
-            href="tel:03-330-2006" // Updated number
-            className="bg-orange-500 hover:bg-orange-600 text-white font-medium py-3 px-8 rounded-md inline-flex items-center gap-2 shadow-md"
-          >
-            <span>התקשרו עכשיו: 03-330-2006</span> {/* Updated number */}
-            <Phone size={18} />
-          </a>
-        </div>
-      </div>
+      
+      {/* CTA Banner - Approx 1/3 point */}
+      <BlogCtaBanner />
 
       <h2 className="text-2xl font-semibold text-medblue-dark mt-6 mb-3">EMG: עבודת הבילוש באבחון ALS</h2>
       <p className="leading-relaxed">
@@ -141,6 +131,9 @@ const AlsContent = () => {
       <p className="leading-relaxed mb-4"> {/* Added bottom margin */}
         <strong>אז מה השורה התחתונה?</strong> ה-EMG ב-ALS מראה שילוב של שני תהליכים שקורים במקביל: <strong>נזק עצבי פעיל ומתמשך (דנרבציה)</strong>, שמתבטא בפיברילציות ו-PSWs, ו<strong>ניסיונות תיקון ופיצוי של העצבים שנותרו (ראינרבציה)</strong>, שמתבטאים ב-MUAPs גדולים, ארוכים ופוליפאזיים. הדבר הכי חשוב הוא למצוא את השילוב הזה של <strong>דנרבציה פעילה וכרונית</strong> (סימנים לשניהם) במספר אזורים בגוף, שמייצגים פגיעה בנוירונים מוטוריים תחתונים מכמה מקטעים שונים של חוט השדרה או גזע המוח. למשל, למצוא את זה גם בזרוע, גם ברגל וגם בשרירי הלשון. זה מה שהופך את ה-EMG לכלי כל כך חזק באבחון ALS.
       </p>
+
+      {/* Short Contact Form - Approx 2/3 point */}
+      <BlogShortForm />
 
       <h2 className="text-2xl font-semibold text-medblue-dark mt-6 mb-3">להרכיב את הפאזל: תהליך האבחון של ALS</h2>
       <p className="leading-relaxed">

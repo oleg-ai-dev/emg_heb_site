@@ -1,6 +1,8 @@
 import React from 'react';
-import { Link } from 'react-router-dom'; // Import Link
+import { Link } from 'react-router-dom';
 import { Phone } from 'lucide-react';
+import BlogCtaBanner from '@/components/BlogCtaBanner'; // Import Banner
+import BlogShortForm from '@/components/BlogShortForm'; // Import Short Form
 
 const CarpalTunnelSyndromeContent = () => {
   return (
@@ -36,20 +38,11 @@ const CarpalTunnelSyndromeContent = () => {
         <li><strong>גורמים נוספים</strong>: השמנת יתר, עישון, ונטייה גנטית</li>
       </ul>
 
-      {/* Inserted Banner */}
-      <div className="my-12 bg-medblue-dark text-white p-8 rounded-lg shadow-md text-right">
-        <h2 className="text-2xl font-bold mb-4">סובלים מתסמיני תעלה קרפלית?</h2>
-        <p className="mb-6">צוות המומחים שלנו יכול לעזור לכם באבחון מדויק באמצעות בדיקת EMG ובהתאמת תכנית טיפול אישית.</p>
-        <div className="flex justify-end">
-          <a 
-            href="tel:03-330-2006" // Updated number
-            className="bg-orange-500 hover:bg-orange-600 text-white font-medium py-3 px-8 rounded-md inline-flex items-center gap-2 shadow-md"
-          >
-            <span>התקשרו עכשיו: 03-330-2006</span> {/* Updated number */}
-            <Phone size={18} />
-          </a>
-        </div>
-      </div>
+      {/* CTA Banner - Approx 1/3 point */}
+      <BlogCtaBanner 
+        title="סובלים מתסמיני תעלה קרפלית?" 
+        description="צוות המומחים שלנו יכול לעזור לכם באבחון מדויק באמצעות בדיקת EMG ובהתאמת תכנית טיפול אישית." 
+      />
 
       <h2 className="text-2xl font-semibold text-medblue-dark mt-6 mb-3">בדיקת EMG לאבחון תסמונת התעלה הקרפלית</h2>
       <p className="leading-relaxed">
@@ -91,6 +84,9 @@ const CarpalTunnelSyndromeContent = () => {
         <li><strong>תרגילים לתעלה קרפלית</strong>: משפרים את גמישות כף היד והאצבעות</li>
         <li><strong>שינויים ארגונומיים</strong>: התאמת סביבת העבודה להפחתת עומס על הידיים</li>
       </ul>
+
+      {/* Short Contact Form - Approx 2/3 point */}
+      <BlogShortForm />
 
       <h3 className="text-xl font-semibold text-medblue-dark mt-4 mb-2">ניתוח שחרור תעלה קרפלית</h3>
       <p className="leading-relaxed">

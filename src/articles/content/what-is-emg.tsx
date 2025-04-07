@@ -1,5 +1,7 @@
 import React from 'react';
 import { Phone } from 'lucide-react';
+import BlogShortForm from '@/components/BlogShortForm'; // Import Short Form
+// Removed BlogCtaBanner import as it's not used here
 
 const WhatIsEmgContent = () => {
   return (
@@ -48,6 +50,9 @@ const WhatIsEmgContent = () => {
         <li><strong>אחרי הבדיקה:</strong> ניתן לחזור לפעילות רגילה מיד. ייתכנו מעט כאב, רגישות או שטפי דם קטנים באזורי החדרת המחט, אך אלה חולפים בדרך כלל תוך יום-יומיים. אפשר להשתמש במשככי כאבים קלים במידת הצורך.</li>
       </ul>
 
+      {/* Short Contact Form - Approx middle point */}
+      <BlogShortForm />
+
       {/* Added id="preparation" */}
       <h2 id="preparation" className="text-2xl font-semibold text-medblue-dark mt-6 mb-3 scroll-mt-20">הכנה לבדיקת EMG: מה חשוב לדעת?</h2> 
       <p className="leading-relaxed">
@@ -61,21 +66,6 @@ const WhatIsEmgContent = () => {
         <li><strong>ביגוד:</strong> לבשו בגדים נוחים ורפויים שמאפשרים גישה קלה לידיים ולרגליים.</li>
         <li><strong>אוכל ושתייה:</strong> אין צורך בצום לפני הבדיקה.</li>
       </ul>
-
-      {/* Inserted Banner */}
-      <div className="my-12 bg-medblue-dark text-white p-8 rounded-lg shadow-md text-right">
-        <h2 className="text-2xl font-bold mb-4">זקוקים לבדיקת EMG?</h2>
-        <p className="mb-6">ב-MedAssist אנו מציעים בדיקות EMG מתקדמות עם צוות מומחים מנוסה ותורים מהירים. צרו קשר לקביעת תור.</p>
-        <div className="flex justify-end">
-          <a 
-            href="tel:03-330-2006" 
-            className="bg-orange-500 hover:bg-orange-600 text-white font-medium py-3 px-8 rounded-md inline-flex items-center gap-2 shadow-md"
-          >
-            <span>התקשרו עכשיו: 03-330-2006</span>
-            <Phone size={18} />
-          </a>
-        </div>
-      </div>
 
       <h2 className="text-2xl font-semibold text-medblue-dark mt-6 mb-3">האם בדיקת EMG כואבת? ומה לגבי סיכונים?</h2>
       <p className="leading-relaxed">

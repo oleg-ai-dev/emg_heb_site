@@ -1,6 +1,8 @@
 import React from 'react';
-import { Link } from 'react-router-dom'; // Import Link
+import { Link } from 'react-router-dom';
 import { Phone } from 'lucide-react';
+import BlogCtaBanner from '@/components/BlogCtaBanner'; // Import Banner
+import BlogShortForm from '@/components/BlogShortForm'; // Import Short Form
 
 const GuillainBarreSyndromeContent = () => {
   return (
@@ -55,20 +57,11 @@ const GuillainBarreSyndromeContent = () => {
         בכשליש מהמקרים, החולשה עלולה להתפתח לשיתוק מלא המחייב הנשמה מלאכותית. חשוב להדגיש שההידרדרות עלולה להיות מהירה מאוד, ולכן אבחון מהיר והתערבות מיידית הם קריטיים.
       </p>
 
-      {/* Inserted Banner */}
-      <div className="my-12 bg-medblue-dark text-white p-8 rounded-lg shadow-md text-right">
-        <h2 className="text-2xl font-bold mb-4">חוששים מתסמיני תסמונת גיאן-בארה?</h2>
-        <p className="mb-6">צוות המומחים שלנו מתמחה באבחון וטיפול בתסמונת גיאן-בארה באמצעות בדיקות EMG מתקדמות ותוכניות טיפול מותאמות אישית.</p>
-        <div className="flex justify-end">
-          <a 
-            href="tel:03-330-2006" // Updated number
-            className="bg-orange-500 hover:bg-orange-600 text-white font-medium py-3 px-8 rounded-md inline-flex items-center gap-2 shadow-md"
-          >
-            <span>התקשרו עכשיו: 03-330-2006</span> {/* Updated number */}
-            <Phone size={18} />
-          </a>
-        </div>
-      </div>
+      {/* CTA Banner - Approx 1/3 point */}
+      <BlogCtaBanner 
+        title="חוששים מתסמיני תסמונת גיאן-בארה?" 
+        description="צוות המומחים שלנו מתמחה באבחון וטיפול בתסמונת גיאן-בארה באמצעות בדיקות EMG מתקדמות ותוכניות טיפול מותאמות אישית." 
+      />
 
       <h2 className="text-2xl font-semibold text-medblue-dark mt-6 mb-3">בדיקת EMG באבחון תסמונת גיאן-בארה</h2>
       <p className="leading-relaxed">
@@ -109,6 +102,9 @@ const GuillainBarreSyndromeContent = () => {
         <li><strong>חיזוי הפרוגנוזה</strong> - ממצאים מסוימים (במיוחד פגיעה אקסונלית נרחבת) מרמזים על פרוגנוזה פחות טובה והחלמה איטית יותר</li>
         <li><strong>אבחנה מבדלת</strong> - מסייעת להבדיל בין GBS למחלות אחרות עם סימנים דומים</li>
       </ul>
+
+      {/* Short Contact Form - Approx 2/3 point */}
+      <BlogShortForm />
 
       <h2 className="text-2xl font-semibold text-medblue-dark mt-6 mb-3">טיפול בתסמונת גיאן-בארה</h2>
       <p className="leading-relaxed">הטיפול בתסמונת גיאן-בארה מתמקד בהאצת תהליך ההחלמה ומניעת סיבוכים:</p>

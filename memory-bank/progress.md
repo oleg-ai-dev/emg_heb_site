@@ -9,12 +9,12 @@
     *   Includes header, footer, responsive design, RTL support.
     *   Features interactive elements (scroll effects, mobile menu).
 *   **Blog Section (`/blog`, `/blog/:id`):**
-    *   Displays a list of blog posts with excerpts and images (`Blog.tsx`). Styling improved (header alignment, card padding, metadata grouping, link alignment). Added new posts: "Inflammatory Myopathies" (`inflammatory-myopathies`), "Muscular Dystrophy" (`muscular-dystrophy`), "Myasthenia Gravis" (`myasthenia-gravis`), "ALS" (`als`), "Polio/Post-Polio" (`polio-post-polio`), "Radiculopathy" (`radiculopathy`).
-    *   Displays individual blog posts (`BlogPost.tsx`). Styling improved. Added mid-content banner. Added new posts: "Inflammatory Myopathies", "Muscular Dystrophy", "Myasthenia Gravis", "ALS", "Polio/Post-Polio", "Radiculopathy".
+    *   Displays a list of blog posts with excerpts and images (`Blog.tsx`). Styling improved. Header subtitle updated for better description. Added new posts: "Inflammatory Myopathies" (`inflammatory-myopathies`), "Muscular Dystrophy" (`muscular-dystrophy`), "Myasthenia Gravis" (`myasthenia-gravis`), "ALS" (`als`), "Polio/Post-Polio" (`polio-post-polio`), "Radiculopathy" (`radiculopathy`).
+    *   Displays individual blog posts (`BlogPost.tsx`). Styling improved. Added reusable CTA banner (~1/3 point) and short contact form (~2/3 point) components (`BlogCtaBanner`, `BlogShortForm`) within all longer article content files (`src/articles/content/*`). Added short contact form to `what-is-emg.tsx`. Layout adjusted in `als`, `polio-post-polio`, `radiculopathy` articles. Added new posts.
     *   **Performance:** Implemented dynamic content loading using `React.lazy` for post content (JSX stored in `src/articles/content/`). Metadata remains in `BlogPost.tsx`.
     *   Includes SEO optimizations (`react-helmet`).
     *   Blog index (`Blog.tsx`) still references hardcoded data (needs update if metadata source changes).
-*   **UI Components:** Base UI components (`shadcn/ui`) and custom application components (`src/components`) are functional.
+*   **UI Components:** Base UI components (`shadcn/ui`) and custom application components (`src/components`, including `BlogCtaBanner`, `BlogShortForm`) are functional.
 *   **Accessibility Statement Page (`/הצהרת-נגישות`):**
     *   Page component created (`src/pages/AccessibilityStatement.tsx`).
     *   Route added (`src/App.tsx`).
@@ -41,6 +41,9 @@
     *   Added structured data (`FAQPage`, `MedicalClinic`) to `Index.tsx`.
     *   Added internal links from relevant blog posts to the "What is EMG?" article.
     *   Optimized image alt text on `Index.tsx`.
+*   **Header:** Added icons to desktop navigation links.
+*   **Analytics:** Added Umami tracking script to `index.html`.
+*   **Image Update:** Replaced external image with local one in `AboutUs.tsx`.
 
 ## 2. What's Left to Build / In Progress
 *   **SEO Implementation (Potential Phase 2):**
@@ -58,11 +61,14 @@
 *   **About Us Page:** Created, banner added, content refined.
 *   **Terms & Conditions Page:** Created.
 *   **Footer:** Refactored, layout updated to centered links/copyright (no logo), color scheme corrected. Task completed.
-*   **Blog Pages:** Styling and readability improved. Added mid-content banner. Added new posts. Refactored `BlogPost.tsx` for dynamic content loading. Task completed.
+*   **Blog Pages:** Styling and readability improved. Added reusable CTA banner and/or short form to articles. Header subtitle updated. Layout adjusted for specific articles. Added new posts. Refactored `BlogPost.tsx` for dynamic content loading. Task completed.
 *   **Contact Form:** Submission logic implemented via webhook. Task completed.
 *   **Performance:** Code-splitting implemented for page routes and blog post content. Task completed.
 *   **SEO:** Analysis complete. Initial implementation phase (meta tags, structured data, basic internal linking, alt text) completed.
-*   **Overall:** The website is functional with the new pages, updated footer layout, improved blog styling including the six new posts, working contact form submission, enhanced code-splitting, and initial SEO improvements implemented.
+*   **Header:** Icons added to desktop navigation. Task completed.
+*   **Analytics:** Umami script added. Task completed.
+*   **Image:** Path updated in About Us. Task completed.
+*   **Overall:** The website is functional with the new pages, updated footer layout, improved blog styling/CTAs/layout, working contact form submission, enhanced code-splitting, initial SEO improvements, header icons, and analytics script. Blog CTAs implemented across all articles as requested.
 
 ## 4. Known Issues / Potential Improvements
 *   **SEO - Keyword Integration:** Body content keyword density/placement could be further reviewed.

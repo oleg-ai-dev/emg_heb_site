@@ -209,7 +209,7 @@ const Blog = () => {
         <div className="container mx-auto px-4 text-right"> {/* Changed to text-right */}
           <h1 className="text-4xl font-bold mb-4">הבלוג שלנו</h1>
           <p className="text-xl text-medblue-light max-w-2xl ml-auto"> {/* Added ml-auto for right alignment */}
-            מאמרים מקצועיים בנושא בדיקות EMG, תסמונת התעלה הקרפלית, וטיפולים מתקדמים
+            מאמרים מקצועיים על בדיקות EMG, מחלות עצב-שריר, אבחונים וטיפולים
           </p>
         </div>
       </div>

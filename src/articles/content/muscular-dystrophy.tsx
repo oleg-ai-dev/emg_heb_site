@@ -1,6 +1,8 @@
 import React from 'react';
-import { Link } from 'react-router-dom'; // Import Link
+import { Link } from 'react-router-dom';
 import { Phone } from 'lucide-react';
+import BlogCtaBanner from '@/components/BlogCtaBanner'; // Import Banner
+import BlogShortForm from '@/components/BlogShortForm'; // Import Short Form
 
 const MuscularDystrophyContent = () => {
   return (
@@ -45,20 +47,8 @@ const MuscularDystrophyContent = () => {
         כמובן, לא כל מי שיש לו אחד מהתסמינים האלה בהכרח סובל מניוון שרירים. אבל אם יש שילוב של כמה מהם, או אם החולשה מחמירה עם הזמן, או אם יש היסטוריה משפחתית – זה בהחלט מצדיק בדיקה יסודית אצל נוירולוג או מומחה למחלות שריר.
       </p>
 
-      {/* Inserted Banner */}
-      <div className="my-12 bg-medblue-dark text-white p-8 rounded-lg shadow-md text-right">
-        <h2 className="text-2xl font-bold mb-4">זקוקים לאבחון מקצועי?</h2>
-        <p className="mb-6">צוות המומחים שלנו יכול לעזור לכם באבחון מדויק באמצעות בדיקת EMG ובהתאמת תכנית טיפול אישית.</p>
-        <div className="flex justify-end">
-          <a 
-            href="tel:03-330-2006" // Updated number
-            className="bg-orange-500 hover:bg-orange-600 text-white font-medium py-3 px-8 rounded-md inline-flex items-center gap-2 shadow-md"
-          >
-            <span>התקשרו עכשיו: 03-330-2006</span> {/* Updated number */}
-            <Phone size={18} />
-          </a>
-        </div>
-      </div>
+      {/* CTA Banner - Approx 1/3 point */}
+      <BlogCtaBanner />
 
       <h2 className="text-2xl font-semibold text-medblue-dark mt-6 mb-3">בדיקת EMG: איך היא עוזרת לפענח את התעלומה?</h2>
       <p className="leading-relaxed">
@@ -90,6 +80,9 @@ const MuscularDystrophyContent = () => {
       <p className="leading-relaxed">
         חשוב לי להדגיש משהו מניסיון אישי: הבדיקה היא כלי עזר חשוב, אבל היא לא נעימה במיוחד, במיוחד חלק המחט. חשוב להסביר למטופל, ובמיוחד לילד, בדיוק מה הולך לקרות, למה זה חשוב, ולהיות סבלניים. הסחת דעת, משחה מאלחשת, ולפעמים אפילו טשטוש קל יכולים לעזור. התוצאות שמתקבלות שוות את האי-נוחות הזמנית.
       </p>
+
+      {/* Short Contact Form - Approx 2/3 point */}
+      <BlogShortForm />
 
       <h2 className="text-2xl font-semibold text-medblue-dark mt-6 mb-3">האבחון המלא: EMG הוא רק חלק מהפאזל</h2>
       <p className="leading-relaxed">
