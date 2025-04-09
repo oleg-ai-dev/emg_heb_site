@@ -1,10 +1,11 @@
 # Active Context: MEDASSIST EMG Website
 
 ## 1. Current Focus
-*   **Documentation Update:** Updating Memory Bank files (`activeContext.md`, `progress.md`) after completing blog CTA implementation.
+*   **Documentation Update:** Updating Memory Bank files (`activeContext.md`, `progress.md`) after modifying contact form submissions.
 *   **Awaiting Next Task:** Ready for the next user request.
 
 ## 2. Recent Changes (Current Session)
+*   **Contact Form Source Field:** Modified `ContactForm.tsx` and `BlogShortForm.tsx` to add/update the `source: "emg"` field in the JSON payload sent to the webhook upon form submission. Task completed.
 *   **Bing Site Verification:** Added Bing site verification meta tag (`msvalidate.01`) to `index.html`. Task completed.
 *   **Google Site Verification:** Added Google site verification meta tag to `index.html`. Task completed.
 *   **Blog Article CTAs:** Created reusable `BlogCtaBanner` and `BlogShortForm` components. Added the banner at ~1/3 point and the short form at ~2/3 point within all longer blog articles (`als`, `polio-post-polio`, `radiculopathy`, `carpal-tunnel-syndrome`, `guillain-barre-syndrome`, `inflammatory-myopathies`, `muscular-dystrophy`, `myasthenia-gravis`, `תסמונות-לחץ-עצבים`). Added only the short form to the `what-is-emg` article after corrections. Removed old hardcoded banners. Task completed.

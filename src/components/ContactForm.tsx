@@ -24,6 +24,7 @@ const ContactForm = () => {
       phone,
       email,
       details,
+      source: "emg", // Added source field
     };
 
     try {

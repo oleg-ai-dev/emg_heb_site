@@ -46,25 +46,25 @@
 *   **Google Site Verification:** Added Google site verification meta tag to `index.html`.
 *   **Bing Site Verification:** Added Bing site verification meta tag (`msvalidate.01`) to `index.html`.
 *   **Image Update:** Replaced external image with local one in `AboutUs.tsx`.
+*   **Contact Form Source Field:** Modified `ContactForm.tsx` and `BlogShortForm.tsx` to add/update the `source: "emg"` field in the JSON payload sent to the webhook upon form submission.
 
 ## 2. What's Left to Build / In Progress
 *   **SEO Implementation (Potential Phase 2):**
     *   Further review and optimization of keyword integration within page body content.
     *   Add `og:image` tags where missing/appropriate.
     *   Add more diverse internal links between related blog posts/pages.
-*   **Contact Form Submission:** Implemented webhook submission logic in `ContactForm.tsx`. Form data (name, phone, email, details) is sent via POST request as JSON to the specified Make.com webhook URL. Includes loading state, success/error toast notifications, and form reset on success.
 *   **Blog Content Management:** Currently hardcoded. Future enhancement might involve a CMS or API integration for easier content updates.
 *   **Footer Links:** Placeholder links for "מדיניות פרטיות" and "צור קשר" still point to `#`. These need actual pages or updated links.
 *   **Testing:** No automated tests (unit, integration, e2e) are apparent in the file structure.
 
 ## 3. Current Status
-*   **Memory Bank:** Initial setup completed. Core files created and updated. `activeContext.md` and `progress.md` updated for SEO task.
+*   **Memory Bank:** Initial setup completed. Core files created and updated. `activeContext.md` and `progress.md` updated for contact form source field task.
 *   **Accessibility Page:** Created, styled, and banner implemented.
 *   **About Us Page:** Created, banner added, content refined.
 *   **Terms & Conditions Page:** Created.
 *   **Footer:** Refactored, layout updated to centered links/copyright (no logo), color scheme corrected. Task completed.
 *   **Blog Pages:** Styling and readability improved. Added reusable CTA banner and/or short form to articles. Header subtitle updated. Layout adjusted for specific articles. Added new posts. Refactored `BlogPost.tsx` for dynamic content loading. Task completed.
-*   **Contact Form:** Submission logic implemented via webhook. Task completed.
+*   **Contact Form:** Submission logic implemented via webhook. Added `source: "emg"` field to payload for both main and blog short forms. Task completed.
 *   **Performance:** Code-splitting implemented for page routes and blog post content. Task completed.
 *   **SEO:** Analysis complete. Initial implementation phase (meta tags, structured data, basic internal linking, alt text) completed.
 *   **Header:** Icons added to desktop navigation. Task completed.

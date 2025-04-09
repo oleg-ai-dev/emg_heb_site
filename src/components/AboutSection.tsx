@@ -58,21 +58,6 @@ const AboutSection = () => {
               לכן, אם אתם זקוקים לבדיקה דחופה, פנו אלינו בהקדם, כדי שנוכל לסייע בגילוי מוקדם ולהביא לשיפור משמעותי באיכות חייכם.
             </p>
 
-            {/* Premium accreditation section */}
-            <div className="mt-6 rounded-lg bg-gradient-to-r from-gray-50 to-white border border-gray-100 p-4 shadow-sm">
-              <div className="flex items-center justify-end gap-2 mb-2">
-                <h4 className="font-semibold text-medblue-dark">הסמכות ואקרדיטציה</h4>
-                <Trophy size={18} className="text-medgold" />
-              </div>
-              <div className="flex flex-wrap justify-end gap-2">
-                {["ISO 9001", "JCI", "תו תקן"].map((cert, i) => (
-                  <span key={i} className="px-2 py-0.5 bg-medblue/5 text-xs font-medium text-medblue-dark rounded border border-medblue/10">
-                    {cert}
-                  </span>
-                ))}
-              </div>
-            </div>
-
             {/* Trust indicators with improved design */}
             <Card className="mt-6 bg-gradient-to-br from-white via-white to-gray-50 border border-gray-100 shadow-md overflow-hidden">
               <CardContent className="p-4">

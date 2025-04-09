@@ -19,7 +19,7 @@ const BlogShortForm = () => {
       name: name,
       phone: phone,
       // Add a source field to distinguish from the main form
-      source: 'Blog Short Form', 
+      source: "emg", // Updated source field to "emg"
     };
 
     try {
