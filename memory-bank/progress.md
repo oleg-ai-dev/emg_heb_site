@@ -3,6 +3,8 @@
 ## 1. What Works / Completed Features
 *   **Core Site Structure:** React SPA setup with Vite, TypeScript, and Tailwind CSS.
     *   **Performance:** Implemented code-splitting for page components (`React.lazy`, `Suspense`) in `src/App.tsx` to improve initial load times and address build warnings.
+    *   **Performance (Fonts):** Optimized Google Fonts loading by removing render-blocking `@import` from `src/index.css` and adding asynchronous `<link>` tags to `index.html`.
+    *   **Performance (JS):** Added `defer` attribute to the `gptengineer.js` script tag in `index.html` to potentially improve loading performance.
 *   **Routing:** Basic client-side routing implemented (`/`, `/blog`, `/blog/:id`).
 *   **Main Landing Page (`/`):**
     *   Displays clinic information, benefits, process, testimonials, FAQs, contact form.
@@ -66,16 +68,18 @@
 *   **Footer:** Refactored, layout updated to centered links/copyright (no logo), color scheme corrected. Task completed.
 *   **Blog Pages:** Styling and readability improved. Added reusable CTA banner and/or short form to articles. Header subtitle updated. Layout adjusted for specific articles. Added new posts. Refactored `BlogPost.tsx` for dynamic content loading. Task completed.
 *   **Contact Form:** Submission logic implemented via webhook. Added `source: "emg"` field to payload for both main and blog short forms. Task completed.
-*   **Performance:** Code-splitting implemented for page routes and blog post content. Task completed.
+*   **Performance:** Code-splitting implemented for page routes and blog post content. Font loading optimized. `gptengineer.js` script deferred. Task completed.
 *   **SEO:** Analysis complete. Initial implementation phase (meta tags, structured data, basic internal linking, alt text, homepage title update) completed.
 *   **Header:** Icons added to desktop navigation. Task completed.
 *   **Analytics:** Umami script added. Task completed.
 *   **Image:** Path updated in About Us. Task completed.
 *   **Google Site Verification:** Tag added to `index.html`. Task completed.
 *   **Bing Site Verification:** Tag added to `index.html`. Task completed.
-*   **Overall:** The website is functional with the new pages, updated footer layout, improved blog styling/CTAs/layout, working contact form submission, enhanced code-splitting, initial SEO improvements (including homepage title update), header icons, analytics script, Google site verification tag, and Bing site verification tag. Blog CTAs implemented across all articles as requested.
+*   **Overall:** The website is functional with the new pages, updated footer layout, improved blog styling/CTAs/layout, working contact form submission, enhanced code-splitting, optimized font loading, deferred `gptengineer.js` script, initial SEO improvements (including homepage title update), header icons, analytics script, Google site verification tag, and Bing site verification tag. Blog CTAs implemented across all articles as requested.
 
 ## 4. Known Issues / Potential Improvements
+*   **Performance - Unused JS (Main Bundle):** The main JS bundle (`/assets/index-*.js`) still reports unused code. Further optimization might require dependency analysis or more complex refactoring beyond existing code splitting.
+*   **Performance - CSS:** The main CSS file (`/assets/index-*.css`) is still identified as potentially render-blocking. Further optimization (e.g., inlining critical CSS) could be explored if needed, but this is more complex.
 *   **SEO - Keyword Integration:** Body content keyword density/placement could be further reviewed.
 *   **SEO - Internal Linking:** Could add more links between related blog topics beyond just linking to "What is EMG?".
 *   **SEO - OG Images:** Some pages lack specific `og:image` tags.
