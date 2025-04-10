@@ -115,11 +115,11 @@ const Index = () => {
     // Removed redundant <header> and mobile menu logic from this page component
     <div className="min-h-screen bg-gray-50">
       <Helmet>
-        <title>MEDASSIST | בדיקות EMG מתקדמות | תור מהיר</title>
+        <title>MEDASSIST - מרכז מומחים לבדיקות EMG מתקדמות | תור מהיר</title>
         <meta name="description" content="מרכז מומחים לבדיקות EMG מתקדמות בישראל. צוות רפואי מנוסה, טכנולוגיה חדישה, תורים מהירים ושירות אישי. צרו קשר לקביעת תור." />
         <meta name="keywords" content="בדיקת EMG, אלקטרומיוגרפיה, נוירולוג, תור מהיר EMG, מרפאת EMG, אבחון עצבים, אבחון שרירים, תסמונת התעלה הקרפלית, כאבי שרירים, נימול" />
         <link rel="canonical" href="https://emg.org.il/" />
-        <meta property="og:title" content="MEDASSIST | בדיקות EMG מתקדמות | תור מהיר" />
+        <meta property="og:title" content="MEDASSIST - מרכז מומחים לבדיקות EMG מתקדמות | תור מהיר" />
         <meta property="og:description" content="מרכז מומחים לבדיקות EMG מתקדמות בישראל. צוות רפואי מנוסה, טכנולוגיה חדישה, תורים מהירים ושירות אישי." />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://emg.org.il/" />

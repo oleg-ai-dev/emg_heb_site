@@ -41,6 +41,7 @@
     *   Added structured data (`FAQPage`, `MedicalClinic`) to `Index.tsx`.
     *   Added internal links from relevant blog posts to the "What is EMG?" article.
     *   Optimized image alt text on `Index.tsx`.
+    *   Updated homepage `<title>` tag (`src/pages/Index.tsx`) to be more descriptive.
 *   **Header:** Added icons to desktop navigation links.
 *   **Analytics:** Added Umami tracking script to `index.html`.
 *   **Google Site Verification:** Added Google site verification meta tag to `index.html`.
@@ -66,13 +67,13 @@
 *   **Blog Pages:** Styling and readability improved. Added reusable CTA banner and/or short form to articles. Header subtitle updated. Layout adjusted for specific articles. Added new posts. Refactored `BlogPost.tsx` for dynamic content loading. Task completed.
 *   **Contact Form:** Submission logic implemented via webhook. Added `source: "emg"` field to payload for both main and blog short forms. Task completed.
 *   **Performance:** Code-splitting implemented for page routes and blog post content. Task completed.
-*   **SEO:** Analysis complete. Initial implementation phase (meta tags, structured data, basic internal linking, alt text) completed.
+*   **SEO:** Analysis complete. Initial implementation phase (meta tags, structured data, basic internal linking, alt text, homepage title update) completed.
 *   **Header:** Icons added to desktop navigation. Task completed.
 *   **Analytics:** Umami script added. Task completed.
 *   **Image:** Path updated in About Us. Task completed.
 *   **Google Site Verification:** Tag added to `index.html`. Task completed.
 *   **Bing Site Verification:** Tag added to `index.html`. Task completed.
-*   **Overall:** The website is functional with the new pages, updated footer layout, improved blog styling/CTAs/layout, working contact form submission, enhanced code-splitting, initial SEO improvements, header icons, analytics script, Google site verification tag, and Bing site verification tag. Blog CTAs implemented across all articles as requested.
+*   **Overall:** The website is functional with the new pages, updated footer layout, improved blog styling/CTAs/layout, working contact form submission, enhanced code-splitting, initial SEO improvements (including homepage title update), header icons, analytics script, Google site verification tag, and Bing site verification tag. Blog CTAs implemented across all articles as requested.
 
 ## 4. Known Issues / Potential Improvements
 *   **SEO - Keyword Integration:** Body content keyword density/placement could be further reviewed.

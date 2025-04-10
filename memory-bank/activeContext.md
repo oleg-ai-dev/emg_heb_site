@@ -2,9 +2,7 @@
 
 ## 1. Current Focus
 *   **Documentation Update:** Updating Memory Bank files (`activeContext.md`, `progress.md`) after modifying contact form submissions.
-*   **Awaiting Next Task:** Ready for the next user request.
-
-## 2. Recent Changes (Current Session)
+*   **SEO Title Update:** Updated the `<title>` tag in `src/pages/Index.tsx` to be more descriptive, addressing "Title too short" feedback. Task completed.
 *   **Contact Form Source Field:** Modified `ContactForm.tsx` and `BlogShortForm.tsx` to add/update the `source: "emg"` field in the JSON payload sent to the webhook upon form submission. Task completed.
 *   **Bing Site Verification:** Added Bing site verification meta tag (`msvalidate.01`) to `index.html`. Task completed.
 *   **Google Site Verification:** Added Google site verification meta tag to `index.html`. Task completed.
@@ -36,7 +34,7 @@
     *   **Performance Optimization (Blog Posts):** Refactored `BlogPost.tsx` to dynamically load post content using `React.lazy`. Extracted JSX content for each post into separate files under `src/articles/content/`.
 
 ## 3. Next Steps
-1.  **Update Documentation:** Update `progress.md` to reflect the completed Bing site verification implementation.
+1.  **Update Documentation:** Update `progress.md` to reflect the completed SEO title update.
 2.  **Present Completion:** Use `attempt_completion` to inform the user.
 
 ## 4. Active Decisions & Considerations
