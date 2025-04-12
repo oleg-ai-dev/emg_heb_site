@@ -170,6 +170,18 @@ const blogPosts = [
       'לחץ על שורש עצב',
       'כאב מוקרן לרגל'
     ]
+  },
+  {
+    id: 'ai-emg-diagnosis',
+    title: 'בינה מלאכותית ולמידת מכונה באבחון EMG: המהפכה באבחון מחלות נוירומוסקולריות',
+    excerpt: 'איך בינה מלאכותית ולמידת מכונה משנים את הדרך בה אנו מאבחנים מחלות נוירומוסקולריות באמצעות EMG? מדריך מקיף על טכנולוגיות AI, יתרונות, אתגרים, ודוגמאות מהשטח.',
+    date: '12 באפריל, 2025',
+    readTime: '15 דקות',
+    image: '/articles/images/ai-emg-diagnosis.jpg',
+    category: 'בדיקות EMG',
+    keywords: [
+      'בינה מלאכותית EMG', 'machine learning EMG', 'AI neuromuscular diagnosis', 'deep learning EMG', 'אבחון אוטומטי EMG', 'EMG signal classification', 'אבחון מחלות עצב-שריר', 'EMG אוטומטי', 'AI ברפואה', 'אבחון נוירולוגי מתקדם'
+    ]
   }
 ];
 

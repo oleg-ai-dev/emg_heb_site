@@ -129,6 +129,17 @@ const blogMetadata: Record<string, BlogPostMetadata> = {
       'פענוח תוצאות EMG', 'תוצאות EMG תקינות', 'תוצאות EMG לא תקינות', 'איך לקרוא תוצאות EMG', 'משמעות תוצאות EMG', 'EMG חריג', 'EMG נורמלי', 'דוח EMG', 'שאלות נפוצות על תוצאות EMG', 'מה עושים אחרי תוצאות EMG', 'בדיקת EMG', 'אלקטרומיוגרפיה', 'בדיקת הולכה עצבית', 'פעילות חשמלית בשריר', 'אבחון מחלות שריר ועצב', 'תסמינים של EMG לא תקין', 'גרף EMG', 'EMG בשרירים במנוחה', 'EMG בזמן כיווץ שריר', 'EMG נורמלי לעומת חריג', 'תוצאות בדיקת EMG בעברית'
     ],
   },
+  'ai-emg-diagnosis': {
+    id: 'ai-emg-diagnosis',
+    title: 'בינה מלאכותית ולמידת מכונה באבחון EMG: המהפכה באבחון מחלות נוירומוסקולריות',
+    date: '12 באפריל, 2025',
+    readTime: '15 דקות',
+    image: '/articles/images/ai-emg-diagnosis.jpg',
+    description: 'איך בינה מלאכותית ולמידת מכונה משנים את הדרך בה אנו מאבחנים מחלות נוירומוסקולריות באמצעות EMG? מדריך מקיף על טכנולוגיות AI, יתרונות, אתגרים, ודוגמאות מהשטח.',
+    keywords: [
+      'בינה מלאכותית EMG', 'machine learning EMG', 'AI neuromuscular diagnosis', 'deep learning EMG', 'אבחון אוטומטי EMG', 'EMG signal classification', 'אבחון מחלות עצב-שריר', 'EMG אוטומטי', 'AI ברפואה', 'אבחון נוירולוגי מתקדם'
+    ],
+  },
   'what-is-emg': { // Added new article metadata
     id: 'what-is-emg',
     title: 'מהי בדיקת EMG (אלקטרומיוגרפיה)? המדריך המלא למטופל',
