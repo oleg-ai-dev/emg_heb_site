@@ -1,44 +1,46 @@
 # Active Context: MEDASSIST EMG Website
 
 ## 1. Current Focus
-*   **Performance Optimization (JS):** Added `defer` attribute to the `gptengineer.js` script tag in `index.html` to potentially reduce its impact on initial load, addressing "Reduce unused JavaScript" feedback for this specific script. Task completed.
-*   **Performance Optimization (Fonts):** Removed render-blocking Google Fonts `@import` from `src/index.css` and added asynchronous loading via `<link rel="preload">` tags in `index.html`. Task completed.
-*   **SEO Title Update:** Updated the `<title>` tag in `src/pages/Index.tsx` to be more descriptive, addressing "Title too short" feedback. Task completed.
-*   **Contact Form Source Field:** Modified `ContactForm.tsx` and `BlogShortForm.tsx` to add/update the `source: "emg"` field in the JSON payload sent to the webhook upon form submission. Task completed.
-*   **Bing Site Verification:** Added Bing site verification meta tag (`msvalidate.01`) to `index.html`. Task completed.
-*   **Google Site Verification:** Added Google site verification meta tag to `index.html`. Task completed.
-*   **Blog Article CTAs:** Created reusable `BlogCtaBanner` and `BlogShortForm` components. Added the banner at ~1/3 point and the short form at ~2/3 point within all longer blog articles (`als`, `polio-post-polio`, `radiculopathy`, `carpal-tunnel-syndrome`, `guillain-barre-syndrome`, `inflammatory-myopathies`, `muscular-dystrophy`, `myasthenia-gravis`, `תסמונות-לחץ-עצבים`). Added only the short form to the `what-is-emg` article after corrections. Removed old hardcoded banners. Task completed.
-*   **Header Icons:** Added icons to main desktop navigation links in `Header.tsx`. Task completed.
-*   **Blog Subtitle:** Updated subtitle on `Blog.tsx` page header. Task completed.
-*   **Analytics Script:** Added Umami tracking script to `index.html`. Task completed.
-*   **Image Path Update:** Replaced external image URL with local path in `AboutUs.tsx`. Task completed.
-*   **Blog Layout Improvements:** Adjusted heading margins and spacing in `als`, `polio-post-polio`, and `radiculopathy` articles for better readability. Task completed.
-*   **SEO Implementation (Phase 1):** Added meta tags (`react-helmet`) to core pages (`Index.tsx`, `AboutUs.tsx`, `AccessibilityStatement.tsx`, `TermsConditions.tsx`). Added structured data (`FAQPage`, `MedicalClinic`) to `Index.tsx`. Added internal links from blog posts to "What is EMG?" article. Optimized image alt text on `Index.tsx`. Corrected syntax error in `AccessibilityStatement.tsx`. Task completed.
-*   **SEO Analysis:** Researched current SEO best practices (2025). Analyzed site structure, technical files, content, and image usage. Task completed.
-*   **Memory Bank Creation:** Established all core Memory Bank files.
-*   **Accessibility Page:** Created component, added route, refined styling, implemented banner via `write_to_file`, added footer links.
-*   **About Us Page:** Created component, added banner, refined content, added route, added footer links.
-*   **Terms & Conditions Page:** Created component, added route.
-*   **Footer Refactoring:** Created reusable `Footer.tsx`, updated layout/alignment, and replaced in all pages.
-*   **Blog Styling:** Improved layout and readability on `Blog.tsx` (index page) and `BlogPost.tsx` (individual post page).
-*   **Documentation Update:** Updating `activeContext.md` (this file) and `progress.md`.
-*   **Blog Post Updates:** Added a call-to-action banner mid-content to all three blog posts (`guillain-barre-syndrome`, `carpal-tunnel-syndrome`, `תסמונות-לחץ-עצבים`) as requested.
-*   **Contact Form Submission:** Implemented webhook submission logic in `ContactForm.tsx` using `fetch` API to send data to the specified Make.com URL. Added success/error handling and toast notifications.
-*   **Footer Layout:** Updated footer layout to remove logo and center links/copyright as per user image. Corrected syntax errors from previous attempt.
-*   **New Blog Post (Inflammatory Myopathies):** Added article `inflammatory-myopathies` to `BlogPost.tsx` and `Blog.tsx`.
-*   **New Blog Post (Muscular Dystrophy):** Added article `muscular-dystrophy` to `BlogPost.tsx` and `Blog.tsx`.
-*   **New Blog Post (Myasthenia Gravis):** Added article `myasthenia-gravis` to `BlogPost.tsx` and `Blog.tsx`.
-*   **New Blog Post (ALS):** Added article `als` to `BlogPost.tsx` and `Blog.tsx`.
-*   **New Blog Post (Polio/Post-Polio):** Added article `polio-post-polio` to `BlogPost.tsx` and `Blog.tsx`.
-*   **New Blog Post (Radiculopathy):** Added article `radiculopathy` to `BlogPost.tsx` and `Blog.tsx` using provided content, keywords, and image. Included mid-content banner.
-*   **Performance Optimization (Pages):** Implemented code-splitting for page components in `src/App.tsx` using `React.lazy` and `Suspense` to address build warnings about large chunks.
-    *   **Performance Optimization (Blog Posts):** Refactored `BlogPost.tsx` to dynamically load post content using `React.lazy`. Extracted JSX content for each post into separate files under `src/articles/content/`.
+- All articles and blog content now use a visually appealing, highly readable format:
+  - <article> with Tailwind prose classes for optimal typography
+  - Headings, lists, and blockquotes styled for clarity and accessibility
+  - Internal CTAs (BlogCtaBanner, BlogShortForm) spaced and visually distinct
+  - No duplicate images (featured image only in blog template, not in article body)
+  - No redundant CTAs at the end of articles (only the buffer CTA is used)
+  - All articles are at least 1300 words, SEO-optimized, and use long-tail keyword research
+  - Images are sourced from Unsplash or similar, downloaded and stored locally
+  - Sitemap.xml is generated and includes all main pages and blog articles
+
+## 2. Editorial & Technical Directives (for all future articles)
+- Use Brave and Fetch to research long-tail keywords with high ranking potential, focusing on medical/EMG topics relevant to the site
+- Article length: minimum 1300 words, in-depth, SEO-optimized, and in Hebrew (RTL)
+- Article structure:
+  - Clear, bold H1 and H2/H3 headings
+  - Short, readable paragraphs
+  - Bulleted and numbered lists for clarity
+  - Blockquotes and colored callouts for tips, notes, or important points
+  - Internal links to related articles
+  - No duplicate images (featured image only in blog template)
+  - No redundant CTA at the end (use only the buffer CTA)
+  - Alt text for all images is descriptive and SEO-friendly
+- Visual formatting:
+  - Use Tailwind prose classes for all article content
+  - Add spacing between sections, before/after CTAs, and around lists
+  - Use horizontal rules to separate major sections
+  - Ensure all lists are visually clear and spaced
+  - Use bold/italic for emphasis on key terms
+- Image usage:
+  - Always use a free, relevant image (preferably Unsplash)
+  - Download and store image in both articles/images/ and public/articles/images/
+  - Use Invoke-WebRequest for image download
+  - Use Unsplash as fallback if no suitable image found elsewhere
+- Sitemap:
+  - Always update public/sitemap.xml to include all main pages and blog articles
 
 ## 3. Next Steps
-1.  **Update Documentation:** Update `progress.md` to reflect the completed JS defer optimization.
-2.  **Present Completion:** Use `attempt_completion` to inform the user.
+- All future articles must strictly follow these editorial, SEO, and formatting standards.
+- Memory Bank and .clinerules must be kept up to date with any new editorial or technical directives.
 
 ## 4. Active Decisions & Considerations
-*   **Footer Refactoring:** Completed. Addressed the previous duplication issue.
-*   **Footer Color Scheme:** Updated footer background from `bg-gray-900` to `bg-medblue-dark` to align with header and project palette.
-*   **Placeholder Links:** The footer still contains placeholder links (`#`) for "מדיניות פרטיות" and "צור קשר". These will need actual pages or valid links eventually.
+- All previous articles have been refactored to match the new standards.
+- The editorial workflow and formatting rules are now codified in the Memory Bank and .clinerules for future reference.
