@@ -7,6 +7,28 @@ import { Helmet } from 'react-helmet';
 // Blog post data with keywords for SEO
 const blogPosts = [
   {
+    id: 'stiff-person-syndrome',
+    title: 'בדיקת EMG לתסמונת האדם הנוקשה (Stiff Person Syndrome)',
+    excerpt: 'כל מה שצריך לדעת על תסמונת האדם הנוקשה (SPS): תסמינים, אבחון באמצעות EMG, טיפול, שאלות נפוצות, והבדלים ממחלות שריר אחרות. מדריך מקיף ועדכני.',
+    date: '14 באפריל, 2025',
+    readTime: '15 דקות',
+    image: '/articles/images/stiff-person-syndrome.jpg',
+    category: 'בדיקות EMG',
+    keywords: [
+      'בדיקת EMG לתסמונת האדם הנוקשה',
+      'EMG Stiff Person Syndrome',
+      'אבחון SPS',
+      'נוקשות שרירים',
+      'ספאזם שרירים',
+      'continuous muscle activity',
+      'anti-GAD antibodies',
+      'טיפול בתסמונת האדם הנוקשה',
+      'SPS',
+      'autoimmune neurological disorder',
+      'co-contraction agonist antagonist muscles'
+    ]
+  },
+  {
     id: 'פענוח-תוצאות-emg',
     title: 'פענוח תוצאות EMG – המדריך המקיף להבנת תוצאות בדיקת אלקטרומיוגרפיה',
     excerpt: 'מדריך מקיף לפענוח תוצאות בדיקת EMG: הסבר על תהליך הבדיקה, דוגמאות למצבים נפוצים, משמעות תוצאות תקינות וחריגות, טעויות נפוצות, שאלות ותשובות, ומילון מונחים.',

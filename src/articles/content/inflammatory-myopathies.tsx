@@ -1,261 +1,233 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
-import { Phone } from 'lucide-react';
-import BlogCtaBanner from '@/components/BlogCtaBanner'; // Import Banner
-import BlogShortForm from '@/components/BlogShortForm'; // Import Short Form
+import React from "react";
+import { Link } from "react-router-dom";
+import BlogCtaBanner from "@/components/BlogCtaBanner";
+import BlogShortForm from "@/components/BlogShortForm";
 
 const InflammatoryMyopathiesContent = () => {
   return (
-    <div className="space-y-6">
-      <h2 className="text-2xl font-semibold text-medblue-dark mt-6 mb-3">מבוא: מה הן מיופתיות דלקתיות?</h2>
-      <p className="leading-relaxed">
+    <article dir="rtl" lang="he" className="prose prose-lg prose-sky max-w-none mx-auto">
+      <h1 className="!text-4xl !font-extrabold text-medblue-dark mb-6">
+        מבוא: מה הן מיופתיות דלקתיות?
+      </h1>
+      <p className="text-lg leading-relaxed mb-6">
         מיופתיות דלקתיות הן קבוצה של מחלות אוטואימוניות נדירות יחסית, שבהן מערכת החיסון של הגוף תוקפת בטעות את רקמות השריר, גורמת לדלקת ולנזק לסיבי השריר. השכיחות של מחלות אלה מוערכת בכ-2-10 מקרים ל-100,000 אנשים, כשהן נפוצות יותר בקרב נשים ובגילאי 40-60, אם כי יכולות להופיע בכל גיל.
       </p>
-      <p className="leading-relaxed">
-        מחלות אלו שייכות לקבוצה הרחבה יותר של מחלות ראומטיות, ויכולות להופיע כמחלה עצמאית או כחלק ממחלת רקמת חיבור מעורבת. האבחון המוקדם חיוני להתחלת טיפול מתאים ולמניעת נזק בלתי הפיך לשרירים.
-      </p>
-      <p className="leading-relaxed">
-        המאפיין העיקרי של מחלות אלה הוא חולשת שרירים הדרגתית, שמתפתחת לאורך שבועות או חודשים ומשפיעה על איכות החיים של המטופלים. במאמר זה נסקור את המחלות הללו, מאפייניהן, ואת התפקיד המהותי של בדיקת EMG באבחונן ובמעקב אחריהן.
+      <blockquote className="border-r-4 border-medblue-dark bg-medblue/10 p-4 rounded-lg mb-8">
+        האבחון המוקדם חיוני להתחלת טיפול מתאים ולמניעת נזק בלתי הפיך לשרירים. המאפיין העיקרי של מחלות אלה הוא חולשת שרירים הדרגתית, שמתפתחת לאורך שבועות או חודשים ומשפיעה על איכות החיים של המטופלים.
+      </blockquote>
+      <p>
+        מחלות אלו שייכות לקבוצה הרחבה יותר של מחלות ראומטיות, ויכולות להופיע כמחלה עצמאית או כחלק ממחלת רקמת חיבור מעורבת. במאמר זה נסקור את המחלות הללו, מאפייניהן, ואת התפקיד המהותי של בדיקת EMG באבחונן ובמעקב אחריהן.
       </p>
 
-      <h2 className="text-2xl font-semibold text-medblue-dark mt-6 mb-3">סוגים עיקריים של מיופתיות דלקתיות</h2>
+      <hr className="my-8" />
 
-      <h3 className="text-xl font-semibold text-medblue-dark mt-4 mb-2">פולימיוזיטיס</h3>
-      <p className="leading-relaxed">
-        פולימיוזיטיס היא מחלה דלקתית של השרירים, המתאפיינת בדלקת של שרירי הגוף, בעיקר באזורי האגן, הכתפיים והצוואר. המחלה מתפתחת בדרך כלל באופן הדרגתי על פני תקופה של שבועות או חודשים, וגורמת לתסמינים הבאים:
-      </p>
-      <ul className="list-disc pr-8 space-y-3 mt-4">
+      <h2 className="!text-2xl !font-bold text-medblue-dark mt-10 mb-4">
+        סוגים עיקריים של מיופתיות דלקתיות
+      </h2>
+      <h3 className="!text-xl !font-bold text-medblue-dark mt-6 mb-3">פולימיוזיטיס</h3>
+      <ul className="my-4">
         <li><strong>חולשת שרירים סימטרית פרוקסימלית</strong> (קרובה לגוף)</li>
         <li><strong>קושי בביצוע פעולות יומיומיות</strong> כמו קימה מכיסא, עלייה במדרגות והרמת ידיים מעל הראש</li>
         <li><strong>כאבי שרירים</strong>, אם כי פחות בולטים מהחולשה</li>
         <li>לעתים <strong>קשיי בליעה (דיספגיה)</strong> וקשיי נשימה במקרים חמורים</li>
       </ul>
-      <p className="leading-relaxed">
-        מחקרים מראים שפולימיוזיטיס נפוצה יותר בנשים ביחס של 2:1 בהשוואה לגברים, ושיא ההופעה הוא בגילאי 40-60.
-      </p>
+      <blockquote className="bg-orange-100 border-r-4 border-orange-400 p-4 rounded-lg my-6">
+        פולימיוזיטיס נפוצה יותר בנשים ביחס של 2:1 בהשוואה לגברים, ושיא ההופעה הוא בגילאי 40-60.
+      </blockquote>
 
-      <h3 className="text-xl font-semibold text-medblue-dark mt-4 mb-2">דרמטומיוזיטיס</h3>
-      <p className="leading-relaxed">
-        דרמטומיוזיטיס דומה לפולימיוזיטיס בהיותה גורמת לחולשת שרירים, אך נבדלת ממנה בכך שהיא מלווה גם בפריחה אופיינית. מאפייני המחלה כוללים:
-      </p>
-      <ul className="list-disc pr-8 space-y-3 mt-4">
+      <h3 className="!text-xl !font-bold text-medblue-dark mt-6 mb-3">דרמטומיוזיטיס</h3>
+      <ul className="my-4">
         <li><strong>פריחה אדמדמה-סגלגלה על העפעפיים</strong> ("פריחת הליוטרופ")</li>
         <li><strong>פריחה על הפנים, הצוואר, החזה, הכתפיים והידיים</strong></li>
-        <li><strong>סימן גוטרון</strong>: פריחה אדומה ומחוספסת על פרקי האצבעות</li>
+        <li><strong>סימן גוטרון:</strong> פריחה אדומה ומחוספסת על פרקי האצבעות</li>
         <li><strong>חולשת שרירים</strong> דומה לזו שבפולימיוזיטיס</li>
         <li><strong>קשר מוגבר לסיכון למחלות ממאירות</strong>, במיוחד בקרב מבוגרים</li>
       </ul>
-      <p className="leading-relaxed">
-        חשוב לציין שמטופלים עם דרמטומיוזיטיס נמצאים בסיכון מוגבר לפתח סרטן, במיוחד בשנתיים הראשונות לאחר האבחון, ולכן מומלץ על בדיקות סקר לגילוי מוקדם של סרטן.
-      </p>
+      <blockquote className="bg-sky-50 border-r-4 border-sky-400 p-4 rounded-lg my-6">
+        מטופלים עם דרמטומיוזיטיס נמצאים בסיכון מוגבר לפתח סרטן, במיוחד בשנתיים הראשונות לאחר האבחון, ולכן מומלץ על בדיקות סקר לגילוי מוקדם של סרטן.
+      </blockquote>
 
-      <h3 className="text-xl font-semibold text-medblue-dark mt-4 mb-2">מיוזיטיס עם גופיפי הכללה (IBM)</h3>
-      <p className="leading-relaxed">
-        מיוזיטיס עם גופיפי הכללה היא הצורה השכיחה ביותר של מיופתיה דלקתית בקרב אנשים מעל גיל 50. בניגוד לתצורות האחרות, היא שכיחה יותר בגברים ומתאפיינת ב:
-      </p>
-      <ul className="list-disc pr-8 space-y-3 mt-4">
+      <h3 className="!text-xl !font-bold text-medblue-dark mt-6 mb-3">מיוזיטיס עם גופיפי הכללה (IBM)</h3>
+      <ul className="my-4">
         <li><strong>חולשת שרירים איטית והדרגתית</strong>, שלעתים אינה סימטרית</li>
         <li><strong>מעורבות ייחודית של שרירים דיסטליים</strong> (רחוקים מהגוף) כמו שרירי כף היד והרגל</li>
         <li><strong>חולשה אופיינית בשרירי קדמת הירך ושרירי האמה</strong></li>
         <li><strong>הפרעה בבליעה</strong> בכ-40% מהמקרים</li>
         <li><strong>תגובה מוגבלת לטיפול אימונוסופרסיבי</strong></li>
       </ul>
-      <p className="leading-relaxed">
-        זוהי המחלה העמידה ביותר לטיפול מבין המיופתיות הדלקתיות, והטיפול בה מתמקד בעיקר בשיקום ובשמירה על תפקוד.
-      </p>
+      <blockquote className="bg-orange-100 border-r-4 border-orange-400 p-4 rounded-lg my-6">
+        מיוזיטיס עם גופיפי הכללה היא המחלה העמידה ביותר לטיפול מבין המיופתיות הדלקתיות, והטיפול בה מתמקד בעיקר בשיקום ובשמירה על תפקוד.
+      </blockquote>
 
-      <h2 className="text-2xl font-semibold text-medblue-dark mt-6 mb-3">תסמינים וסימנים של מיופתיות דלקתיות</h2>
-      <p className="leading-relaxed">
-        התסמינים של מיופתיות דלקתיות יכולים להשתנות בהתאם לסוג הספציפי של המחלה, אך כוללים בדרך כלל:
-      </p>
-      <ul className="list-disc pr-8 space-y-3 mt-4">
-        <li><strong>חולשת שרירים</strong>: בדרך כלל חולשה סימטרית המתחילה בשרירים הקרובים לגוף (ירכיים, אגן, כתפיים)</li>
-        <li><strong>קשיים בתפקוד יומיומי</strong>: קושי בקימה מכיסא, עלייה במדרגות, או הרמת חפצים</li>
-        <li><strong>כאבי שרירים</strong>: מופיעים בכשליש מהחולים, אך פחות בולטים מהחולשה</li>
-        <li><strong>קשיי בליעה</strong>: בכ-30% מהחולים, גורמים לקושי בבליעה ולסיכון לשאיפה</li>
-        <li><strong>קשיי נשימה</strong>: במקרים חמורים, כאשר שרירי הנשימה מעורבים</li>
-        <li><strong>תסמינים עוריים</strong>: בדרמטומיוזיטיס, פריחה אופיינית על הפנים, הידיים, ובמקומות אחרים</li>
-        <li><strong>תסמינים מערכתיים</strong>: עייפות, חום נמוך, אובדן משקל, כאבי מפרקים</li>
+      <hr className="my-8" />
+
+      <h2 className="!text-2xl !font-bold text-medblue-dark mt-10 mb-4">
+        תסמינים וסימנים של מיופתיות דלקתיות
+      </h2>
+      <ul className="my-4">
+        <li><strong>חולשת שרירים:</strong> בדרך כלל חולשה סימטרית המתחילה בשרירים הקרובים לגוף (ירכיים, אגן, כתפיים)</li>
+        <li><strong>קשיים בתפקוד יומיומי:</strong> קושי בקימה מכיסא, עלייה במדרגות, או הרמת חפצים</li>
+        <li><strong>כאבי שרירים:</strong> מופיעים בכשליש מהחולים, אך פחות בולטים מהחולשה</li>
+        <li><strong>קשיי בליעה:</strong> בכ-30% מהחולים, גורמים לקושי בבליעה ולסיכון לשאיפה</li>
+        <li><strong>קשיי נשימה:</strong> במקרים חמורים, כאשר שרירי הנשימה מעורבים</li>
+        <li><strong>תסמינים עוריים:</strong> בדרמטומיוזיטיס, פריחה אופיינית על הפנים, הידיים, ובמקומות אחרים</li>
+        <li><strong>תסמינים מערכתיים:</strong> עייפות, חום נמוך, אובדן משקל, כאבי מפרקים</li>
       </ul>
-      <p className="leading-relaxed">
-        חשוב לציין שתסמיני המחלה עלולים להתפתח בהדרגה על פני שבועות או חודשים, ולכן האבחון עלול להתעכב.
-      </p>
+      <blockquote className="bg-sky-50 border-r-4 border-sky-400 p-4 rounded-lg my-6">
+        תסמיני המחלה עלולים להתפתח בהדרגה על פני שבועות או חודשים, ולכן האבחון עלול להתעכב.
+      </blockquote>
 
-      {/* CTA Banner - Approx 1/3 point */}
       <BlogCtaBanner />
 
-      <h2 className="text-2xl font-semibold text-medblue-dark mt-6 mb-3">תפקיד בדיקת EMG באבחון מיופתיות דלקתיות</h2>
+      <hr className="my-8" />
 
-      <h3 className="text-xl font-semibold text-medblue-dark mt-4 mb-2">מהי בדיקת EMG?</h3>
-      <p className="leading-relaxed">
+      <h2 className="!text-2xl !font-bold text-medblue-dark mt-10 mb-4">
+        תפקיד בדיקת EMG באבחון מיופתיות דלקתיות
+      </h2>
+      <h3 className="!text-xl !font-bold text-medblue-dark mt-6 mb-3">מהי בדיקת EMG?</h3>
+      <p>
         <Link to="/blog/what-is-emg" className="text-medblue hover:underline">בדיקת אלקטרומיוגרפיה (EMG)</Link> היא כלי חשוב באבחון מיופתיות דלקתיות. הבדיקה כוללת שני חלקים:
       </p>
-      <ol className="list-decimal pr-8 space-y-3 mt-4">
-        <li><strong>בדיקת מוליכות עצבית (NCS)</strong>: בדיקה זו בודקת את תפקוד העצבים הפריפריים ובדרך כלל תקינה במיופתיות טהורות, מה שעוזר להבדיל בינן לבין בעיות בעצבים.</li>
-        <li><strong>בדיקת EMG של השרירים</strong>: החלק העיקרי באבחון מיופתיות, שבו מחט דקה עם אלקטרודה מוחדרת לשרירים שונים כדי לרשום את הפעילות החשמלית שלהם.</li>
+      <ol className="my-4 list-decimal pr-8">
+        <li><strong>בדיקת מוליכות עצבית (NCS):</strong> בודקת את תפקוד העצבים הפריפריים ובדרך כלל תקינה במיופתיות טהורות, מה שעוזר להבדיל בינן לבין בעיות בעצבים.</li>
+        <li><strong>בדיקת EMG של השרירים:</strong> החלק העיקרי באבחון מיופתיות, שבו מחט דקה עם אלקטרודה מוחדרת לשרירים שונים כדי לרשום את הפעילות החשמלית שלהם.</li>
       </ol>
-      <p className="leading-relaxed">
+      <blockquote className="bg-orange-100 border-r-4 border-orange-400 p-4 rounded-lg my-6">
         הבדיקה אינה כואבת במיוחד, אך יכולה לגרום לאי-נוחות מסוימת. היא נמשכת בין 30 ל-60 דקות, תלוי במספר השרירים הנבדקים.
-      </p>
+      </blockquote>
 
-      <h3 className="text-xl font-semibold text-medblue-dark mt-4 mb-2">ממצאים אופייניים ב-EMG במיופתיות דלקתיות</h3>
-      <p className="leading-relaxed">
-        בבדיקת EMG של השרירים במיופתיות דלקתיות ניתן לזהות מספר ממצאים אופייניים:
-      </p>
-      <ul className="list-disc pr-8 space-y-3 mt-4">
-        <li><strong>פוטנציאלים קצרים, נמוכים ורב-פאזיים</strong>: מאפיינים של סיבי שריר קטנים וחלשים</li>
-        <li><strong>דה-סינכרוניזציה של יחידות מוטוריות</strong>: שינויים בדפוס הפעילות החשמלית של היחידות המוטוריות</li>
-        <li><strong>פוטנציאלים ספונטניים חיוביים חדים וגלי פיברילציה</strong>: סימנים לתהליך פעיל של נזק לסיבי שריר</li>
-        <li><strong>פריקות מיוטוניות</strong>: שינויים באות החשמלי אופייניים לפגיעה ביציבות ממברנת תא השריר</li>
-        <li><strong>דפוס גיוס מוקדם</strong>: גיוס מוגבר של יחידות מוטוריות בהשוואה לעוצמת הכיווץ</li>
+      <h3 className="!text-xl !font-bold text-medblue-dark mt-6 mb-3">ממצאים אופייניים ב-EMG במיופתיות דלקתיות</h3>
+      <ul className="my-4">
+        <li><strong>פוטנציאלים קצרים, נמוכים ורב-פאזיים:</strong> מאפיינים של סיבי שריר קטנים וחלשים</li>
+        <li><strong>דה-סינכרוניזציה של יחידות מוטוריות:</strong> שינויים בדפוס הפעילות החשמלית של היחידות המוטוריות</li>
+        <li><strong>פוטנציאלים ספונטניים חיוביים חדים וגלי פיברילציה:</strong> סימנים לתהליך פעיל של נזק לסיבי שריר</li>
+        <li><strong>פריקות מיוטוניות:</strong> שינויים באות החשמלי אופייניים לפגיעה ביציבות ממברנת תא השריר</li>
+        <li><strong>דפוס גיוס מוקדם:</strong> גיוס מוגבר של יחידות מוטוריות בהשוואה לעוצמת הכיווץ</li>
       </ul>
-      <p className="leading-relaxed">
+      <blockquote className="bg-sky-50 border-r-4 border-sky-400 p-4 rounded-lg my-6">
         ממצאים אלו מספקים תמונה אופיינית של "דפוס מיופתי", שהוא שונה מ"דפוס נוירוגני" הנראה בפגיעות עצביות. הבחנה זו חיונית לקביעת האבחנה המדויקת.
-      </p>
+      </blockquote>
 
-      <h3 className="text-xl font-semibold text-medblue-dark mt-4 mb-2">יתרונות בדיקת EMG באבחון וניטור</h3>
-      <p className="leading-relaxed">
-        בדיקת EMG מציעה מספר יתרונות משמעותיים באבחון וניטור מיופתיות דלקתיות:
-      </p>
-      <ul className="list-disc pr-8 space-y-3 mt-4">
-        <li><strong>אבחון מוקדם</strong>: יכולה לזהות שינויים חשמליים עוד לפני הופעת סימנים קליניים ברורים</li>
-        <li><strong>הערכת היקף המחלה</strong>: מאפשרת להעריך כמה שרירים מעורבים וחומרת המעורבות</li>
-        <li><strong>הבחנה בין תת-סוגים</strong>: מסייעת להבדיל בין סוגים שונים של מיופתיות דלקתיות</li>
-        <li><strong>הנחיית ביופסיה</strong>: עוזרת לזהות אזורים מתאימים לביופסית שריר</li>
-        <li><strong>מעקב אחר התקדמות</strong>: מאפשרת הערכה אובייקטיבית של תגובה לטיפול</li>
-        <li><strong>אבחנה מבדלת</strong>: עוזרת להבחין בין מיופתיות דלקתיות למחלות אחרות עם תסמינים דומים</li>
+      <hr className="my-8" />
+
+      <h2 className="!text-2xl !font-bold text-medblue-dark mt-10 mb-4">
+        בדיקות נוספות המשלימות את ה-EMG באבחון
+      </h2>
+      <h3 className="!text-xl !font-bold text-medblue-dark mt-6 mb-3">בדיקות דם</h3>
+      <ul className="my-4">
+        <li><strong>רמות אנזימי שריר בדם:</strong> עלייה ברמות קריאטין קינאז (CK), אלדולאז, אמינוטרנספראזות (AST, ALT) ולקטט דהידרוגנאז (LDH)</li>
+        <li><strong>בדיקות נוגדנים:</strong> נוגדנים מיוזיטיס-ספציפיים (MSA) ונוגדנים מיוזיטיס-משויכים (MAA)</li>
       </ul>
-      <p className="leading-relaxed">
-        מחקרים הראו שבדיקת EMG יכולה לזהות שינויים מיופתיים ב-70% עד 90% מהחולים עם מיופתיות דלקתיות, מה שהופך אותה לכלי רגיש יחסית באבחון.
-      </p>
-
-      <h2 className="text-2xl font-semibold text-medblue-dark mt-6 mb-3">בדיקות נוספות המשלימות את ה-EMG באבחון</h2>
-      <p className="leading-relaxed">
-        לצד בדיקת EMG, מספר בדיקות נוספות חשובות לאבחון מיופתיות דלקתיות:
-      </p>
-
-      <h3 className="text-xl font-semibold text-medblue-dark mt-4 mb-2">בדיקות דם</h3>
-      <ul className="list-disc pr-8 space-y-3 mt-4">
-        <li><strong>רמות אנזימי שריר בדם</strong>: עלייה ברמות קריאטין קינאז (CK), אלדולאז, אמינוטרנספראזות (AST, ALT) ולקטט דהידרוגנאז (LDH)</li>
-        <li><strong>בדיקות נוגדנים</strong>: נוגדנים מיוזיטיס-ספציפיים (MSA) ונוגדנים מיוזיטיס-משויכים (MAA)</li>
+      <h3 className="!text-xl !font-bold text-medblue-dark mt-6 mb-3">בדיקות הדמיה ורקמה</h3>
+      <ul className="my-4">
+        <li><strong>ביופסיית שריר:</strong> הנחשבת ל"סטנדרט הזהב" באבחון, מראה תמונה היסטופתולוגית אופיינית של דלקת ונזק לסיבי שריר</li>
+        <li><strong>בדיקות הדמיה:</strong> MRI של שרירים מראה דפוסים אופייניים של בצקת ודלקת</li>
+        <li><strong>קפיץ תפקודי:</strong> הערכה אובייקטיבית של חולשת שרירים</li>
       </ul>
+      <blockquote className="bg-orange-100 border-r-4 border-orange-400 p-4 rounded-lg my-6">
+        השילוב של בדיקת EMG עם בדיקות אלו מאפשר אבחון מדויק ומוקדם יותר, וכן תכנון טיפול מותאם אישית.
+      </blockquote>
 
-      <h3 className="text-xl font-semibold text-medblue-dark mt-4 mb-2">בדיקות הדמיה ורקמה</h3>
-      <ul className="list-disc pr-8 space-y-3 mt-4">
-        <li><strong>ביופסיית שריר</strong>: הנחשבת ל"סטנדרט הזהב" באבחון, מראה תמונה היסטופתולוגית אופיינית של דלקת ונזק לסיבי שריר</li>
-        <li><strong>בדיקות הדמיה</strong>: MRI של שרירים מראה דפוסים אופייניים של בצקת ודלקת</li>
-        <li><strong>קפיץ תפקודי</strong>: הערכה אובייקטיבית של חולשת שרירים</li>
-      </ul>
-      <p className="leading-relaxed">
-        השילוב של בדיקת EMG עם בדיקות אלו מאפשר אבחון מדויק ומוקדם יותר, וכן תכנון טיפול מותאם אישית. מחקרים מראים ששילוב של EMG, בדיקות נוגדנים וביופסיית שריר מגיע לרגישות של מעל 90% באבחון מיופתיות דלקתיות.
-      </p>
-
-      {/* Short Contact Form - Approx 2/3 point */}
       <BlogShortForm />
 
-      <h2 className="text-2xl font-semibold text-medblue-dark mt-6 mb-3">גישות טיפוליות במיופתיות דלקתיות</h2>
-      <p className="leading-relaxed">
-        הטיפול במיופתיות דלקתיות מתמקד בדיכוי התגובה האוטואימונית והדלקת בשרירים. הגישה הטיפולית מותאמת לסוג המחלה, חומרתה, ומאפייני המטופל.
-      </p>
+      <hr className="my-8" />
 
-      <h3 className="text-xl font-semibold text-medblue-dark mt-4 mb-2">טיפול תרופתי</h3>
-      <ul className="list-disc pr-8 space-y-3 mt-4">
-        <li><strong>קורטיקוסטרואידים</strong>: קו טיפול ראשון, בדרך כלל פרדניזון במינון גבוה בתחילה (בדרך כלל 1 מ"ג לק"ג משקל גוף), עם הורדה הדרגתית</li>
-        <li><strong>תרופות אימונוסופרסיביות</strong>: מטוטרקסט, אזתיופרין, מיקופנולט מופטיל לחולים שאינם מגיבים מספיק לסטרואידים</li>
-        <li><strong>אימונוגלובולינים תוך-ורידיים (IVIG)</strong>: בעיקר במקרים חמורים או עמידים לטיפול</li>
-        <li><strong>טיפולים ביולוגיים</strong>: ריטוקסימאב, אנטי-TNF ותרופות חדשניות אחרות במקרים עמידים</li>
+      <h2 className="!text-2xl !font-bold text-medblue-dark mt-10 mb-4">
+        גישות טיפוליות במיופתיות דלקתיות
+      </h2>
+      <h3 className="!text-xl !font-bold text-medblue-dark mt-6 mb-3">טיפול תרופתי</h3>
+      <ul className="my-4">
+        <li><strong>קורטיקוסטרואידים:</strong> קו טיפול ראשון, בדרך כלל פרדניזון במינון גבוה בתחילה (בדרך כלל 1 מ"ג לק"ג משקל גוף), עם הורדה הדרגתית</li>
+        <li><strong>תרופות אימונוסופרסיביות:</strong> מטוטרקסט, אזתיופרין, מיקופנולט מופטיל לחולים שאינם מגיבים מספיק לסטרואידים</li>
+        <li><strong>אימונוגלובולינים תוך-ורידיים (IVIG):</strong> בעיקר במקרים חמורים או עמידים לטיפול</li>
+        <li><strong>טיפולים ביולוגיים:</strong> ריטוקסימאב, אנטי-TNF ותרופות חדשניות אחרות במקרים עמידים</li>
       </ul>
-      <p className="leading-relaxed">
-        מחקרים קליניים הראו ש-60% עד 80% מהחולים בפולימיוזיטיס ודרמטומיוזיטיס מגיבים היטב לטיפול קו ראשון בסטרואידים, בעוד שתגובה לטיפול במיוזיטיס עם גופיפי הכללה היא נמוכה יותר.
-      </p>
-
-      <h3 className="text-xl font-semibold text-medblue-dark mt-4 mb-2">טיפולים משלימים</h3>
-      <ul className="list-disc pr-8 space-y-3 mt-4">
-        <li><strong>פיזיותרפיה</strong>: תרגילי טווח תנועה, חיזוק שרירים והדרכה לפעילויות יומיומיות</li>
-        <li><strong>תזונה מותאמת</strong>: תמיכה תזונתית למטופלים עם קשיי בליעה</li>
-        <li><strong>ריפוי בעיסוק</strong>: התאמת אביזרי עזר ושיטות לביצוע פעולות יומיומיות</li>
-        <li><strong>טיפול בקשיי בליעה</strong>: הערכה וטיפול על ידי קלינאי תקשורת</li>
+      <blockquote className="bg-sky-50 border-r-4 border-sky-400 p-4 rounded-lg my-6">
+        60% עד 80% מהחולים בפולימיוזיטיס ודרמטומיוזיטיס מגיבים היטב לטיפול קו ראשון בסטרואידים, בעוד שתגובה לטיפול במיוזיטיס עם גופיפי הכללה היא נמוכה יותר.
+      </blockquote>
+      <h3 className="!text-xl !font-bold text-medblue-dark mt-6 mb-3">טיפולים משלימים</h3>
+      <ul className="my-4">
+        <li><strong>פיזיותרפיה:</strong> תרגילי טווח תנועה, חיזוק שרירים והדרכה לפעילויות יומיומיות</li>
+        <li><strong>תזונה מותאמת:</strong> תמיכה תזונתית למטופלים עם קשיי בליעה</li>
+        <li><strong>ריפוי בעיסוק:</strong> התאמת אביזרי עזר ושיטות לביצוע פעולות יומיומיות</li>
+        <li><strong>טיפול בקשיי בליעה:</strong> הערכה וטיפול על ידי קלינאי תקשורת</li>
       </ul>
-      <p className="leading-relaxed">
+      <blockquote className="bg-orange-100 border-r-4 border-orange-400 p-4 rounded-lg my-6">
         במיוזיטיס עם גופיפי הכללה (IBM), התגובה לטיפולים אימונוסופרסיביים ירודה, והטיפול מתמקד בעיקר בשיקום ובשמירה על תפקוד.
-      </p>
+      </blockquote>
 
-      <h2 className="text-2xl font-semibold text-medblue-dark mt-6 mb-3">אתגרים ותחזית במיופתיות דלקתיות</h2>
-      <p className="leading-relaxed">
-        הטיפול והתחזית במיופתיות דלקתיות משתנים בהתאם לסוג הספציפי של המחלה:
-      </p>
-      <ul className="list-disc pr-8 space-y-3 mt-4">
-        <li><strong>פולימיוזיטיס ודרמטומיוזיטיס</strong>: ברוב המקרים, תגובה טובה לטיפול אימונוסופרסיבי, במיוחד אם מתחילים טיפול מוקדם. כ-50% מהחולים משיגים הפוגה משמעותית עם תפקוד שריר תקין או כמעט תקין.</li>
-        <li><strong>מיוזיטיס עם גופיפי הכללה</strong>: תחזית פחות טובה, עם התקדמות הדרגתית של חולשת שרירים למרות טיפול.</li>
-        <li><strong>אתגרים טיפוליים</strong>: איזון בין יעילות הטיפול האימונוסופרסיבי לתופעות הלוואי, סיכון מוגבר לזיהומים, וההשפעה של טיפול ממושך בסטרואידים.</li>
-      </ul>
-      <p className="leading-relaxed">
-        גורמים המשפיעים על התחזית כוללים:
-      </p>
-      <ul className="list-disc pr-8 space-y-3 mt-4">
-        <li>גיל בעת האבחון</li>
-        <li>חומרת המחלה בתחילתה</li>
-        <li>נוכחות מעורבות ריאתית</li>
-        <li>קיום מחלה ממארת נלווית</li>
-        <li>עיכוב באבחון ובטיפול</li>
-      </ul>
-      <p className="leading-relaxed">
-        מחקרי מעקב ארוכי טווח הראו ששיעור ההישרדות לחמש שנים בחולים עם פולימיוזיטיס ודרמטומיוזיטיס הוא כ-95%, כאשר הסיבות העיקריות לתמותה הן זיהומים, מחלות לב וריאה, ומחלות ממאירות.
-      </p>
+      <hr className="my-8" />
 
-      <h2 className="text-2xl font-semibold text-medblue-dark mt-6 mb-3">סיכום: חשיבות האבחון המוקדם באמצעות EMG</h2>
-      <p className="leading-relaxed">
+      <h2 className="!text-2xl !font-bold text-medblue-dark mt-10 mb-4">
+        אתגרים ותחזית במיופתיות דלקתיות
+      </h2>
+      <ul className="my-4">
+        <li><strong>פולימיוזיטיס ודרמטומיוזיטיס:</strong> ברוב המקרים, תגובה טובה לטיפול אימונוסופרסיבי, במיוחד אם מתחילים טיפול מוקדם. כ-50% מהחולים משיגים הפוגה משמעותית עם תפקוד שריר תקין או כמעט תקין.</li>
+        <li><strong>מיוזיטיס עם גופיפי הכללה:</strong> תחזית פחות טובה, עם התקדמות הדרגתית של חולשת שרירים למרות טיפול.</li>
+        <li><strong>אתגרים טיפוליים:</strong> איזון בין יעילות הטיפול האימונוסופרסיבי לתופעות הלוואי, סיכון מוגבר לזיהומים, וההשפעה של טיפול ממושך בסטרואידים.</li>
+      </ul>
+      <blockquote className="bg-sky-50 border-r-4 border-sky-400 p-4 rounded-lg my-6">
+        שיעור ההישרדות לחמש שנים בחולים עם פולימיוזיטיס ודרמטומיוזיטיס הוא כ-95%, כאשר הסיבות העיקריות לתמותה הן זיהומים, מחלות לב וריאה, ומחלות ממאירות.
+      </blockquote>
+
+      <hr className="my-8" />
+
+      <h2 className="!text-2xl !font-bold text-medblue-dark mt-10 mb-4">
+        סיכום: חשיבות האבחון המוקדם באמצעות EMG
+      </h2>
+      <p>
         מיופתיות דלקתיות הן מחלות מורכבות שדורשות אבחון מדויק ומוקדם ככל האפשר. בדיקת EMG, בשילוב עם בדיקות ייחודיות אחרות, מספקת מידע חיוני שמאפשר להבדיל בין סוגים שונים של מיופתיות, להעריך את חומרת המחלה, ולנטר את התגובה לטיפול.
       </p>
-      <p className="leading-relaxed">
-        התחלת טיפול מוקדם משפרת את התחזית ומפחיתה את הסיכון לנזק בלתי הפיך לשרירים. לכן, מטופלים עם חולשת שרירים הדרגתית או עם תסמינים אופייניים אחרים, במיוחד אם הם מלווים בעלייה ברמות אנזימי שריר בדם, צריכים לעבור הערכה מקיפה הכוללת בדיקת EMG.
-      </p>
-      <p className="leading-relaxed">
-        גישה רב-תחומית, הכוללת ראומטולוגים, נוירולוגים, פיזיותרפיסטים ומומחים אחרים, היא המפתח לניהול מיטבי של מיופתיות דלקתיות ולשיפור איכות החיים של המטופלים.
-      </p>
+      <blockquote className="bg-orange-100 border-r-4 border-orange-400 p-4 rounded-lg my-6">
+        התחלת טיפול מוקדם משפרת את התחזית ומפחיתה את הסיכון לנזק בלתי הפיך לשרירים. גישה רב-תחומית, הכוללת ראומטולוגים, נוירולוגים, פיזיותרפיסטים ומומחים אחרים, היא המפתח לניהול מיטבי של מיופתיות דלקתיות ולשיפור איכות החיים של המטופלים.
+      </blockquote>
 
-      <h2 className="text-2xl font-semibold text-medblue-dark mt-6 mb-3">שאלות נפוצות</h2>
+      <hr className="my-8" />
 
-      <h3 className="text-xl font-semibold text-medblue-dark mt-4 mb-2">מהו ההבדל העיקרי בין פולימיוזיטיס לדרמטומיוזיטיס?</h3>
-      <p className="leading-relaxed">
+      <h2 className="!text-2xl !font-bold text-medblue-dark mt-10 mb-4">
+        שאלות נפוצות
+      </h2>
+
+      <h3 className="!text-xl !font-bold text-medblue-dark mt-6 mb-3">מהו ההבדל העיקרי בין פולימיוזיטיס לדרמטומיוזיטיס?</h3>
+      <p>
         ההבדל העיקרי הוא נוכחות פריחה אופיינית בדרמטומיוזיטיס, במיוחד על העפעפיים (פריחת הליוטרופ) ועל פרקי האצבעות (סימן גוטרון). מבחינת מעורבות השרירים, שתי המחלות דומות למדי.
       </p>
 
-      <h3 className="text-xl font-semibold text-medblue-dark mt-4 mb-2">האם בדיקת EMG כואבת?</h3>
-      <p className="leading-relaxed">
+      <h3 className="!text-xl !font-bold text-medblue-dark mt-6 mb-3">האם בדיקת EMG כואבת?</h3>
+      <p>
         בדיקת EMG יכולה לגרום לאי-נוחות מסוימת, במיוחד כאשר מחדירים את מחט האלקטרודה לשרירים, אך בדרך כלל אינה כואבת במיוחד. תחושת אי-הנוחות דומה לזו של זריקה שגרתית.
       </p>
 
-      <h3 className="text-xl font-semibold text-medblue-dark mt-4 mb-2">כמה זמן לוקח להחלים ממיופתיה דלקתית?</h3>
-      <p className="leading-relaxed">
+      <h3 className="!text-xl !font-bold text-medblue-dark mt-6 mb-3">כמה זמן לוקח להחלים ממיופתיה דלקתית?</h3>
+      <p>
         זמן ההחלמה משתנה בהתאם לסוג המחלה, חומרתה ולתגובה לטיפול. בפולימיוזיטיס ודרמטומיוזיטיס, שיפור בחוזק השרירים יכול להתחיל תוך מספר שבועות מתחילת הטיפול, אך החלמה מלאה עשויה לקחת חודשים עד שנים. במיוזיטיס עם גופיפי הכללה, המחלה בדרך כלל מתקדמת למרות הטיפול.
       </p>
 
-      <h3 className="text-xl font-semibold text-medblue-dark mt-4 mb-2">האם יש קשר בין מיופתיות דלקתיות וסרטן?</h3>
-      <p className="leading-relaxed">
+      <h3 className="!text-xl !font-bold text-medblue-dark mt-6 mb-3">האם יש קשר בין מיופתיות דלקתיות וסרטן?</h3>
+      <p>
         כן, במיוחד בדרמטומיוזיטיס יש קשר מוגבר לסיכון למחלות ממאירות, במיוחד בקרב מבוגרים. הסיכון גבוה במיוחד בשנתיים הראשונות לאחר האבחון, ולכן מומלץ על בדיקות סקר לגילוי מוקדם של סרטן.
       </p>
 
-      <h3 className="text-xl font-semibold text-medblue-dark mt-4 mb-2">האם מיופתיות דלקתיות הן מחלות תורשתיות?</h3>
-      <p className="leading-relaxed">
+      <h3 className="!text-xl !font-bold text-medblue-dark mt-6 mb-3">האם מיופתיות דלקתיות הן מחלות תורשתיות?</h3>
+      <p>
         לא, מיופתיות דלקתיות אינן מחלות תורשתיות ישירות, אלא מחלות אוטואימוניות. עם זאת, יש נטייה גנטית מסוימת לפתח מחלות אוטואימוניות, כולל מיופתיות דלקתיות, במשפחות מסוימות.
       </p>
 
-      <h3 className="text-xl font-semibold text-medblue-dark mt-4 mb-2">האם ניתן להחלים לחלוטין ממיופתיה דלקתית?</h3>
-      <p className="leading-relaxed">
+      <h3 className="!text-xl !font-bold text-medblue-dark mt-6 mb-3">האם ניתן להחלים לחלוטין ממיופתיה דלקתית?</h3>
+      <p>
         בפולימיוזיטיס ודרמטומיוזיטיס, חלק מהחולים משיגים הפוגה מלאה עם טיפול מתאים, במיוחד אם האבחון והטיפול מתחילים מוקדם. עם זאת, רבים יזדקקו לטיפול תחזוקתי ארוך טווח. במיוזיטיס עם גופיפי הכללה, החלמה מלאה אינה צפויה, והמטרה היא להאט את התקדמות המחלה ולשמור על תפקוד.
       </p>
 
-      <h3 className="text-xl font-semibold text-medblue-dark mt-4 mb-2">מהי תדירות המעקב הרפואי הנדרשת לאחר אבחון מיופתיה דלקתית?</h3>
-      <p className="leading-relaxed">
+      <h3 className="!text-xl !font-bold text-medblue-dark mt-6 mb-3">מהי תדירות המעקב הרפואי הנדרשת לאחר אבחון מיופתיה דלקתית?</h3>
+      <p>
         תדירות המעקב תלויה בחומרת המחלה, בתגובה לטיפול ובנוכחות תופעות לוואי של הטיפול. בתחילה, ייתכן שיהיה צורך במעקב כל שבועיים עד חודש. לאחר השגת יציבות, המעקב עשוי להיות כל 3-6 חודשים.
       </p>
 
-      <h3 className="text-xl font-semibold text-medblue-dark mt-4 mb-2">האם ניתן להמשיך בפעילות גופנית עם מיופתיה דלקתית?</h3>
-      <p className="leading-relaxed">
+      <h3 className="!text-xl !font-bold text-medblue-dark mt-6 mb-3">האם ניתן להמשיך בפעילות גופנית עם מיופתיה דלקתית?</h3>
+      <p>
         כן, אך סוג ועצימות הפעילות צריכים להיות מותאמים אישית בהתאם למצב המטופל. בשלב החריף של המחלה, מנוחה היא חשובה. לאחר התייצבות, פעילות גופנית מתונה ופיזיותרפיה מומלצות לשיפור הכוח והתפקוד.
       </p>
-    </div>
+    </article>
   );
 };
 

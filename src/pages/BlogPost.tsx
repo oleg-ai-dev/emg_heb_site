@@ -171,6 +171,27 @@ const blogMetadata: Record<string, BlogPostMetadata> = {
       'בינה מלאכותית EMG', 'machine learning EMG', 'AI neuromuscular diagnosis', 'deep learning EMG', 'אבחון אוטומטי EMG', 'EMG signal classification', 'אבחון מחלות עצב-שריר', 'EMG אוטומטי', 'AI ברפואה', 'אבחון נוירולוגי מתקדם'
     ],
   },
+  'stiff-person-syndrome': {
+    id: 'stiff-person-syndrome',
+    title: 'בדיקת EMG לתסמונת האדם הנוקשה (Stiff Person Syndrome)',
+    date: '14 באפריל, 2025',
+    readTime: '15 דקות',
+    image: '/articles/images/stiff-person-syndrome.jpg',
+    description: 'כל מה שצריך לדעת על תסמונת האדם הנוקשה (SPS): תסמינים, אבחון באמצעות EMG, טיפול, שאלות נפוצות, והבדלים ממחלות שריר אחרות. מדריך מקיף ועדכני.',
+    keywords: [
+      'בדיקת EMG לתסמונת האדם הנוקשה',
+      'EMG Stiff Person Syndrome',
+      'אבחון SPS',
+      'נוקשות שרירים',
+      'ספאזם שרירים',
+      'continuous muscle activity',
+      'anti-GAD antibodies',
+      'טיפול בתסמונת האדם הנוקשה',
+      'SPS',
+      'autoimmune neurological disorder',
+      'co-contraction agonist antagonist muscles'
+    ],
+  },
   'what-is-emg': { // Added new article metadata
     id: 'what-is-emg',
     title: 'מהי בדיקת EMG (אלקטרומיוגרפיה)? המדריך המלא למטופל',
