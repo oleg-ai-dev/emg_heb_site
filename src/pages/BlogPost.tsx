@@ -192,6 +192,17 @@ const blogMetadata: Record<string, BlogPostMetadata> = {
       'co-contraction agonist antagonist muscles'
     ],
   },
+  'guillain-barre-syndrome-detailed': {
+    id: 'guillain-barre-syndrome-detailed',
+    title: 'תסמונת גיאן-בארה (GBS): מדריך מקיף ומעמיק לאבחון, טיפול ושיקום',
+    date: '15 באפריל, 2025',
+    readTime: '18 דקות',
+    image: '/articles/images/guillain-barre-rehabilitation-1.jpg', // Featured image
+    description: 'מדריך מקיף ומעמיק על תסמונת גיאן-בארה (GBS), כולל תסמינים, גורמים, אבחון מדויק עם בדיקת EMG, טיפולים (IVIG, פלזמפרזיס), שיקום ופרוגנוזה.',
+    keywords: [
+      'תסמונת גיאן-בארה', 'GBS', 'Guillain Barre Syndrome', 'אבחון GBS', 'בדיקת EMG לגיאן-בארה', 'טיפול בגיאן-בארה', 'שיקום גיאן-בארה', 'תסמינים ראשונים של תסמונת גיאן בארה', 'אבחון גיאן בארה עם בדיקת EMG', 'טיפול IVIG לגיאן בארה', 'שיקום פיזיותרפיה לאחר גיאן בארה', 'סיכויי החלמה מגיאן בארה', 'מה גורם לתסמונת גיאן בארה', 'פלזמפרזיס', 'אימונוגלובולינים', 'נוירופתיה היקפית', 'מחלה אוטואימונית', 'חולשת שרירים מתקדמת', 'שיתוק עולה', 'תסמונת מילר-פישר'
+    ],
+  },
   'what-is-emg': { // Added new article metadata
     id: 'what-is-emg',
     title: 'מהי בדיקת EMG (אלקטרומיוגרפיה)? המדריך המלא למטופל',

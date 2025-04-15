@@ -1,79 +1,93 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://emg.org.il/</loc>
+    <loc>https://emg.org.il</loc>
+    <lastmod>2025-04-15</lastmod>
+    <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://emg.org.il/blog</loc>
-    <priority>0.9</priority>
-  </url>
-  <url>
     <loc>https://emg.org.il/about-us</loc>
-    <priority>0.7</priority>
+    <lastmod>2025-04-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://emg.org.il/accessibility-statement</loc>
-    <priority>0.7</priority>
+    <loc>https://emg.org.il/blog</loc>
+    <lastmod>2025-04-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://emg.org.il/terms-conditions</loc>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://emg.org.il/blog/als</loc>
+    <lastmod>2025-04-15</lastmod>
+    <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://emg.org.il/blog/polio-post-polio</loc>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://emg.org.il/blog/radiculopathy</loc>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://emg.org.il/blog/carpal-tunnel-syndrome</loc>
+    <loc>https://emg.org.il/%D7%94%D7%A6%D7%94%D7%A8%D7%AA-%D7%A0%D7%92%D7%99%D7%A9%D7%95%D7%AA</loc>
+    <lastmod>2025-04-15</lastmod>
+    <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://emg.org.il/blog/guillain-barre-syndrome</loc>
-    <priority>0.8</priority>
+    <lastmod>2025-04-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://emg.org.il/blog/carpal-tunnel-syndrome</loc>
+    <lastmod>2025-04-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://emg.org.il/blog/%D7%AA%D7%A1%D7%9E%D7%95%D7%A0%D7%95%D7%AA-%D7%9C%D7%97%D7%A5-%D7%A2%D7%A6%D7%91%D7%99%D7%9D</loc>
+    <lastmod>2025-04-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://emg.org.il/blog/inflammatory-myopathies</loc>
-    <priority>0.8</priority>
+    <lastmod>2025-04-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://emg.org.il/blog/muscular-dystrophy</loc>
-    <priority>0.8</priority>
+    <lastmod>2025-04-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://emg.org.il/blog/myasthenia-gravis</loc>
-    <priority>0.8</priority>
+    <lastmod>2025-04-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://emg.org.il/blog/תסמונות-לחץ-עצבים</loc>
-    <priority>0.8</priority>
+    <loc>https://emg.org.il/blog/als</loc>
+    <lastmod>2025-04-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://emg.org.il/blog/פענוח-תוצאות-emg</loc>
-    <priority>0.8</priority>
+    <loc>https://emg.org.il/blog/polio-post-polio</loc>
+    <lastmod>2025-04-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://emg.org.il/blog/בדיקת-emg-לנוירופתיה-סוכרתית</loc>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://emg.org.il/blog/ai-emg-diagnosis</loc>
-    <priority>0.8</priority>
+    <loc>https://emg.org.il/blog/radiculopathy</loc>
+    <lastmod>2025-04-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://emg.org.il/blog/what-is-emg</loc>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://emg.org.il/blog/stiff-person-syndrome</loc>
-    <priority>0.8</priority>
+    <lastmod>2025-04-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
   </url>
 </urlset>

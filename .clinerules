@@ -1,0 +1,35 @@
+# Cline Rules for MEDASSIST EMG Website (`emg_heb_site`)
+
+## Content Creation & Formatting
+
+1.  **Featured Image Handling:** The featured image for a blog post is defined in the metadata within `src/pages/BlogPost.tsx` and rendered by the template. **DO NOT** include the same featured image (`<img>` tag) within the article's `.tsx` content file (e.g., `src/articles/content/your-article-id.tsx`). Only add *additional*, different images inside the content file if specifically required by the task.
+2.  **Formatting Consistency:** New articles **MUST** strictly adhere to the visual formatting and structure of established, correctly formatted articles.
+    *   **Reference Article:** Use `src/articles/content/stiff-person-syndrome.tsx` as the primary reference for correct formatting.
+    *   **Key Elements:**
+        *   Apply Tailwind prose classes to the main `<article>` tag: `prose prose-lg prose-sky max-w-none mx-auto`.
+        *   Use specific heading styles: `h1` (`!text-4xl !font-extrabold text-medblue-dark mb-6`), `h2` (`!text-2xl !font-bold text-medblue-dark mt-10 mb-4`), `h3` (`!text-xl !font-semibold text-medblue-dark mt-8 mb-3`).
+        *   Ensure consistent bottom margins (`mb-6`, `mb-4`) for paragraphs (`<p>`) and lists (`<ul>`, `<ol>`).
+        *   Use styled blockquotes (`<blockquote className="bg-color-100 border-r-4 border-color-400 p-4 rounded-lg my-6">`) for emphasis, tips, or important notes, adjusting colors (e.g., `bg-orange-100`, `border-orange-400`, `text-orange-700`) as appropriate for the context.
+        *   Style internal links within the article body using `<Link to="..." className="text-medblue underline">`.
+        *   Use `<hr className="my-8" />` for section separation.
+        *   Include the standard disclaimer paragraph at the end.
+3.  **Article Structure:** Follow the general flow observed in reference articles: Introduction, detailed sections with headings/subheadings, lists, blockquotes for emphasis, relevant internal links, embedded components (`BlogCtaBanner`, `BlogShortForm`), conclusion, and disclaimer.
+4.  **Image Placement:** If additional images (beyond the featured image) are required *within* the article content, place the `<img>` tag appropriately between paragraphs or sections, followed by a caption paragraph: `<p className="text-center text-sm text-gray-600">Your caption here</p>`.
+
+## Technical Procedures
+
+1.  **Image Downloads (Windows):** Use `Invoke-WebRequest -Uri "IMAGE_URL" -OutFile "path/to/save/image.jpg"` for downloading images.
+2.  **File Copying (Windows):** Use the `copy source destination` command. Execute copy commands individually, as chaining with `&&` may fail in `cmd.exe`. Example: `copy articles\images\image.jpg public\articles\images\image.jpg`.
+3.  **Sitemap Updates:** Always add the new blog post URL to `public/sitemap.xml` using the format:
+    ```xml
+    <url>
+      <loc>https://emg.org.il/blog/your-new-article-id</loc>
+      <priority>0.8</priority>
+    </url>
+    ```
+4.  **Metadata Updates:** Add new article metadata to both `src/pages/BlogPost.tsx` (in the `blogMetadata` object) and `src/pages/Blog.tsx` (in the `blogPosts` array). Ensure the `id` matches the content filename (without `.tsx`).
+
+## Tool Usage Notes
+
+1.  **`replace_in_file` vs `write_to_file`:** Default to `replace_in_file` for targeted edits. If multiple `replace_in_file` attempts fail for the same file (e.g., due to formatting inconsistencies or complex changes), use `write_to_file` with the complete intended file content as a fallback.
+2.  **Command Chaining (Windows):** Avoid using `&&` to chain commands in `cmd.exe`. Execute commands sequentially in separate `execute_command` calls if necessary.

@@ -7,6 +7,18 @@ import { Helmet } from 'react-helmet';
 // Blog post data with keywords for SEO
 const blogPosts = [
   {
+    id: 'guillain-barre-syndrome-detailed',
+    title: 'תסמונת גיאן-בארה (GBS): מדריך מקיף ומעמיק לאבחון, טיפול ושיקום',
+    excerpt: 'מדריך מקיף ומעמיק על תסמונת גיאן-בארה (GBS), כולל תסמינים, גורמים, אבחון מדויק עם בדיקת EMG, טיפולים (IVIG, פלזמפרזיס), שיקום ופרוגנוזה.',
+    date: '15 באפריל, 2025',
+    readTime: '18 דקות',
+    image: '/articles/images/guillain-barre-rehabilitation-1.jpg', // Use one of the downloaded images
+    category: 'בדיקות EMG',
+    keywords: [
+      'תסמונת גיאן-בארה', 'GBS', 'Guillain Barre Syndrome', 'אבחון GBS', 'בדיקת EMG לגיאן-בארה', 'טיפול בגיאן-בארה', 'שיקום גיאן-בארה', 'תסמינים ראשונים של תסמונת גיאן בארה', 'אבחון גיאן בארה עם בדיקת EMG', 'טיפול IVIG לגיאן בארה', 'שיקום פיזיותרפיה לאחר גיאן בארה', 'סיכויי החלמה מגיאן בארה', 'מה גורם לתסמונת גיאן בארה', 'פלזמפרזיס', 'אימונוגלובולינים', 'נוירופתיה היקפית', 'מחלה אוטואימונית', 'חולשת שרירים מתקדמת', 'שיתוק עולה', 'תסמונת מילר-פישר'
+    ],
+  },
+  {
     id: 'stiff-person-syndrome',
     title: 'בדיקת EMG לתסמונת האדם הנוקשה (Stiff Person Syndrome)',
     excerpt: 'כל מה שצריך לדעת על תסמונת האדם הנוקשה (SPS): תסמינים, אבחון באמצעות EMG, טיפול, שאלות נפוצות, והבדלים ממחלות שריר אחרות. מדריך מקיף ועדכני.',
