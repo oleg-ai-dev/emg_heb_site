@@ -41,7 +41,8 @@
 ## 3. Next Steps
 - All future articles must strictly follow these editorial, SEO, and formatting standards.
 - Memory Bank and .clinerules must be kept up to date with any new editorial or technical directives.
-- **Recent Correction (GBS Article):** Needed to remove duplicate image from article content and apply detailed formatting (margins, heading styles) to match reference articles.
+  - **Recent Correction (GBS Article):** Needed to remove duplicate image from article content and apply detailed formatting (margins, heading styles) to match reference articles.
+  - **New Article Added (April 16, 2025):** Created a comprehensive article on "אלקטרומיוגרפיה (EMG): המדריך המקיף לבדיקה החשובה" (`src/articles/content/electromyography-emg.tsx`). The article adheres to all established editorial, SEO, and formatting standards, including keyword research, length requirements, image handling, and sitemap/metadata updates.
 
 ## 4. Active Decisions & Considerations
 - All previous articles have been refactored to match the new standards.
