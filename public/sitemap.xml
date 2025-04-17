@@ -94,4 +94,8 @@
     <loc>https://emg.org.il/blog/electromyography-emg</loc>
     <priority>0.8</priority>
   </url>
+  <url>
+    <loc>https://emg.org.il/blog/dystrophy-emg-diagnosis</loc>
+    <priority>0.8</priority>
+  </url>
 </urlset>

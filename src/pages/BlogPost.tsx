@@ -225,6 +225,17 @@ const blogMetadata: Record<string, BlogPostMetadata> = {
       'בדיקת EMG', 'אלקטרומיוגרפיה', 'מהי בדיקת EMG', 'בדיקת הולכה עצבית', 'NCS', 'EMG מחט', 'הכנה לבדיקת EMG', 'כאב בבדיקת EMG', 'סיכונים בבדיקת EMG', 'מחלות עצב-שריר', 'אבחון נוירולוגי'
     ],
   },
+  'dystrophy-emg-diagnosis': {
+    id: 'dystrophy-emg-diagnosis',
+    title: 'אבחון דיסטרופיה (ניוון שרירים) באמצעות EMG: המדריך המלא',
+    date: '17 באפריל, 2025', // Use current date
+    readTime: '16 דקות', // Estimated read time
+    image: '/articles/images/dystrophy-emg-diagnosis.jpg',
+    description: 'מדריך מקיף על תפקיד בדיקת EMG באבחון דיסטרופיה (ניוון שרירים). למדו על התהליך, פיענוח תוצאות, ממצאים אופייניים וחשיבות האבחון המדויק.',
+    keywords: [
+      'דיסטרופיה', 'ניוון שרירים', 'בדיקת EMG לדיסטרופיה', 'אבחון ניוון שרירים', 'EMG מיופתיה', 'פוטנציאל יחידה מוטורית', 'MUAP', 'גיוס מוקדם EMG', 'פיברילציות', 'דיסטרופיה מיוטונית EMG', 'אבחון מחלות שריר', 'נוירולוגיה', 'אלקטרומיוגרפיה', 'חולשת שרירים', 'בדיקת הולכה עצבית', 'NCS'
+    ],
+  },
 };
 
 // Function to dynamically import the content component
