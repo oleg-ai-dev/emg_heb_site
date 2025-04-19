@@ -7,6 +7,18 @@ import { Helmet } from 'react-helmet';
 // Blog post data with keywords for SEO
 const blogPosts = [
   {
+    id: 'emg-fasciculations-meaning',
+    title: 'פסיקולציות בבדיקת EMG: מה המשמעות ומה הלאה?',
+    excerpt: 'מדריך מקיף על פסיקולציות (קפיצות שרירים) בבדיקת EMG. למדו מה המשמעות של ממצא זה, מתי הוא שפיר (BFS) ומתי הוא עשוי להצביע על בעיה נוירולוגית כמו ALS.',
+    date: '19 באפריל, 2025', // Use current date
+    readTime: '16 דקות', // Estimated read time
+    image: '/articles/images/emg-fasciculations-meaning.jpg',
+    category: 'פענוח תוצאות EMG', // Assigning a relevant category
+    keywords: [
+      'פסיקולציות EMG', 'קפיצות שרירים EMG', 'משמעות פסיקולציות', 'פסיקולציות שפירות', 'BFS', 'EMG ALS', 'פיברילציות EMG', 'דנרבציה EMG', 'פענוח EMG פסיקולציות', 'תסמונת האדם הנוקשה', 'נוירולוגיה', 'אלקטרומיוגרפיה'
+    ],
+  },
+  {
     id: 'emg-vs-ncs-explained',
     title: 'EMG מול NCS: הבנת ההבדלים והחשיבות של כל בדיקה',
     excerpt: 'מדריך מקיף להבנת ההבדלים בין בדיקת EMG לבדיקת NCS, חשיבותן המשלימה באבחון מחלות עצב ושריר, ומה לצפות במהלך הבדיקות.',

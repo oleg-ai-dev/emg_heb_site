@@ -15,6 +15,7 @@
 - All blog articles are discoverable and indexed for search engines.
 - **New Article Added (April 15, 2025):** Created and corrected a comprehensive article on Guillain-Barré Syndrome (`guillain-barre-syndrome-detailed.tsx`), adhering to current formatting and image standards.
 - **New Article Added (April 16, 2025):** Created a comprehensive article on Electromyography (EMG) (`electromyography-emg.tsx`), following all established standards.
+- **New Article Added (April 19, 2025):** Created a comprehensive article on EMG Fasciculations (`emg-fasciculations-meaning.tsx`), following all established standards.
 
 ## 2. What's Left to Build / In Progress
 - For every new article:

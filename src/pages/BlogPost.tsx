@@ -258,6 +258,17 @@ const blogMetadata: Record<string, BlogPostMetadata> = {
       'EMG', 'NCS', 'הבדל בין EMG ל NCS', 'אלקטרומיוגרפיה', 'בדיקת הולכה עצבית', 'אבחון נוירולוגי', 'מחלות עצב', 'מחלות שריר', 'נוירופתיה', 'רדיקולופתיה', 'תסמונת התעלה הקרפלית', 'מיאסטניה גרביס', 'מהירות הולכה עצבית', 'פוטנציאל יחידה מוטורית'
     ],
   },
+  'emg-fasciculations-meaning': {
+    id: 'emg-fasciculations-meaning',
+    title: 'פסיקולציות בבדיקת EMG: מה המשמעות ומה הלאה?',
+    date: '19 באפריל, 2025', // Use current date
+    readTime: '16 דקות', // Estimated read time
+    image: '/articles/images/emg-fasciculations-meaning.jpg',
+    description: 'מדריך מקיף על פסיקולציות (קפיצות שרירים) בבדיקת EMG. למדו מה המשמעות של ממצא זה, מתי הוא שפיר (BFS) ומתי הוא עשוי להצביע על בעיה נוירולוגית כמו ALS.',
+    keywords: [
+      'פסיקולציות EMG', 'קפיצות שרירים EMG', 'משמעות פסיקולציות', 'פסיקולציות שפירות', 'BFS', 'EMG ALS', 'פיברילציות EMG', 'דנרבציה EMG', 'פענוח EMG פסיקולציות', 'תסמונת האדם הנוקשה', 'נוירולוגיה', 'אלקטרומיוגרפיה'
+    ],
+  },
 };
 
 // Function to dynamically import the content component
